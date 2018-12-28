@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="athenanavbar">
+    <a id="logoNav" href="#"><img src="img/athena.png" id="logonav"/></a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+   	    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">INÍCIO</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">PARA COMPUTADOR</a>
+                    <a class="dropdown-item" href="#">PARA ANDROID</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MATERIAL DE APOIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">DÚVIDAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SOBRE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="dropdown" href="#">BUSCAR</a>
+                <div class="dropdown-menu" id="searchBar">
+                  	<div id="containerSearchBar">
+        	          	<p>Pesquise Recursos:</p>
+        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+        	          		<select name="h" id="h" form="formsearch">
+        	          			<option value="" selected>Dispositivo</option>
+        	          			<option value="ad">Android</option>
+        	          			<option value="pc">Computador</option>
+        	          		</select><select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+        	          			<option value="" selected>Disciplina</option>
+        	          			<option value="lp">Lingua Portuguesa</option>
+        	          			<option value="mat">Matemática</option>
+        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+        	          			<option value="" selected>Ano</option>
+        	          			<option value="1">1ºAno</option>
+        	          			<option value="2">2ºAno</option>
+        	          			<option value="3">3ºAno</option>
+        	          			<option value="4">4ºAno</option>
+        	          			<option value="5">5ºAno</option>
+        	          			<option value="6">6ºAno</option>
+        	          			<option value="7">7ºAno</option>
+        	          			<option value="8">8ºAno</option>
+        	          			<option value="9">9ºAno</option>
+        	          		</select><select name="t" id="t" form="formsearch" disabled="">
+        	          			<option value="" selected>Descritor</option>
+        	          		</select>
+        	          		<input type="submit" value="Buscar">
+        	          	</form>
+                  	</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
