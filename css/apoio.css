@@ -1,6 +1,6 @@
 #containerContent{
-	width: 75%;
-	margin-left: 15%;
+	width: 77%;
+	margin-left: 13%;
 	margin-top: 8%;
 }
 
@@ -96,13 +96,14 @@ a.collapseColorA {
 	}
 
 	h1.titulo {
-		font-size: 1.2em;
+		font-size: 1.1em;
 		color: #0E89AC;
 		font-weight: normal;
+		text-align: center;
 	}
 
 	h4.titulo4A, h4.titulo4V {
-		font-size: 1em
+		font-size: 0.85em
 	}
 
 	.corpoTexto {
@@ -145,6 +146,13 @@ a.collapseColorA {
 		background-color: #EC7F2B;
 		color: #FFFFFF;
 		font-size: 0.8em;
+	}
+
+	.col-sm-10.box{
+		padding: 0px;
+	}
+	.btn.botaoL{
+		margin: 0px;
 	}
 
 }

@@ -1,18 +1,21 @@
 <html>
 	<head>
-		<link href="css/bootstrap.css" rel="stylesheet">
+		<title>Dúvidas - Athena</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/gif" href="img/ico.gif">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
 		<link rel="stylesheet" type="text/css" href="css/nav.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
-		<link rel="stylesheet" type="text/css" href="css/duvidas.css">
 		<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
-
+		<link rel="stylesheet" type="text/css" href="css/duvidas.css">
 	</head>
 	<body>
 		<!--cabecalho-->
 		<header>
 			<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="athenanavbar">
-			    <a id="logoNav" href="#"><img src="img/athena.png" id="logonav"/></a>
+			    <a id="logoNav" href="index.html"><img src="img/athena.png" id="logonav"/></a>
 			    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
 			   	    <span class="navbar-toggler-icon"></span>
 			    </button>
@@ -20,23 +23,23 @@
 			    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
 			        <ul class="navbar-nav ml-auto">
 			            <li class="nav-item">
-			                <a class="nav-link" href="#">INÍCIO</a>
+			                <a class="nav-link" href="index.html">INÍCIO</a>
 			            </li>
 			            <li class="dropdown">
 			                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
 			                <div class="dropdown-menu">
-			                    <a class="dropdown-item" href="#">PARA COMPUTADOR</a>
-			                    <a class="dropdown-item" href="#">PARA ANDROID</a>
+			                    <a class="dropdown-item" href="buscacomputador.html">PARA COMPUTADOR</a>
+			                    <a class="dropdown-item" href="buscaandroid.html">PARA ANDROID</a>
 			                </div>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link" href="#">MATERIAL DE APOIO</a>
+			                <a class="nav-link" href="apoio.html">MATERIAL DE APOIO</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link" href="#">DÚVIDAS</a>
+			                <a class="nav-link" href="duvidas.html">DÚVIDAS</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link" href="#">SOBRE</a>
+			                <a class="nav-link" href="sobre.html">SOBRE</a>
 			            </li>
 			            <li class="nav-item">
 			                <a class="nav-link" data-toggle="dropdown" href="#">BUSCAR</a>
@@ -75,7 +78,7 @@
 			    </div>
 			</nav>
 		</header>
-				<!--inicio do corpo da página-->
+<!--inicio do corpo da página-->
 <div id="containerContent">
 		<h1 class="titulo">DÚVIDAS FREQUENTES</h1>
 
@@ -179,7 +182,8 @@
 </div><!--fecha a div content-->
 				<!--fim do corpo da página-->
 				
-				<!--footer-->
+
+		<!--footer-->
 		<footer>
 			<div id="footerContainer">
 				<div class="row" id="row_one">
@@ -232,5 +236,6 @@
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/sweetalert2.all.min.js"></script>
-</body>
+		<script src="js/nav.js"></script>
+	</body>
 </html>
