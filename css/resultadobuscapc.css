@@ -1,0 +1,33 @@
+
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+
+/*título da página*/
+h1.titulo {
+	font-size: 2em;
+	color: #0E89AC;
+	font-weight: normal;
+	margin-bottom: 2%;
+}
+
+
+img.recursosTamanho {
+	height: 116.5px; 
+	width: 200.9px;
+}
+
+p {
+	margin: 0;
+}
+
+p.tituloRecurso{
+	font-size: 1.05em;
+	font-weight: 600;
+}
+
+.rowRecurso {
+	margin: 4% 2%;
+}

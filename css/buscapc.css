@@ -1,0 +1,118 @@
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+
+/*título da página*/
+h1.titulo {
+	font-size: 2em;
+	color: #0E89AC;
+	font-weight: normal;
+	margin-bottom: 4%;
+}
+
+img.recursosTamanho {
+	width: 96.5px; 
+	height: 130.9px;
+}
+/*INICIO:recursos scroll lateral ANDROID*/
+#recursosandroid{
+	background-color:#DCE5FB; 
+	width: 100%;
+}
+#titulodispositivo{
+	color: black;
+	font-size: 1.3em;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-left: 10%;
+}
+#rowAndroid{
+	width: 80%;
+	margin-left: 10%;
+	padding-bottom: 8vh;
+}
+#rowAndroid .col-sm-1{
+	margin:auto;
+}
+#randroidcontainer{
+	width: 100%;
+	overflow-x:scroll;
+	overflow: -moz-scrollbars-none;
+}
+#randroidcontainer::-webkit-scrollbar{
+	display: none;
+}
+#scrollbarandroid{
+	width: 170vw;
+}
+.itemandroid{
+	display: inline-block;
+	margin-right: 2vw;
+	width: 15vw;
+}
+.itemandroid img{
+	width: 100%;
+}
+.itemandroid p{
+	color: black;
+	margin:0px;
+	font-size: 0.8em;
+}
+/*FIM:recursos scroll lateral ANDROID*/
+
+/*INICIO:recursos scroll lateral PC*/
+#recursospc{
+	background-color: #C1D1FA; 
+	width: 100%;
+}
+#rowpc{
+	width: 80%;
+	margin-left: 10%;
+	padding-bottom: 8vh;
+}
+#rowpc .col-sm-1{
+	margin:auto;
+}
+#rpccontainer{
+	width: 100%;
+	overflow-x:scroll;
+	overflow: -moz-scrollbars-none;
+}
+#rpccontainer::-webkit-scrollbar{
+	display: none;
+}
+#scrollbarpc{
+	width: 170vw;
+}
+.itempc{
+	display: inline-block;
+	margin-right: 2vw;
+	width: 15vw;
+}
+.itempc img{
+	width: 100%;
+}
+.itempc p{
+	color: black;
+	margin:0px;
+	font-size: 0.8em;
+}
+/*FIM:recursos scroll lateral PC*/
+
+/*INICIO:COMUM DOS DOIS SLIDERS*/
+#botaosliderEsquerda:hover, #botaosliderDireita:hover{
+	cursor: pointer;
+}
+#botaosliderEsquerda{
+	width: 80%;
+}
+#botaosliderDireita{
+	width: 80%;
+}
+p.tituloRecurso{
+	font-size: 1.05em;
+	font-weight: 600;
+}
+/*FIM:COMUM DOS DOIS SLIDERS*/

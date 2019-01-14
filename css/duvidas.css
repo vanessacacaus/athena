@@ -1,6 +1,6 @@
 #containerContent{
 	width: 75%;
-	margin-left: 15%;
+	margin-left: 13%;
 	margin-top: 8%;
 }
 
@@ -83,7 +83,7 @@ a.collapseColorA {
 	color: #0E89AC;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 580px) {
 	#containerContent{
 		margin-top: 20%;
 	}

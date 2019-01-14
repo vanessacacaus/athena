@@ -1,0 +1,37 @@
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+
+/*título da página*/
+h1.titulo {
+	font-size: 2em;
+	color: #0E89AC;
+	font-weight: normal;
+	text-align: center;
+}
+
+p.texto {
+	font-size: 1.6em;
+	text-align: center;
+}
+
+.caixa {
+	margin: 3% 0%;
+	padding: 2%;
+	border: 1px dashed #0E89AC;
+}
+
+.imgRecurso {
+	width: 100%;
+}
+
+.botao {
+	margin: 5%;
+	width: 75%;
+}
+
+.alinhamentoImgBtn {
+	text-align: center;
+}
