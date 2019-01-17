@@ -1,0 +1,201 @@
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+
+/*título da página*/
+h1.titulo {
+	font-size: 2em;
+	color: #0E89AC;
+	font-weight: normal;
+	margin-bottom: 4%;
+}
+
+img.recursosTamanho {
+	width: 96.5px; 
+	height: 130.9px;
+}
+/*INICIO:recursos scroll lateral Matemática*/
+#recursosMat{
+	background-color: #DCE5FB; 
+	width: 100%;
+}
+
+#recursosMatAnd{
+	background-color: #FEF4DF; 
+	width: 100%;
+}
+
+#titulodispositivo{
+	color: black;
+	font-size: 1.3em;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-left: 10%;
+}
+#rowMat{
+	width: 80%;
+	margin-left: 10%;
+	padding-bottom: 8vh;
+}
+#rowMat .col-sm-1{
+	margin:auto;
+}
+#rMatcontainer{
+	width: 100%;
+	overflow-x:scroll;
+	overflow: -moz-scrollbars-none;
+}
+#rMatcontainer::-webkit-scrollbar{
+	display: none;
+}
+#scrollbarMat {
+	width: 170vw;
+}
+.itemMat{
+	display: inline-block;
+	margin-right: 2vw;
+	width: 15vw;
+}
+.itemMat img{
+	width: 100%;
+}
+.itemMat p{
+	color: black;
+	margin:0px;
+	font-size: 0.8em;
+}
+/*FIM:recursos scroll lateral Matemática*/
+
+/*INICIO:recursos scroll lateral Lingua Portuguesa*/
+#recursosPortAnd {
+	background-color: #FFDCA1;
+	width: 100%;
+}
+
+#recursosPort{
+	background-color: #C1D1FA; 
+	width: 100%;
+}
+#rowPort{
+	width: 80%;
+	margin-left: 10%;
+	padding-bottom: 8vh;
+}
+#rowPort .col-sm-1{
+	margin:auto;
+}
+#rPortcontainer{
+	width: 100%;
+	overflow-x:scroll;
+	overflow: -moz-scrollbars-none;
+}
+#rPortcontainer::-webkit-scrollbar{
+	display: none;
+}
+#scrollbarPort{
+	width: 170vw;
+}
+.itemPort {
+	display: inline-block;
+	margin-right: 2vw;
+	width: 15vw;
+}
+.itemPort img{
+	width: 100%;
+}
+.itemPort p{
+	color: black;
+	margin:0px;
+	font-size: 0.8em;
+}
+/*FIM:recursos scroll lateral PC*/
+
+/*INICIO:COMUM DOS DOIS SLIDERS*/
+#botaosliderEsquerda:hover, #botaosliderDireita:hover{
+	cursor: pointer;
+}
+#botaosliderEsquerda{
+	width: 80%;
+}
+#botaosliderDireita{
+	width: 80%;
+}
+p.tituloRecurso{
+	font-size: 1.05em;
+	font-weight: 600;
+}
+/*FIM:COMUM DOS DOIS SLIDERS*/
+
+@media only screen and (max-width: 780px) {
+	#containerContent{
+		margin-top: 20%;
+	}
+
+	h1.titulo {
+		font-size: 1.1em;
+		color: #0E89AC;
+		font-weight: normal;
+		text-align: center;
+	}
+
+	#titulodispositivo{
+		font-size: 0.9em;
+	}
+
+	/*recursos Matemática*/
+	.itemMat{
+		display: inline-block;
+		margin-right: 2vw;
+		width: 45vw;
+	}
+	#scrollbarMat{
+		width: 470vw;
+		margin-bottom: 4vh;
+	}
+	.itemMat p{
+		color: black;
+		margin:0px;
+		font-size: 0.7em;
+	}
+	#rowMat .col-sm-1{
+		width: 10%;
+		padding: 0px;
+	}
+	#rowMat .col-sm-10{
+		width: 80%;
+	}
+
+	/*recursos Lingua Portuguesa*/
+	.itemPort{
+		display: inline-block;
+		margin-right: 2vw;
+		width: 45vw;
+	}
+	#scrollbarPort{
+		width: 470vw;
+		margin-bottom: 4vh;
+	}
+	.itemPort p{
+		color: black;
+		margin:0px;
+		font-size: 0.7em;
+	}
+	#rowPort .col-sm-1{
+		width: 10%;
+		padding: 0px;
+	}
+	#rowPort .col-sm-10{
+		width: 80%;
+	}
+
+	/*comum entre dois sliders*/
+	#botaosliderEsquerda, #botaosliderDireita{
+		width: 100%;
+	}
+	p.tituloRecurso{
+		font-size: 0.9em;
+		font-weight: 600;
+	}
+}
