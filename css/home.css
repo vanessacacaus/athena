@@ -97,6 +97,10 @@ img.recursosTamanho {
 	margin:0px;
 	font-size: 0.8em;
 }
+
+.item {
+	cursor: pointer;
+}
 /*FIM:recursos scroll lateral ANDROID*/
 
 /*INICIO:recursos scroll lateral PC*/
