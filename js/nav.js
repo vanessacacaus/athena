@@ -63,9 +63,9 @@ function checkSearch(){
 		return false;
 	}else{
 		if(x=="pc"){
-			$('#formsearch').attr('action', 'buscacomputador.html');
+			$('#formsearch').attr('action', 'resultadobuscapc.html');
 		}else{
-			$('#formsearch').attr('action', 'buscaandroid.html');
+			$('#formsearch').attr('action', 'resultadobuscapc.html');
 		}
 	}
 	return true;
