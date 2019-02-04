@@ -61,7 +61,9 @@ a.collapseColorV {
 h4.titulo4A {
 	font-weight: normal;
 	color: #0E89AC;
+	text-transform: uppercase;
 }
+
 .bordaA {
 	border: 2px solid #0E89AC;
 	padding: 1%;
