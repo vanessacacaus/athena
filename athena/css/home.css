@@ -1,0 +1,275 @@
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+
+#textoPrincipal {
+	width: 70%;
+	margin:0px;
+	padding: 0px;
+	margin-left: 15%;
+	text-align: center;
+	font-size: 2.5em;
+	color: #0E89AC;
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 4vh;
+}
+
+/*INICIO:cinco imagens informativas*/
+.imginfo{
+	width: 100%;
+}
+#infosIniciais .col-sm{
+	text-align: center;
+}
+#infosIniciais{
+	margin-bottom: 8vh;
+}
+.infos{
+	font-weight: 600;
+	font-size: 0.9em;
+}
+#info1{
+	color: #00C37A;				
+}
+#info2{
+	color: #FF7058;				
+}
+#info3{
+	color: #0E89AC;				
+}
+#info4{
+	color: #AAC148;				
+}
+#info5{
+	color: #7383BF;				
+}
+
+img.recursosTamanho {
+	width: 96.5px; 
+	height: 130.9px;
+}
+/*FIM:cinco imagens informativas*/
+
+/*INICIO:recursos scroll lateral ANDROID*/
+#recursosandroid{
+	background-color:#EC7F2B; 
+	width: 100%;
+}
+#titulodispositivo{
+	color:white;
+	font-size: 1.3em;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-left: 10%;
+}
+#rowAndroid{
+	width: 80%;
+	margin-left: 10%;
+	padding-bottom: 8vh;
+}
+#rowAndroid .col-sm-1{
+	margin:auto;
+}
+#randroidcontainer{
+	width: 100%;
+	overflow-x:scroll;
+	overflow: -moz-scrollbars-none;
+}
+#randroidcontainer::-webkit-scrollbar{
+	display: none;
+}
+#scrollbarandroid{
+	width: 170vw;
+}
+.itemandroid{
+	display: inline-block;
+	margin-right: 2vw;
+	width: 15vw;
+}
+.itemandroid img{
+	width: 100%;
+}
+.itemandroid p{
+	color: white;
+	margin:0px;
+	font-size: 0.8em;
+}
+
+.item {
+	cursor: pointer;
+}
+/*FIM:recursos scroll lateral ANDROID*/
+
+/*INICIO:recursos scroll lateral PC*/
+#recursospc{
+	background-color:#0E89AC; 
+	width: 100%;
+}
+#rowpc{
+	width: 80%;
+	margin-left: 10%;
+	padding-bottom: 8vh;
+}
+#rowpc .col-sm-1{
+	margin:auto;
+}
+#rpccontainer{
+	width: 100%;
+	overflow-x:scroll;
+	overflow: -moz-scrollbars-none;
+}
+#rpccontainer::-webkit-scrollbar{
+	display: none;
+}
+#scrollbarpc{
+	width: 170vw;
+}
+.itempc{
+	display: inline-block;
+	margin-right: 2vw;
+	width: 15vw;
+}
+.itempc img{
+	width: 100%;
+}
+.itempc p{
+	color: white;
+	margin:0px;
+	font-size: 0.8em;
+}
+/*FIM:recursos scroll lateral PC*/
+
+/*INICIO:COMUM DOS DOIS SLIDERS*/
+#botaosliderEsquerda:hover, #botaosliderDireita:hover{
+	cursor: pointer;
+}
+#botaosliderEsquerda{
+	width: 80%;
+}
+#botaosliderDireita{
+	width: 80%;
+}
+p.tituloRecurso{
+	font-size: 1.05em;
+	font-weight: 600;
+}
+/*FIM:COMUM DOS DOIS SLIDERS*/
+
+/*INICIO:DOWNLOAD OFFLINE PARTE*/
+#downloadOffline{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8vh;
+	margin-bottom: 8vh;
+}
+
+#downloadOffline .col-sm-5 button{
+	width: 100%;
+	font-size: 1em; 
+}
+
+#downloadOffline .col-sm-5{
+	margin:auto;
+}
+
+#downloadOffline .col-sm-6 h3{
+	text-align: right;
+	color: #0069d9;
+	font-size: 1.6em;
+}
+/*FIM:DOWNLOAD OFFLINE PARTE*/
+
+@media only screen and (max-width: 780px) {
+	#containerContent{
+		margin-top: 20%;
+	}
+	#textoPrincipal {
+		width: 100%;
+		margin:0px;
+		padding: 0px;
+		text-align: center;
+		font-size: 1.5em;
+		color: #0E89AC;
+		font-style: italic;
+		font-weight: normal;
+		margin-bottom: 4vh;
+	}
+	#infosIniciais{
+		margin-bottom: 12vh;
+	}
+	.imginfo{
+		width: 45%;
+	}
+	.infos{
+		font-size: 0.7em;
+	}
+	#titulodispositivo{
+		font-size: 0.9em;
+	}
+
+	/*recursos android*/
+	.itemandroid{
+		display: inline-block;
+		margin-right: 2vw;
+		width: 45vw;
+	}
+	#scrollbarandroid{
+		width: 470vw;
+		margin-bottom: 4vh;
+	}
+	.itemandroid p{
+		color: white;
+		margin:0px;
+		font-size: 0.7em;
+	}
+	#rowAndroid .col-sm-1{
+		width: 10%;
+		padding: 0px;
+	}
+	#rowAndroid .col-sm-10{
+		width: 80%;
+	}
+
+	/*recursos pc*/
+	.itempc{
+		display: inline-block;
+		margin-right: 2vw;
+		width: 45vw;
+	}
+	#scrollbarpc{
+		width: 470vw;
+		margin-bottom: 4vh;
+	}
+	.itempc p{
+		color: white;
+		margin:0px;
+		font-size: 0.7em;
+	}
+	#rowpc .col-sm-1{
+		width: 10%;
+		padding: 0px;
+	}
+	#rowpc .col-sm-10{
+		width: 80%;
+	}
+
+	/*comum entre dois sliders*/
+	#botaosliderEsquerda, #botaosliderDireita{
+		width: 100%;
+	}
+	p.tituloRecurso{
+		font-size: 0.9em;
+		font-weight: 600;
+	}
+
+	/*download offline*/
+	#downloadOffline .col-sm-6 h3{
+		margin-top:3vh;
+		text-align: center;
+		color: #0069d9;
+		font-size: 1.2em;
+	}
+}
