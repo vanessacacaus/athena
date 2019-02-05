@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Página Inicial - Athena</title>
+		<title>Página Incial - Athena</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
 		<link rel="stylesheet" type="text/css" href="css/nav.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
-		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/resultadobuscapc.css">
 		<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
 	</head>
 	<body>
@@ -78,169 +78,74 @@
 			    </div>
 			</nav>
 		</header>
-
-		<!--inicio do corpo-->
-		<!--cinco icones informativos-->
+		<!-- abre corpo da página-->
 		<div id="containerContent">
-			<h1 id="textoPrincipal">O primeiro repositório tão compacto que cabe no seu bolso</h1>
-			<div class="row" id="infosIniciais">
-				<div class="col-sm">
-					<img class="imginfo" src="img/home/laptop.png">
-					<p id="info1" class="infos">RECURSOS DE LÍNGUA PORTUGUESA E DE MATEMÁTICA</p>
-				</div>
-				<div class="col-sm">
-					<img class="imginfo" src="img/home/recursos.png">
-					<p id="info2" class="infos">CATALOGADOS DE ACORDO COM A MATRIZ DE REFERÊNCIA DO SAEB</p>
-				</div>
-				<div class="col-sm">
-					<img class="imginfo" src="img/home/computador.png">
-					<p id="info3" class="infos">PARA COMPUTADOR</p>
-				</div>
-				<div class="col-sm">
-					<img class="imginfo" src="img/home/android.png">
-					<p id="info4" class="infos">PARA ANDROID</p>
-				</div>
-				<div class="col-sm">
-					<img class="imginfo" src="img/home/pendrive.png">
-					<p id="info5" class="infos">LEVE O ATHENA PARA ONDE VOCÊ FOR</p>
-				</div>
-			</div>
-		</div>
+			<h1 class="titulo">RECURSOS PARA ANDROID</h1>
+			<button class="btn btn-light">Língua Portuguesa</button>
+			<button class="btn btn-light">Matemática</button>
 
-
-		<!--recursos android-->
-		<div id="recursosandroid">
-			<h4 id="titulodispositivo">RECURSOS PARA ANDROID</h4>
-			<div class="row" id="rowAndroid">
-				<div class="col-sm-1">
-					<img id="botaosliderEsquerda" onclick="scrollToLeft('#randroidcontainer')" src="img/home/esquerda.png"/>
-				</div>
-				<div class="col-sm-10">
-					<div id="randroidcontainer">
-						<div id="scrollbarandroid">
-							<div class="itemandroid item" onclick="page()">
+			<div class="row rowRecurso">
+				<div class="col-sm-3">
+					<div class="">
 								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso1.png">
-								<p class="tituloRecurso">Matemática da Selva</p>
+								<p class="tituloRecurso">Matemática Selva</p>
 								<p>Pré-escola</p>
-							</div><div class="itemandroid item" onclick="page()">
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="">
 								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso1.png">
-								<p class="tituloRecurso">Brincando com as Palavras</p>
-								<p>Ano indicado: 4º e 5º anos</p>
-							</div><div class="itemandroid item" onclick="page()">
+								<p class="tituloRecurso">Brincando com as palavras</p>
+								<p>4º e 5º anos</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="">
 								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso2.png">
 								<p class="tituloRecurso">Crianças, matemática</p>
-								<p>Ano indicado: 4º e 5º anos</p>
-							</div><div class="itemandroid item" onclick="page()">
+								<p>1º ano</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="">
 								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso2.png">
 								<p class="tituloRecurso">A poça d'água</p>
-								<p>Ano indicado: 4º e 5º anos</p>
-							</div><div class="itemandroid item" onclick="page()">
+								<p>2º e 3º anos</p>
+					</div>
+				</div>
+			</div>
+			<div class="row rowRecurso">
+				<div class="col-sm-3">
+					<div class="">
 								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso3.png">
-								<p class="tituloRecurso">Adição e subtração</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itemandroid item" onclick="page()">
+								<p class="tituloRecurso">Adição e Subtração</p>
+								<p>1º ano</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="">
 								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso3.png">
 								<p class="tituloRecurso">As minhas histórias</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itemandroid item" onclick="page()">
+								<p>2º e 3º anos</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="">
 								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso4.png">
-								<p class="tituloRecurso">Adição e subtração</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itemandroid item" onclick="page()">
+								<p class="tituloRecurso">Adição e Subtração</p>
+								<p>4º e 5º anos</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="">
 								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso4.png">
 								<p class="tituloRecurso">Forma palavras</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itemandroid item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso5.png">
-								<p class="tituloRecurso">Matemática para crianças</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itemandroid item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso5.png">
-								<p class="tituloRecurso">Ursinho A E I O U</p>
-								<p>Ano indicado: 1º ano</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="col-sm-1">
-					<img id="botaosliderDireita" onclick="scrollToRight('#randroidcontainer')" src="img/home/direita.png"/>	
+								<p>Pré-escola</p>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<!--recursos computador-->
-		<div id="recursospc">
-			<h4 id="titulodispositivo">RECURSOS PARA COMPUTADOR</h4>
-			<div class="row" id="rowpc">
-				<div class="col-sm-1">
-					<img id="botaosliderEsquerda" onclick="scrollToLeft('#rpccontainer')" src="img/home/esquerda.png"/>
-				</div>
-				<div class="col-sm-10">
-					<div id="rpccontainer">
-						<div id="scrollbarpc">
-							<div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso1.png">
-								<p class="tituloRecurso">Alfabeto em Ordem</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/matematica/recurso1.png">
-								<p class="tituloRecurso">Reta Numérica</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso2.png">
-								<p class="tituloRecurso">Brincando com as </p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/matematica/recurso2.png">
-								<p class="tituloRecurso">Pesado x Leve</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso3.png">
-								<p class="tituloRecurso">Ursinho pooh e as </p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/matematica/recurso3.png">
-								<p class="tituloRecurso">Jogo da Matemática</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso4.png">
-								<p class="tituloRecurso">Contando letras</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/matematica/recurso4.png">
-								<p class="tituloRecurso">Formas</p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso5.png">
-								<p class="tituloRecurso">Brincando com as </p>
-								<p>Ano indicado: 1º ano</p>
-							</div><div class="itempc item" onclick="page()">
-								<img class="recursosTamanho" src="img/home/recursos/matematica/recurso5.png">
-								<p class="tituloRecurso">Fazenda rived</p>
-								<p>Ano indicado: 1º ano</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="col-sm-1">
-					<img id="botaosliderDireita" onclick="scrollToRight('#rpccontainer')" src="img/home/direita.png"/>	
-				</div>
-			</div>
-		</div>
-
-		<!--download offline-->
-		<div class="row" id="downloadOffline">
-			<div class="col-sm-5">
-				<button class="btn btn-primary">Download do Athena Offline</button>
-			</div>
-			<div class="col-sm-1">
-				
-			</div>
-			<div class="col-sm-6">
-				<h3><i>Faça o download completo do repositório, coloque-o em um pen drive e leve-o a qualquer lugar</i></h3>
-			</div>
-		</div>
-
+		<!-- fecha corpo da página-->
 		<!--footer-->
 		<footer>
 			<div id="footerContainer">
@@ -296,11 +201,5 @@
 		<script src="js/sweetalert2.all.min.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/home.js"></script>
-
-		<script type="text/javascript">
-			function page() {
-				location.href="file:///C:/Users/vanes/Downloads/novo-athena/recursomobile.html?=recurso";
-		}
-		</script>
 	</body>
 </html>

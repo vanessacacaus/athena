@@ -65,7 +65,7 @@ function checkSearch(){
 		if(x=="pc"){
 			$('#formsearch').attr('action', 'resultadobuscapc.html');
 		}else{
-			$('#formsearch').attr('action', 'resultadobuscapc.html');
+			$('#formsearch').attr('action', 'resultadobuscaand.html');
 		}
 	}
 	return true;

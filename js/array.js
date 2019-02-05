@@ -2,7 +2,7 @@ var recurso1 = {
 	tipo: "android",
 	materia: "matematica",
 	img: "file:///C:/Users/vanes/Downloads/novo-athena/img/home/recursos/matematicaMovel/recurso1.png", 
-	titulo: "Matemática selva",
+	titulo: "Matemática da selva",
 	descricao: "matematicaselvasaosifljsdoifhsdjfisdkjfdifjedofjdfoidsfjdfjdoofjdfojfd", 
 	ano: "pré-escola",
 	descritores: "",
