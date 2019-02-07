@@ -9,6 +9,7 @@ h1.titulo {
 	font-size: 2em;
 	color: #0E89AC;
 	font-weight: normal;
+	text-transform: uppercase;
 }
 .content {
 	margin: 5% 0;
@@ -33,6 +34,8 @@ img.imgApoio {
 h4.titulo4V {
 	font-weight: normal;
 	color: #92C25A;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .bordaV {
@@ -62,6 +65,8 @@ h4.titulo4A {
 	font-weight: normal;
 	color: #0E89AC;
 	text-transform: uppercase;
+	text-align: center;
+
 }
 
 .bordaA {
@@ -105,7 +110,9 @@ a.collapseColorA {
 	}
 
 	h4.titulo4A, h4.titulo4V {
-		font-size: 0.85em
+		font-size: 0.85em;
+		text-align: center;
+		text-transform: uppercase;
 	}
 
 	.corpoTexto {

@@ -9,6 +9,7 @@ h1.titulo {
 	font-size: 2em;
 	color: #0E89AC;
 	font-weight: normal;
+	text-transform: uppercase;
 }
 .content {
 	margin: 5% 0;
@@ -51,6 +52,8 @@ img.imgDuvida3 {
 h4.titulo4V {
 	font-weight: normal;
 	color: #92C25A;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .bordaV {
@@ -69,6 +72,8 @@ a.collapseColorV {
 h4.titulo4A {
 	font-weight: normal;
 	color: #0E89AC;
+	text-transform: uppercase;
+	text-align: center;
 }
 .bordaA {
 	border: 2px solid #0E89AC;
@@ -92,10 +97,14 @@ a.collapseColorA {
 		font-size: 1.2em;
 		color: #0E89AC;
 		font-weight: normal;
+		text-transform: uppercase;
+		text-align: center;
 	}
 
 	h4.titulo4A, h4.titulo4V {
-		font-size: 1em
+		font-size: 1em;
+		text-transform: uppercase;
+		text-align: center;
 	}
 
 	.imagens {

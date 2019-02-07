@@ -1,4 +1,5 @@
 var url_string = window.location.href
+			var recursos = [];
 			var url = new URL(url_string);
 			var disciplinaDesejada = url.searchParams.get("d");
 			if(String(disciplinaDesejada)=="lp"){
@@ -13,10 +14,6 @@ var url_string = window.location.href
 				anoDesejado="null";
 			}
 			var descritoresDesejados = url.searchParams.get("t");
-			
-			function page(n) {
-				location.href="../recursocomputador.html?d="+disciplinaDesejada+"&a="+ anoDesejado + "&t=" + descritoresDesejados+ "&n=" + n;
-			}
 
 			$(document).ready(function() {
 			    $.ajax({
@@ -29,7 +26,6 @@ var url_string = window.location.href
 
 			function processData(textoParam){
 				var linhas = textoParam.split('\n');
-				var recursos = [];
 				for (var i=0; i < linhas.length; i++){
 				    var aux = linhas[i].split('\t');
 				    aux = {identidade:aux[0], nome:aux[1], miniatura:aux[2], resumo:aux[3], disciplina:aux[4], ano:aux[5], descritores:aux[6], linkdown:aux[7], visualizar:aux[8], tema:aux[9], origem:aux[10], autores:aux[11], idioma:aux[12], datacriacao:aux[13]};
@@ -79,3 +75,7 @@ var url_string = window.location.href
 
 			}
 
+
+			function page(n) {
+				location.href="../novo-athena/recursocomputador.html?n=" + recursos[n].identidade;
+			}
