@@ -32,7 +32,7 @@
         	          	<p>Pesquise Recursos:</p>
         	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
         	          		<select name="h" id="h" form="formsearch">
-        	          			<option value="" selected>Dispositivo</option>
+        	          			<option value="pc" selected>Dispositivo</option>
         	          			<option value="ad">Android</option>
         	          			<option value="pc">Computador</option>
         	          		</select><select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
@@ -50,9 +50,10 @@
         	          			<option value="7">7ºAno</option>
         	          			<option value="8">8ºAno</option>
         	          			<option value="9">9ºAno</option>
-        	          		</select><select name="t" id="t" form="formsearch" disabled="">
-        	          			<option value="" selected>Descritor</option>
         	          		</select>
+                            <select name="t" id="t" form="formsearch" disabled="">
+                                            <option value="" selected>Descritor</option>
+                                        </select>
         	          		<input type="submit" value="Buscar">
         	          	</form>
                   	</div>

@@ -15,6 +15,7 @@ h1.titulo {
 p.texto {
 	font-size: 1.6em;
 	text-align: center;
+	margin: 5%;
 }
 
 .caixa {
@@ -35,6 +36,7 @@ p.texto {
 
 .botao {
 	width: 75%;
+	margin: 0% 0% 1% 0%;
 }
 
 .btnCaixa {
@@ -45,7 +47,6 @@ p.texto {
 
 .alinhamentoImgBtn {
 	text-align: center;
-	margin-bottom: 10%;
 }
 
 .play {

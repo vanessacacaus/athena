@@ -66,8 +66,6 @@
 			        	          			<option value="7">7ºAno</option>
 			        	          			<option value="8">8ºAno</option>
 			        	          			<option value="9">9ºAno</option>
-			        	          		</select><select name="t" id="t" form="formsearch" disabled="">
-			        	          			<option value="" selected>Descritor</option>
 			        	          		</select>
 			        	          		<input type="submit" value="Buscar">
 			        	          	</form>
@@ -81,68 +79,80 @@
 		<!-- abre corpo da página-->
 		<div id="containerContent">
 			<h1 class="titulo">RECURSOS PARA COMPUTADORES</h1>
-			<button class="btn btn-light">Língua Portuguesa</button>
-			<button class="btn btn-light">Matemática</button>
+
+			<div id="containerSearchBar">
+			        	          	<p>Busca Avançada:</p>
+			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+			        	          		<select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Disciplina</option>
+			        	          			<option value="lp">Lingua Portuguesa</option>
+			        	          			<option value="mat">Matemática</option>
+			        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Ano</option>
+			        	          			<option value="1">1ºAno</option>
+			        	          			<option value="2">2ºAno</option>
+			        	          			<option value="3">3ºAno</option>
+			        	          			<option value="4">4ºAno</option>
+			        	          			<option value="5">5ºAno</option>
+			        	          			<option value="6">6ºAno</option>
+			        	          			<option value="7">7ºAno</option>
+			        	          			<option value="8">8ºAno</option>
+			        	          			<option value="9">9ºAno</option>
+			        	          		</select>
+			                            <select name="t" id="t" form="formsearch" disabled="">
+			                                            <option value="" selected>Descritor</option>
+			                                        </select>
+			        	          		<input type="submit" value="Buscar">
+			        	          	</form>
+			                  	</div>
 
 			<div class="row rowRecurso">
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/matematica/recurso1.png">
-								<p class="tituloRecurso">Reta numérica</p>
-								<p>1º ano</p>
-					</div>
+				<div id="recurso1" class="col-sm-3" onclick="page(0);">
+					<img class="recursosTamanho" src="">
+					<p class="tituloRecurso"></p>
+					<p></p>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso1.png">
-								<p class="tituloRecurso">Alfabeto em ordem</p>
-								<p>Pré-escola</p>
-					</div>
+				<div id="recurso2" class="col-sm-3" onclick="page(1);">
+					<img class="recursosTamanho" src="">
+					<p class="tituloRecurso"></p>
+					<p></p>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/matematica/recurso2.png">
-								<p class="tituloRecurso">Pesado x Leve</p>
-								<p>4º e 5º anos</p>
-					</div>
+				<div id="recurso3" class="col-sm-3" onclick="page(2);">
+					<img class="recursosTamanho" src="">
+					<p class="tituloRecurso"></p>
+					<p></p>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso2.png">
-								<p class="tituloRecurso">Brincando com as letrinhas</p>
-								<p>Pré-escola</p>
-					</div>
+				<div id="recurso4" class="col-sm-3" onclick="page(3);">
+					<img class="recursosTamanho" src="">
+					<p class="tituloRecurso"></p>
+					<p></p>
 				</div>
 			</div>
 			<div class="row rowRecurso">
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/matematica/recurso3.png">
-								<p class="tituloRecurso">Jogo da Matemática</p>
-								<p>2º e 3º anos</p>
-					</div>
+				<div id="recurso5" class="col-sm-3" onclick="page();">
+					<img class="recursosTamanho" src="">
+					<p class="tituloRecurso"></p>
+					<p></p>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso3.png">
-								<p class="tituloRecurso">Ursinho pooh e as vogais</p>
-								<p>Pré-escola</p>
-					</div>
+				<div id="recurso6" class="col-sm-3" onclick="page();">
+					<img class="recursosTamanho" src="">
+					<p class="tituloRecurso"></p>
+					<p></p>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso4.png">
-								<p class="tituloRecurso">Formas</p>
-								<p>Pré-escola</p>
-					</div>
+				<div id="recurso7" class="col-sm-3" onclick="page();">
+					<img class="recursosTamanho" src="">
+					<p class="tituloRecurso"></p>
+					<p></p>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/portugues/recurso4.png">
-								<p class="tituloRecurso">Contando Letras</p>
-								<p>Pré-escola</p>
-					</div>
+				<div id="recurso8" class="col-sm-3" onclick="page();">
+					<img class="recursosTamanho" src="">
+					<p class="tituloRecurso"></p>
+					<p></p>
 				</div>
+			</div>
+			<div class="row">
+				<a href="#" class="previous">&laquo; Previous </a> | 
+				<a href="#" class="next"> Next &raquo;</a>
 			</div>
 		</div>
 		<!-- fecha corpo da página-->
@@ -201,5 +211,12 @@
 		<script src="js/sweetalert2.all.min.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/home.js"></script>
+		<script src="js/busca.js"></script>
+
+		<script type="text/javascript">
+			function page(n) {
+				location.href="../novo-athena/recursocomputador.html?="+n;
+			}
+		</script>
 	</body>
 </html>
