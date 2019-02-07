@@ -13,6 +13,10 @@ var url_string = window.location.href
 				anoDesejado="null";
 			}
 			var descritoresDesejados = url.searchParams.get("t");
+			
+			function page(n) {
+				location.href="../recursocomputador.html?d="+disciplinaDesejada+"&a="+ anoDesejado + "&t=" + descritoresDesejados+ "&n=" + n;
+			}
 
 			$(document).ready(function() {
 			    $.ajax({
@@ -74,3 +78,4 @@ var url_string = window.location.href
 				document.getElementById('recurso8').children[2].innerHTML = recursos[7].ano+"º ano";
 
 			}
+
