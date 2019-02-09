@@ -77,5 +77,5 @@ var url_string = window.location.href
 
 
 			function page(n) {
-				location.href="../novo-athena/recursocomputador.html?n=" + recursos[n].identidade;
+				location.href="../recursocomputador.html?n=" + recursos[n].identidade;
 			}

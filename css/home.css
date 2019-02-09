@@ -152,9 +152,15 @@ img.recursosTamanho {
 #botaosliderDireita{
 	width: 80%;
 }
+
 p.tituloRecurso{
 	font-size: 1.05em;
 	font-weight: 600;
+	/*height: 2vh;*/
+}
+
+p {
+	margin: 1%;
 }
 /*FIM:COMUM DOS DOIS SLIDERS*/
 
