@@ -82,12 +82,12 @@
 
 			<div id="containerSearchBar">
 			        	          	<p>Busca Avançada:</p>
-			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
-			        	          		<select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          	<form name="buscaavancada" id="buscaavancada" action="resultadobuscapc.html">
+			        	          		<select name="d" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Disciplina</option>
 			        	          			<option value="lp">Lingua Portuguesa</option>
 			        	          			<option value="mat">Matemática</option>
-			        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          		</select><select name="a" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Ano</option>
 			        	          			<option value="1">1ºAno</option>
 			        	          			<option value="2">2ºAno</option>
@@ -100,59 +100,63 @@
 			        	          			<option value="9">9ºAno</option>
 			        	          		</select>
 			                            <select name="t" id="t" form="formsearch" disabled="">
-			                                            <option value="" selected>Descritor</option>
-			                                        </select>
+			                            	<option value="" selected>Descritor</option>
+			                            </select>
+			        	          		<input type="text" name="p" value="0" style="display: none">
 			        	          		<input type="submit" value="Buscar">
 			        	          	</form>
 			                  	</div>
 
 			<div class="row rowRecurso">
-				<div id="recurso1" class="col-sm-3" onclick="page(0);">
-					<img class="recursosTamanho" src="">
+				<div id="recurso0" class="col-sm-3">
+					<img class="recursosTamanho" src="" onclick="irPararecurso(0);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso2" class="col-sm-3" onclick="page(1);">
-					<img class="recursosTamanho" src="">
+				<div id="recurso1" class="col-sm-3">
+					<img class="recursosTamanho" src="" onclick="irPararecurso(1);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso3" class="col-sm-3" onclick="page(2);">
-					<img class="recursosTamanho" src="">
+				<div id="recurso2" class="col-sm-3">
+					<img class="recursosTamanho" src="" onclick="irPararecurso(2);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso4" class="col-sm-3" onclick="page(3);">
-					<img class="recursosTamanho" src="">
+				<div id="recurso3" class="col-sm-3">
+					<img class="recursosTamanho" src="" onclick="irPararecurso(3);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
 			</div>
 			<div class="row rowRecurso">
-				<div id="recurso5" class="col-sm-3" onclick="page(4);">
-					<img class="recursosTamanho" src="">
+				<div id="recurso4" class="col-sm-3">
+					<img class="recursosTamanho" src="" onclick="irPararecurso(4);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso6" class="col-sm-3" onclick="page(5);">
-					<img class="recursosTamanho" src="">
+				<div id="recurso5" class="col-sm-3">
+					<img class="recursosTamanho" src="" onclick="irPararecurso(5);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso7" class="col-sm-3" onclick="page(6);">
-					<img class="recursosTamanho" src="">
+				<div id="recurso6" class="col-sm-3">
+					<img class="recursosTamanho" src="" onclick="irPararecurso(6);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso8" class="col-sm-3" onclick="page(7);">
-					<img class="recursosTamanho" src="">
+				<div id="recurso7" class="col-sm-3">
+					<img class="recursosTamanho" src="" onclick="irPararecurso(7);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
 			</div>
 			<div class="row">
-				<a href="#" class="previous">&laquo; Previous </a> | 
-				<a href="#" class="next"> Next &raquo;</a>
+				<div id="botoesPassarPagina">
+					<a href="#" id="paginaAnterior"></a>
+					<a id="paginaAtual"></a> 
+					<a href="#" id="proximaPagina"></a>
+				</div>
 			</div>
 		</div>
 		<!-- fecha corpo da página-->
@@ -212,11 +216,6 @@
 		<script src="js/nav.js"></script>
 		<script src="js/home.js"></script>
 		<script src="js/busca.js"></script>
-
-		<!--script type="text/javascript">
-			function page(n) {
-				location.href="../novo-athena/recursocomputador.html?d="+d+"a="+ a + "t=" + t+ "n" + n;
-			}
-		</script-->
+		<script src="js/buscaavancadapc.js"></script>
 	</body>
 </html>

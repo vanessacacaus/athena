@@ -13,6 +13,10 @@ h1.titulo {
 	margin-bottom: 2%;
 }
 
+img.recursosTamanho:hover{
+	cursor: pointer;
+}
+
 
 img.recursosTamanho {
 	height: 60%; 
@@ -30,4 +34,21 @@ p.tituloRecurso{
 
 .rowRecurso {
 	margin: 4% 2%;
+}
+
+#botoesPassarPagina{
+	margin: auto;
+	padding-bottom: 3vh;
+}
+
+#buscaavancada select{
+	background-color: white;
+	max-width: 200px;
+}
+
+@media only screen and (max-width: 780px) {
+	h1.titulo{
+		margin-top:80px;
+		font-size:1.5em;
+	}
 }

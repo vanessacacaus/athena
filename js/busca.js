@@ -1,81 +1,99 @@
-var url_string = window.location.href
-			var recursos = [];
-			var url = new URL(url_string);
-			var disciplinaDesejada = url.searchParams.get("d");
-			if(String(disciplinaDesejada)=="lp"){
-				disciplinaDesejada = "Portugues";
-			}else if(String(disciplinaDesejada)=="mat"){
-				disciplinaDesejada = "Matematica";
-			}else{
-				disciplinaDesejada = "null";
-			}
-			var anoDesejado = url.searchParams.get("a");
-			if(String(anoDesejado)==""){
-				anoDesejado="null";
-			}
-			var descritoresDesejados = url.searchParams.get("t");
+var urlString = window.location.href
+var recursos = [];
+var url = new URL(urlString);
+var disciplinaDesejada = url.searchParams.get("d");
+var anoDesejado = url.searchParams.get("a");
+var descritoresDesejados = url.searchParams.get("t");
+var pagina = url.searchParams.get("p");
+var primeiroIntervaloRecursos = 0;
 
-			$(document).ready(function() {
-			    $.ajax({
-			        type: "GET",
-			        url: "data/recursos_pc.tsv",
-			        dataType: "text",
-			        success: function(data) {processData(data);}
-			     });
-			});
-
-			function processData(textoParam){
-				var linhas = textoParam.split('\n');
-				for (var i=0; i < linhas.length; i++){
-				    var aux = linhas[i].split('\t');
-				    aux = {identidade:aux[0], nome:aux[1], miniatura:aux[2], resumo:aux[3], disciplina:aux[4], ano:aux[5], descritores:aux[6], linkdown:aux[7], visualizar:aux[8], tema:aux[9], origem:aux[10], autores:aux[11], idioma:aux[12], datacriacao:aux[13]};
-				    if(String(disciplinaDesejada) != "null" && String(disciplinaDesejada) != String(aux.disciplina)){
-				    	continue;
-				    }
-				    if(String(anoDesejado)!="null" && String(aux.ano)!=String(anoDesejado)){
-				    	//alert(String(anoDesejado)!="null");
-				    	continue;
-				    }
-				    recursos.push(aux);
-				}
-				alert(recursos.length);
+if(String(disciplinaDesejada)=="lp"){
+	disciplinaDesejada = "Portugues";
+}else if(String(disciplinaDesejada)=="mat"){
+	disciplinaDesejada = "Matematica";
+}else{
+	disciplinaDesejada = "null";
+}
 
 
-				document.getElementById('recurso1').children[0].src = recursos[0].miniatura;
-				document.getElementById('recurso1').children[1].innerHTML = recursos[0].nome;
-				document.getElementById('recurso1').children[2].innerHTML = recursos[0].ano+"º ano";
+if(String(anoDesejado)==""){
+	anoDesejado="null";
+}
 
-				document.getElementById('recurso2').children[0].src = recursos[1].miniatura;
-				document.getElementById('recurso2').children[1].innerHTML = recursos[1].nome;
-				document.getElementById('recurso2').children[2].innerHTML = recursos[1].ano+"º ano";
-
-				document.getElementById('recurso3').children[0].src = recursos[2].miniatura;
-				document.getElementById('recurso3').children[1].innerHTML = recursos[2].nome;
-				document.getElementById('recurso3').children[2].innerHTML = recursos[2].ano+"º ano";
-
-				document.getElementById('recurso4').children[0].src = recursos[3].miniatura;
-				document.getElementById('recurso4').children[1].innerHTML = recursos[3].nome;
-				document.getElementById('recurso4').children[2].innerHTML = recursos[3].ano+"º ano";
-
-				document.getElementById('recurso5').children[0].src = recursos[4].miniatura;
-				document.getElementById('recurso5').children[1].innerHTML = recursos[4].nome;
-				document.getElementById('recurso5').children[2].innerHTML = recursos[4].ano+"º ano";
-
-				document.getElementById('recurso6').children[0].src = recursos[5].miniatura;
-				document.getElementById('recurso6').children[1].innerHTML = recursos[5].nome;
-				document.getElementById('recurso6').children[2].innerHTML = recursos[5].ano+"º ano";
-
-				document.getElementById('recurso7').children[0].src = recursos[6].miniatura;
-				document.getElementById('recurso7').children[1].innerHTML = recursos[6].nome;
-				document.getElementById('recurso7').children[2].innerHTML = recursos[6].ano+"º ano";
-
-				document.getElementById('recurso8').children[0].src = recursos[7].miniatura;
-				document.getElementById('recurso8').children[1].innerHTML = recursos[7].nome;
-				document.getElementById('recurso8').children[2].innerHTML = recursos[7].ano+"º ano";
-
-			}
+if(pagina == null){
+	pagina = 0;
+} else if(String(pagina)==""){
+	pagina = 0;
+}
+else{
+	pagina = parseInt(pagina);
+	primeiroIntervaloRecursos = pagina*8;
+}
 
 
-			function page(n) {
-				location.href="../recursocomputador.html?n=" + recursos[n].identidade;
-			}
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "data/recursos_pc.tsv",
+        dataType: "text",
+        success: function(data) {processData(data);}
+    });
+});
+
+function processData(textoParam){
+	var linhas = textoParam.split('\n');
+	for (var i=0; i < linhas.length; i++){
+	    var aux = linhas[i].split('\t');
+	    aux = {identidade:aux[0], nome:aux[1], miniatura:aux[2], resumo:aux[3], disciplina:aux[4], ano:aux[5], descritores:aux[6], linkdown:aux[7], visualizar:aux[8], tema:aux[9], origem:aux[10], autores:aux[11], idioma:aux[12], datacriacao:aux[13]};
+	    if(String(disciplinaDesejada) != "null" && String(disciplinaDesejada) != String(aux.disciplina)){
+	    	continue;
+	    }
+	    if(String(anoDesejado)!="null" && String(aux.ano)!=String(anoDesejado)){
+	    	continue;
+	    }
+	    recursos.push(aux);
+	}
+	//processamento de consulta por descritores
+	//processamento de consulta por tema
+	//alert(recursos.length);
+
+
+
+	//colocando recursos no seus locais
+	var auxCount = 0;
+	for(i=primeiroIntervaloRecursos;i<primeiroIntervaloRecursos+8;i++){
+		//if para o caso de nao ter a pagina inteira, ex: com 20 recursos há duas paginas cheias e uma com quatro
+		if(recursos[i]==null){
+			break;
+		}
+		document.getElementById('recurso'+auxCount).children[0].src = recursos[i].miniatura;
+		document.getElementById('recurso'+auxCount).children[1].innerHTML = recursos[i].nome;
+		document.getElementById('recurso'+auxCount).children[2].innerHTML = recursos[i].ano+"º ano";
+		auxCount++;
+	}
+
+	//colocando os links para passar de página
+	//pagina+1 para calcular quantos recursos temos, se tiver menos recursos que o maximo das paginas, é a ultima
+	document.getElementById("paginaAtual").innerHTML='| Página '+ (pagina+1) + ' |';
+	if((pagina+1)*8 >= recursos.length){
+		document.getElementById("proximaPagina").style.visibility = "hidden";
+	}else{
+		var proximaPaginaUrl = urlString.replace('p='+pagina,'p='+(pagina+1))
+		document.getElementById('proximaPagina').href=proximaPaginaUrl;
+		document.getElementById("proximaPagina").innerHTML='Página '+(pagina+2)+'&raquo;';
+	}
+
+	if(pagina == 0){
+		document.getElementById("paginaAnterior").style.visibility = "hidden";
+	}else{
+		var paginaAnteriorUrl = urlString.replace('p='+pagina,'p='+(pagina-1))
+		document.getElementById('paginaAnterior').href=paginaAnteriorUrl;
+		document.getElementById("paginaAnterior").innerHTML='&laquo; Página '+pagina;	
+	}
+
+}
+
+
+function irPararecurso(n) {
+	location.href="../recursocomputador.html?n=" + recursos[n].identidade;
+}
