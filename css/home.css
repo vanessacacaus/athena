@@ -76,7 +76,7 @@ img.recursosTamanho {
 #randroidcontainer{
 	width: 100%;
 	overflow-x:scroll;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	overflow: -moz-scrollbars-none;
 }
 #randroidcontainer::-webkit-scrollbar{
