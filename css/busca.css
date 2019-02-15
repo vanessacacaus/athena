@@ -46,6 +46,7 @@ img.recursosTamanho {
 	width: 100%;
 	overflow-x:scroll;
 	overflow: -moz-scrollbars-none;
+	overflow-x: hidden;
 }
 #rMatcontainer::-webkit-scrollbar{
 	display: none;
@@ -88,7 +89,8 @@ img.recursosTamanho {
 }
 #rPortcontainer{
 	width: 100%;
-	overflow-x:scroll;
+	overflow-x: scroll;
+	overflow-x: hidden;
 	overflow: -moz-scrollbars-none;
 }
 #rPortcontainer::-webkit-scrollbar{
