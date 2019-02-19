@@ -1,6 +1,6 @@
 	var recursos = []; 
 	var recurso1 = {
-		miniatura: "recursos/img/Portugues/historiapascoa.png", 
+		miniatura: "recursos/img/Portugues/brincandocomasvogais.png", 
 		nome: "Brincando com as vogais",
 		ano: "1",
 		id: "1"
