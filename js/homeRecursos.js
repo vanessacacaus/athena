@@ -62,5 +62,5 @@
 	}
 
 	function page(n) {
-		location.href="../recursocomputador.html?n=" + recursos[n].identidade;
+		location.href="../novo-athena/recursocomputador.html?n=" + recursos[n].identidade;
 	}
