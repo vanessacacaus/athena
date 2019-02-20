@@ -282,7 +282,7 @@ function processData(textoParam){
 			//alert(thread_descritor[j]);
 			//alert(descritoresPII.length);
 		}
-		document.getElementById("descritoresRecurso").innerHTML = '<em> Ano indicado: ' + recursos[0].ano + 'º ano</em>' + '<b>'+ tituloDescritoresI + '</b>' + descritoresI + '<b>'+ tituloDescritoresII + '</b>' + descritoresII;
+		document.getElementById("descritoresRecurso").innerHTML = '<em> Ano indicado: ' + recursos[0].ano + 'º ano</em>' + '<b>'+ tituloDescritoresI + '</b>' + descritoresI + '<br><br><b>'+ tituloDescritoresII + '</b>' + descritoresII;
 		document.getElementById("metadadosRecurso").innerHTML = '<b> Tema: </b>' + recursos[0].tema + '<br><b> Origem: </b>' + recursos[0].origem + '<br><b> Autor (es): </b>' + recursos[0].autores + '<br> <b> Idioma: </b>' + recursos[0].idioma + '<br> <b> Data da criação:</b>' + recursos[0].datacriacao;
 	}
 }
