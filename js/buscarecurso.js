@@ -270,7 +270,7 @@ function processData(textoParam){
 			var auxiliar2 = textoRecursosII[k].texto;
 			};
 			if(String(auxiliar2) != "undefined"){
-				descritoresII.push('<br>'+ auxiliar2);
+				descritoresII.push(auxiliar2 + '<br>');
 			}
 
 			if(descritoresI.length > 0){
