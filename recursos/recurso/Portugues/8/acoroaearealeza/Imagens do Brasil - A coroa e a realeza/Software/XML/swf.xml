@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<menu>
+       <imagem>
+               <caminho>SWF/quadro_1.swf</caminho>
+       </imagem>
+       <imagem>
+               <caminho>SWF/quadro_2.swf</caminho>
+       </imagem>
+       <imagem>
+               <caminho>SWF/creditos.swf</caminho>
+       </imagem>
+       <imagem>
+               <caminho>SWF/ajuda.swf</caminho>
+       </imagem>
+</menu>
+
+               

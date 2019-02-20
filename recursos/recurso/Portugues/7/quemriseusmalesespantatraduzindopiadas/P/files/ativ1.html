@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title id="title_id"> </title>
+	<link rel="stylesheet" href="styles/boxes.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="paginas.js"></script>
+	<script type="text/javascript" src="styles/functions.js"></script>
+	
+	
+	<script type="text/javascript">
+
+	// Pagina atual na pilha de paginas.
+	var mypage = 2;
+	
+
+
+</script>
+
+
+
+</head>
+
+
+<body onload="setupPage();">
+
+<div id="comments" style="visibility: hidden; height: 1px;">
+
+ <div id="paneleft_src">
+   <br><p>
+Leia a piada abaixo e sua tradução para responder as próximas questões:<br/> <br/> 
+
+<i>
+An American:<br/> 
+- We have Barack Obama, Stevie Wonder, Bob Hope and Johnny Cash.<br/>
+An Italian: <br/>
+- We have Silvio Berlusconi, no wonder, no hope and no cash. <br/>
+<br/>
+Tradução:<br/>
+Um norte-americano:<br/>
+- Nós temos Barack Obama, Stevie Wonder, Bob Hope e Johnny Cash.<br/>
+Um italiano:<br/>
+- Nós temos Silvio Berlusconi, nenhuma maravilha, nenhuma esperança e nenhum dinheiro.   <br/>
+</i>
+   </p>
+   <br/><br/>
+  </div>
+  <div id="opta">
+Você errou! Releia a piada e também sua tradução prestando atenção em alguns termos que são chaves para que a piada faça sentido.
+</div>
+  <div id="optb">
+Você errou! Releia a piada e também sua tradução prestando atenção em alguns termos que são chaves para que a piada faça sentido.
+</div>
+  <div id="optc">
+Parabéns! Nessa piada, sua graça está centrada no jogo linguístico feito com os nomes. Com a tradução, não há mais esse jogo. 
+</div>
+ 
+</div>
+ 
+
+
+
+<div id="container">
+
+
+	<div id="header">
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+        <div class="dropshadow-content"> 
+
+ 			<h1 id="header_id"></h1>
+
+
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+</div>
+
+	<div id="mainnav"> 
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+        <div class="dropshadow-content"> 
+        <div style="height: 30px">
+		  <div style="width: 700px;float: left;">
+			   <ul id="crumbs">
+			    <li>Início</li>
+			    <li>Final</li>
+			   </ul>
+			</div>
+			<div style="float: right;" >
+			<a class="menos" href="javascript:mudaTamanho(-1);">a-</a>
+			<a class="mais" href="javascript:mudaTamanho(1);">A+</a>			
+		
+			</div>
+		  </div>
+
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+</div>
+
+
+
+	<div id="contentsright">
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+        <div class="dropshadow-content"  style="height: 255px;"> 
+        <div  id="paneright"  style="height: 235px;	text-align: justify;overflow: auto; ">
+Marque a alternativa correta:
+<br><br>
+			<input type="radio" name="quests" value="opta"> a) A piada não tem graça, pois não entendemos as questões culturais que envolvem os americanos e os italianos.
+			<br>
+			<input type="radio" name="quests" value="optb"> b) Se a piada fosse sobre brasileiros e portugueses, ela teria graça.
+			<br>
+			<input type="radio" name="quests" value="optc"> c) A piada tem graça por causa do jogo linguístico com os nomes das personalidades americanas. Com a tradução, esse jogo se perde e, por consequência, a graça também.
+			<br>
+       </div> 
+        <div >
+        			<input type="button" value="Responder"  onclick="setResponse(mypage);validateAnswer();return false;" />
+        </div>
+        </div>
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+		<div class="dropshadow-content"  style="height: 100px;	text-align: left;">
+			
+			<div style="height: 75px;overflow: auto;" id="feedback" ></div>
+		<table width="100%"><tr><td style="text-align: left" >
+		<input type="button"  value="Anterior"  onclick="goPrev(mypage);" />
+		</td><td style="text-align: right;" >
+		<input type="button"  value="Próxima"  onclick="goNext(mypage);" />
+		</td></tr></table>
+			
+		</div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+
+	</div>
+	<div id="contentsleft">
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+       <div class="dropshadow-content" style="height: 400px;text-align: justify;"> 
+        <div id="paneleft"  style="height: 400px;	text-align: justify;overflow: auto; ">
+			<!--    Conteudo do Pane -->
+		</div>
+		</div>
+	      
+      </div> 
+    </div> 
+  </div> 
+</div>
+
+	
+
+</div>
+
+</div>
+ 
+
+
+
+
+
+</body>
+</html>
+

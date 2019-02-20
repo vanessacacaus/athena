@@ -1,0 +1,8 @@
+/*
+* Arquivo de estilos específicos do jogo da memória.
+*/
+
+.carta {	display:block; float: left; width: 185px; height: 88px; padding: 4px; margin: 1px; cursor:pointer; cursor:hand;}
+.carta table { border: 0; margin: 0; padding: 0; font-size: 12; font-weight: bold; text-align: center;}
+#mesa-de-jogo {   display: block;   text-align:center;}
+#msg-jogo { font-weight: bold; line-height: 220%;}

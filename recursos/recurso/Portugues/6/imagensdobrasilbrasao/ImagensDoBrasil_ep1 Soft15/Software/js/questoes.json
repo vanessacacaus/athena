@@ -1,0 +1,78 @@
+{
+    "nome" : "Imagens do Brasil - Gândavo e Pero Vaz de Caminha<br/>Brasão",
+    "titulo": "Brasão",
+    "apresentacao" : "Nesse jogo, você trabalhará questões relativas aos sentidos das palavras.Faça-o após ter assistido ao programa de vídeo e de ter feito as atividades correlatas.",
+
+    "telas": [
+	{
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao_2.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao_3.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo" : "jogo",
+            "titulo" : "Jogo da Memória",
+            "texto" : "",
+       	},        
+        {
+            "tipo": "texto",
+            "titulo" : "Relatório",
+            "texto" : ""
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "fim.html"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "creditos.html"
+        }
+    ],
+
+    "questoes" : [
+        {
+            "id" : 1,
+            "texto" : "Em ‘Rita passa muito bem’, o verbo ‘passar’ pode produzir o sentido de ‘passar _____’, ou o sentido de ‘se sentir bem’.",
+            "correto" : "roupa",
+            "feedback_correto" : "Muito bem! O verbo ‘passar’, quando apresentado sem as condições de produção da frase, pode produzir o sentido de ‘passar roupa’, ou o sentido de ‘se sentir bem’.",
+            "feedback_incorreto" : "Tente outra vez. O verbo ‘passar’, quando apresentado sem as condições de produção da frase, pode produzir o sentido de ‘passar roupa’, ou o sentido de ‘se sentir bem’."
+        },
+        {
+            "id" : 2,
+            "texto" : "Em ‘Ele cuida muito bem de seu canto’, o nome ‘canto’ pode produzir o sentido de ‘_____’ ou o sentido do resultado da ação de ‘cantar’.",
+            "correto" : "quarto",
+            "feedback_correto" : "Muito bem! O nome ‘canto’pode produzir o sentido de ‘quarto’ ou o sentido do resultado da ação de ‘cantar’.",
+            "feedback_incorreto" : "Tente outra vez. O nome ‘canto’pode produzir o sentido de ‘quarto’ ou o sentido do resultado da ação de ‘cantar’."
+        },
+        {
+            "id" : 3,
+            "texto" : "Em ‘Ele estava em minha companhia’, a palavra ‘companhia’ pode produzir o sentido de ‘_____’ ou ‘em minha empresa’.",
+            "correto" : 'comigo',
+            "feedback_correto" : "Muito bem! A palavra ‘companhia’ pode produzir o sentido de ‘comigo’ ou ‘em minha empresa’.",
+            "feedback_incorreto" : "Tente outra vez. A palavra ‘companhia’ pode produzir o sentido de ‘comigo’ ou ‘em minha empresa’."
+        },
+        {
+            "id" : 4,
+            "texto" : "Em ‘A polícia cercou o ladrão no banco da Rua Santos’, a palavra ‘banco’ pode produzir o sentido de ‘lugar onde as pessoas _____’ ou o sentido de ‘lugar onde se guarda o dinheiro’.",
+            "correto" : "sentam",
+            "feedback_correto" : "Muito bem! A palavra ‘banco’ pode produzir o sentido de ‘lugar onde as pessoas sentam’ ou o sentido de ‘lugar onde se guarda o dinheiro’.",
+            "feedback_incorreto" : "Tente outra vez. A palavra ‘banco’ pode produzir o sentido de ‘lugar onde as pessoas sentam’ ou o sentido de ‘lugar onde se guarda o dinheiro’."
+        }
+    ]
+ 
+}

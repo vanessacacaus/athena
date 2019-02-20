@@ -1,0 +1,120 @@
+{
+    "nome" : "Imagens do Brasil Gândavo e Pero Vaz de Caminha<br/>Plantas e Folhas",
+    "titulo": "Plantas",
+    "apresentacao" : "Nesse jogo, você trabalhará questões relativas a sentidos e referências.",
+
+    "telas": [
+	{
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao_2.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao_3.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo" : "jogo",
+            "titulo" : "Jogo da Memória",
+            "texto" : "",
+       	},        
+        {
+            "tipo": "texto",
+            "titulo" : "Relatório",
+            "texto" : ""
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "fim.html"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "creditos.html"
+        }
+    ],
+
+    "questoes" : [
+        {
+            "id" : 1,
+            "texto" : "Carolina está estudando sobre a _____ portuguesa. / Pedro disse que a _____ sabe cozinhar.",
+            "correto" : "coroa",
+            "feedback_correto" : "Parabéns! Você acertou. A palavra ‘coroa’ completa essa frase.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 2,
+            "texto" : "As _____ das árvores caíram durante o outono. / As _____ do caderno de Pedro molharam por causa da chuva.",
+            "correto" : "folhas",
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 3,
+            "texto" : "Pedro rasgou a _____ da camiseta dele quando pulou o muro. / Carolina comeu uma _____ depois do almoço.",
+            "correto" : 'manga',
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 4,
+            "texto" : "O _____ da cadeira foi ruído pelo cupim. / Ontem, o Pedro quebrou o _____ jogando futebol.",
+            "correto" : "pé",
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 5,
+            "texto" : "O caderno da Carolina não tem _____. / A mãe de Pedro sempre pede para ele lavar as _____.",
+            "correto" : 'orelhas',
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 6,
+            "texto" : "O _____ da Carolina emocionou a todos. / O _____ da sala estava sujo.",
+            "correto" : "canto",
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 7,
+            "texto" : "A _____ da casa foi enviada para o arquiteto. / Pedro e Carolina regaram a _____.",
+            "correto" : "planta",
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 8,
+            "texto" : "O _____ estava fechado por causa do feriado. / O _____ da praça foi pintado ontem.",
+            "correto" : "banco",
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 9,
+            "texto" : "A cor da calça favorita da Carolina é _____. / Pedro adora suco de _____.",
+            "correto" : 'laranja',
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        },
+        {
+            "id" : 10,
+            "texto" : 'O passarinho _____ sem parar no jardim. / A _____ do banheiro estava quebrada.',
+            "correto" : "pia",
+            "feedback_correto" : "Parabéns! Você acertou.",
+            "feedback_incorreto" : "Esta palavra não completa essa frase. Tente novamente."
+        }
+    ]
+ 
+}

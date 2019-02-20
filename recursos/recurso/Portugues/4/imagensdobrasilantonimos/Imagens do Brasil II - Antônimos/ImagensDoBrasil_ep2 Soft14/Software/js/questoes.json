@@ -1,0 +1,85 @@
+{
+    "nome" : "Imagens do Brasil – Gândavo e Pero Vaz de Caminha<br/>Senhor Antônimo",
+    "titulo": "Sr. Antônimo",
+    "apresentacao" : "Neste jogo, você trabalhará com questões relativas aos antônimos. Bom trabalho!",
+
+    "telas": [
+	{
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao_2.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao_3.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo" : "jogo",
+            "titulo" : "Jogo da Memória",
+            "texto" : "",
+       	},        
+        {
+            "tipo": "texto",
+            "titulo" : "Relatório",
+            "texto" : ""
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "fim.html"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "creditos.html"
+        }
+    ],
+
+    "questoes" : [
+        {
+            "id" : 1,
+            "texto" : "Pedro e Carolina são bons amigos, apesar de, às vezes, não se entenderem, e parecerem _____ .",
+            "correto" : "inimigos",
+            "feedback_correto" : "Parabéns! Esta palavra funciona como ‘não amigo’.",
+            "feedback_incorreto" : "Atenção! Esta palavra funciona como ‘não amigo’."
+        },
+        {
+            "id" : 2,
+            "texto" : "Pedro riu quando Carolina disse que levou um tombo, e ela ficou tão brava que até _____ .",
+            "correto" : "chorou",
+            "feedback_correto" : "Parabéns! Esta palavra pode substituir ‘não rir’.",
+            "feedback_incorreto" : "Atenção! Esta palavra pode substituir ‘não rir’"
+        },
+        {
+            "id" : 3,
+            "texto" : "Pedro e Carolina têm animais de estimação. Mas eles têm preferências opostas: enquanto Pedro tem um cachorro grande, Carol tem um gato _____ .",
+            "correto" : 'pequeno',
+            "feedback_correto" : "Parabéns! Esta palavra pode substituir ‘ não grande’.",
+            "feedback_incorreto" : "Atenção! Esta palavra pode substituir ‘ não grande’."
+        },
+        {
+            "id" : 4,
+            "texto" : "Pedro e Carolina concordam em algumas coisas. Eles acham, por exemplo, a professora de artes muito simpática. Por outro lado, acham que o vizinho do avô de Carol é _____ .",
+            "correto" : "antipático",
+            "feedback_correto" : "Parabéns! Esta palavra pode substituir ‘não simpático’.",
+            "feedback_incorreto" : "Atenção! Esta palavra pode substituir ‘não simpático’."
+        },
+        {
+            "id" : 5,
+            "texto" : "Na escola eles têm comportamentos muito diferentes. Pedro sempre discorda de sua professora, enquanto que Carol _____ com as opiniões dela.",
+            "correto" : "concorda",
+            "feedback_correto" : "Parabéns! Esta palavra pode substituir ‘não discorda’.",
+            "feedback_incorreto" : "Atenção! Esta palavra pode substituir ‘não discorda’."
+        }
+    ]
+ 
+}

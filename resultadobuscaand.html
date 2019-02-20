@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Página Incial - Athena</title>
+		<title>Recursos para android</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,69 +79,87 @@
 		<!-- abre corpo da página-->
 		<div id="containerContent">
 			<h1 class="titulo">RECURSOS PARA ANDROID</h1>
-			<button class="btn btn-light">Língua Portuguesa</button>
-			<button class="btn btn-light">Matemática</button>
+
+			<div id="containerSearchBar">
+			        	          	<p>Busca Avançada:</p>
+			        	          	<form name="buscaavancada" id="buscaavancada" action="resultadobuscapc.html">
+			        	          		<select name="d" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Disciplina</option>
+			        	          			<option value="lp">Lingua Portuguesa</option>
+			        	          			<option value="mat">Matemática</option>
+			        	          		</select><select name="a" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Ano</option>
+			        	          			<option value="1">1ºAno</option>
+			        	          			<option value="2">2ºAno</option>
+			        	          			<option value="3">3ºAno</option>
+			        	          			<option value="4">4ºAno</option>
+			        	          			<option value="5">5ºAno</option>
+			        	          			<option value="6">6ºAno</option>
+			        	          			<option value="7">7ºAno</option>
+			        	          			<option value="8">8ºAno</option>
+			        	          			<option value="9">9ºAno</option>
+			        	          		</select>
+			                            <select name="t" id="t" form="formsearch" disabled="">
+			                            	<option value="" selected>Descritor</option>
+			                            </select>
+			        	          		<input type="text" name="p" value="0" style="display: none">
+			        	          		<input type="submit" value="Buscar">
+			        	          	</form>
+			                  	</div>
 
 			<div class="row rowRecurso">
-				<div class="col-sm-3">
-					<div class="">
+				<div id="recurso0" class="col-sm-3">
 								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso1.png">
 								<p class="tituloRecurso">Matemática Selva</p>
 								<p>Pré-escola</p>
-					</div>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
-								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso1.png">
-								<p class="tituloRecurso">Brincando com as palavras</p>
-								<p>4º e 5º anos</p>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="">
+				<div id="recurso1" class="col-sm-3">
 								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso2.png">
 								<p class="tituloRecurso">Crianças, matemática</p>
 								<p>1º ano</p>
-					</div>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
+				<div id="recurso2" class="col-sm-3">
 								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso2.png">
 								<p class="tituloRecurso">A poça d'água</p>
 								<p>2º e 3º anos</p>
-					</div>
 				</div>
-			</div>
-			<div class="row rowRecurso">
-				<div class="col-sm-3">
-					<div class="">
+				<div id="recurso3" class="col-sm-3">
 								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso3.png">
 								<p class="tituloRecurso">Adição e Subtração</p>
 								<p>1º ano</p>
-					</div>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
+			</div>
+			<div class="row rowRecurso">
+				<div id="recurso4" class="col-sm-3">
+								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso1.png">
+								<p class="tituloRecurso">Brincando com as palavras</p>
+								<p>4º e 5º anos</p>
+				</div>
+				<div id="recurso5" class="col-sm-3">
 								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso3.png">
 								<p class="tituloRecurso">As minhas histórias</p>
 								<p>2º e 3º anos</p>
-					</div>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
+				<div id="recurso6" class="col-sm-3">
 								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso4.png">
 								<p class="tituloRecurso">Adição e Subtração</p>
 								<p>4º e 5º anos</p>
-					</div>
 				</div>
-				<div class="col-sm-3">
-					<div class="">
+				<div id="recurso7" class="col-sm-3">
 								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso4.png">
 								<p class="tituloRecurso">Forma palavras</p>
 								<p>Pré-escola</p>
-					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div id="botoesPassarPagina">
+					<a href="#" id="paginaAnterior"></a>
+					<a id="paginaAtual"></a> 
+					<a href="#" id="proximaPagina"></a>
+				</div>
+			</div>
+
+
 		</div>
 		<!-- fecha corpo da página-->
 		<!--footer-->

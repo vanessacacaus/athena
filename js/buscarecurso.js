@@ -214,6 +214,7 @@ textoRecursosII.push(matII37);
 var url_string = window.location.href
 var url = new URL(url_string);
 var identidade = url.searchParams.get("n");
+var recursos = [];
 
 if(String(identidade)==""){
 	identidade="null";
@@ -230,7 +231,6 @@ $(document).ready(function() {
 
 function processData(textoParam){
 	var linhas = textoParam.split('\n');
-	var recursos = [];
 	for (var i=0; i < linhas.length; i++){
 	    var aux = linhas[i].split('\t');
 	    aux = {identidade:aux[0], nome:aux[1], miniatura:aux[2], resumo:aux[3], disciplina:aux[4], ano:aux[5], descritores:aux[6], linkdown:aux[7], visualizar:aux[8], tema:aux[9], origem:aux[10], autores:aux[11], idioma:aux[12], datacriacao:aux[13]};
@@ -238,7 +238,9 @@ function processData(textoParam){
 	    	continue;
 	    }
 	    recursos.push(aux);
+
 		//alert(recursos.length);
+        window.document.title = recursos[0].nome;
 		document.getElementById("tituloRecurso").innerHTML = recursos[0].nome;
 		document.getElementById("imagemRecurso").src = recursos[0].miniatura;
 		document.getElementById("textoRecurso").innerHTML = recursos[0].resumo;
@@ -282,8 +284,15 @@ function processData(textoParam){
 			//alert(thread_descritor[j]);
 			//alert(descritoresPII.length);
 		}
-		document.getElementById("descritoresRecurso").innerHTML = '<em> Ano indicado: ' + recursos[0].ano + 'º ano</em>' + '<b>'+ tituloDescritoresI + '</b>' + descritoresI + '<br><br><b>'+ tituloDescritoresII + '</b>' + descritoresII;
+		document.getElementById("descritoresRecurso").innerHTML = '<em> Ano indicado: ' + recursos[0].ano + 'º ano</em>' + '<b>'+ tituloDescritoresI + '</b>' + descritoresI + '<br>' + '<b>'+ tituloDescritoresII + '</b>' + descritoresII;
 		document.getElementById("metadadosRecurso").innerHTML = '<b> Tema: </b>' + recursos[0].tema + '<br><b> Origem: </b>' + recursos[0].origem + '<br><b> Autor (es): </b>' + recursos[0].autores + '<br> <b> Idioma: </b>' + recursos[0].idioma + '<br> <b> Data da criação:</b>' + recursos[0].datacriacao;
 	}
 }
 
+    function visualizar() {
+        window.open(recursos[0].visualizar, '_blank');
+    }
+
+    function baixar(){
+        window.open(recursos[0].linkdown, '_blank');
+    }

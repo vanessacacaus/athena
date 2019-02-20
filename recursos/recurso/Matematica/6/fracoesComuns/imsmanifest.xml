@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Rob Heigh (Intel Ireland) -->
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Alan McCurdy (Intel Ireland) -->
+<manifest identifier="RSSCA" version="1.2" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                           http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                           http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>1.2</schemaversion>
+		<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+			<general>
+				<!--****** 1 ******-->
+				<title>
+					<langstring>Common Fractions</langstring>
+				</title>
+				<!--****** 2 ******-->
+				<catalogentry>
+					<catalog>URI</catalog>
+					<entry>
+						<langstring>http://lgfl.skoool.co.uk/viewdetails_ks3.aspx?id=442</langstring>
+					</entry>
+				</catalogentry>
+				<language>en</language>
+				<!--****** 3 ******-->
+				<description>
+					<langstring>An introduction to common fractions</langstring>
+				</description>
+				<!--****** 4 ******-->
+				<keyword>
+					<langstring>common fraction; denominator; numerator; whole; equal parts</langstring>
+				</keyword>
+			</general>
+			<lifecycle>
+				<!--****** 5 ******-->
+				<version>
+					<langstring>1</langstring>
+				</version>
+				<status>
+					<source>
+						<langstring xml:lang="x-none">LOMv1.0</langstring>
+					</source>
+					<value>
+						<langstring xml:lang="x-none">Final</langstring>
+					</value>
+				</status>
+			</lifecycle>
+			<metametadata>
+				<metadatascheme>ADL SCORM 1.2</metadatascheme>
+			</metametadata>
+			<technical>
+				<!--****** 6 ******-->
+				<format>application/x-shockwave-flash</format>
+				<location>indexSCORM.html</location>
+			</technical>
+			<rights>
+				<!--****** 7 ******-->
+				<cost>
+					<source>
+						<langstring xml:lang="x-none">LOMv1.0</langstring>
+					</source>
+					<value>
+						<langstring xml:lang="x-none">no</langstring>
+					</value>
+				</cost>
+				<!--****** 8 ******-->
+				<copyrightandotherrestrictions>
+					<source>
+						<langstring xml:lang="x-none">LOMv1.0</langstring>
+					</source>
+					<value>
+						<langstring xml:lang="x-none">yes</langstring>
+					</value>
+				</copyrightandotherrestrictions>
+			</rights>
+			<classification>
+				<purpose>
+					<source>
+						<langstring xml:lang="x-none">LOMv1.0</langstring>
+					</source>
+					<value>
+						<langstring xml:lang="x-none">Educational Objective</langstring>
+					</value>
+				</purpose>
+				<!--****** 9 ******-->
+				<description>
+					<langstring>An introduction to common fractions</langstring>
+				</description>
+				<!--****** 10 ******-->
+				<keyword>
+					<langstring>common fraction; denominator; numerator; whole; equal parts</langstring>
+				</keyword>
+			</classification>
+		</lom>
+	</metadata>
+	<organizations default="B0">
+		<organization identifier="B0">
+			<!--****** 1 ******-->
+			<title>Title</title>
+			<item identifier="i1" identifierref="r1" isvisible="true">
+				<!--****** 1 ******-->
+				<title>Common Fractions</title>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="r1" adlcp:scormType="sco" type="webcontent" href="Index.xml">
+			<!--****** FILES ******-->
+			<file href="index.htm"/>
+			<file href="aud_control.swf"/>
+			<file href="LO_Template.swf"/>
+			<file href="prompter.swf"/>
+			<file href="LOContent.xml"/>
+			<file href="COMFRAC01.swf"/>
+			<file href="COMFRAC02.swf"/>
+			<file href="COMFRAC03.swf"/>
+			<file href="COMFRAC04.swf"/>
+			<file href="COMFRAC05.swf"/>
+			<file href="xml/COMFRAC.xml"/>
+			<file href="xml/COMFRACrx.xml"/>
+			<file href="xml/COMFRACtx.xml"/>
+			<file href="Audio/COMFRAC01.mp3"/>
+			<file href="Audio/COMFRAC02.mp3"/>
+			<file href="Audio/COMFRAC03.mp3"/>
+			<file href="Audio/COMFRAC04.mp3"/>
+			<file href="Audio/COMFRAC05.mp3"/>
+			<file href="cm_standalone.swf"/>
+			<file href="nav/branding.swf"/>
+			<file href="nav/nav.swf"/>
+			<file href="nav/prompter.swf"/>
+			<file href="nav/XML/nav.xml"/>
+			<file href="nav/XML/settings.xml"/>
+		</resource>
+	</resources>
+</manifest>

@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title id="title_id"> </title>
+	<link rel="stylesheet" href="styles/boxes.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="paginas.js"></script>
+	<script type="text/javascript" src="styles/functions.js"></script>
+	
+	
+	<script type="text/javascript">
+
+	// Pagina atual na pilha de paginas.
+	var mypage = 5;
+	
+
+
+</script>
+
+
+
+</head>
+
+
+<body onload="setupPage();">
+
+<div id="comments" style="visibility: hidden; height: 1px;">
+
+ <div id="paneleft_src">
+ <br>
+	<p>
+Ao contrário do sujeito indeterminado, podemos ter também o sujeito determinado. O primeiro deles, já discutimos. 
+No caso do segundo, muitas vezes a posição de sujeito em um provérbio não é ocupada pelo nome de alguém especificamente, mas por elementos que podem representar as pessoas como um todo.
+ 	</p>
+ 	
+ 	  </div>
+  
+    <div id="respOK1">
+Está certo! Como dissemos várias vezes, o provérbio muitas vezes apresenta a estrutura do sujeito indeterminado para destinar-se a diferentes pessoas.
+	</div>
+ <div id="respFalse1">
+Está errado... Como dissemos várias vezes, o provérbio muitas vezes apresenta a estrutura do sujeito indeterminado para destinar-se a diferentes pessoas.
+</div>
+
+  <div id="respOK2">
+Está certo! A palavra ‘um’, neste provérbio, pode ser entendida como qualquer pessoa.
+	</div>
+ <div id="respFalse2">
+Está errado... A palavra ‘um’, neste provérbio, pode ser entendida como qualquer pessoa.
+	</div>
+
+  <div id="respOK3">
+Está certo! A indeterminação do sujeito, ou os termos ‘cada um’ produzem efeitos de argumentação neste provérbio, direcionando-o a qualquer pessoa.
+	</div>
+ <div id="respFalse3">
+Está errado... A indeterminação do sujeito, ou os termos ‘cada um’ produzem efeitos de argumentação neste provérbio, direcionando-o a qualquer pessoa.
+</div>
+
+
+  
+ 
+</div>
+ 
+
+
+
+<div id="container">
+
+
+	<div id="header">
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+        <div class="dropshadow-content"> 
+
+ 			<h1 id="header_id"></h1>
+
+
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+</div>
+
+	<div id="mainnav"> 
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+        <div class="dropshadow-content"> 
+        <div style="height: 30px">
+		  <div style="width: 700px;float: left;">
+			   <ul id="crumbs">
+			    <li>Início</li>
+			    <li>Final</li>
+			   </ul>
+			</div>
+			<div style="float: right;" >
+			<a class="menos" href="javascript:mudaTamanho(-1);">a-</a>
+			<a class="mais" href="javascript:mudaTamanho(1);">A+</a>			
+		
+			</div>
+		  </div>
+
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+</div>
+
+
+
+	<div id="contentsright">
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+        <div class="dropshadow-content"  style="height: 255px;"> 
+        <div  id="paneright"  style="height: 235px;	text-align: justify;overflow: auto; ">
+O texto abaixo está divido em três partes, e faltam palavras para que ele esteja completo. Tente completá-lo.
+<br><br>
+ 1) No provérbio ‘Aqui se ganha, aqui se perde’, os sujeitos dos verbos ‘ganha’ e ‘perde’ são <input type="text" id = "v1" name="v1" value="" size="15">. 
+<br>
+2) Ao contrário deste provérbio, em ‘Cada um goza a paz que o vizinho quer’ não há a indeterminação do sujeito, porém o termo <input type="text"  id = "v2" name="v2" value="" size="5"> pode fazer referência também a qualquer pessoa. 
+<br>
+3) Estas duas estruturas são exemplos de como o provérbio constrói uma <input type="text"  id = "v3" name="v3" value="" size="14"> destinada a diferentes pessoas.
+
+ 
+       </div> 
+        <div >
+        			<input type="button" value="Responder"  onclick="setResponse(mypage);validateAnswerText3resp('indeterminados','um','argumentação');return false;" />
+        </div>
+        </div>
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+		<div class="dropshadow-content"  style="height: 100px;	text-align: left;">
+			
+			<div style="height: 75px;overflow: auto;" id="feedback" ></div>
+		<table width="100%"><tr><td style="text-align: left" >
+		<input type="button"  value="Anterior"  onclick="goPrev(mypage);" />
+		</td><td style="text-align: right;" >
+		<input type="button"  value="Próxima"  onclick="goNext(mypage);" />
+		</td></tr></table>
+			
+		</div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+
+	</div>
+	<div id="contentsleft">
+
+<div class="dropshadow-tr"> 
+  <div class="dropshadow-tl"> 
+    <div class="dropshadow-br"> 
+      <div class="dropshadow-bl"> 
+       <div class="dropshadow-content" style="height: 400px;text-align: justify;"> 
+        <div id="paneleft"  style="height: 400px;	text-align: justify;overflow: auto; ">
+			<!--    Conteudo do Pane -->
+		</div>
+		</div>
+	      
+      </div> 
+    </div> 
+  </div> 
+</div>
+
+	
+
+</div>
+
+</div>
+ 
+
+
+
+
+
+</body>
+</html>
+

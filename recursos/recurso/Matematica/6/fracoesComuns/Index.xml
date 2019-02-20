@@ -1,0 +1,29 @@
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Alan McCurdy (Intel Ireland) -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by barry (Intel Ireland) -->
+<LearningResource xmlns="urn:schemas-microsoft-com:learning-resource" Version="3.0">
+	<PackageDescription>
+		<General>
+			<Title>Common Fractions</Title>
+			<Description>An introduction to common fractions</Description>
+			<LearningResourceData RegionID="3" SubjectTopicList="GEM" DateCreated="38343.624362" PointsPossible="0" Attachment="" Type="Learning Object" UnitName="Mathematics" ChapterName="" Author="Intel" AuthorEmail="" Publisher="skoool.co.uk supported by Intel" CurriculumSeries="Mathematics" Copyright="(c) 2004 Intel Corporation" CurriculumSequence="1" LastModifiedBy="Intel" Subject="Mathematics" Topic="Common Fractions" KeyStage="3" AgeMin="11" AgeMax="13" IsPublishable="1" IsTemplate="0" IsLocked="0" SuitableFor="Individual|Small group|Class" BloomTaxonomy="Knowledge|Comprehension|Application" GardnerMultipleIntelligences="" DateModified="38344.3943865741">
+				<Instructions>An introduction to common fractions</Instructions>
+				<ID CreationID="4D37101F-253D-4d16-AC5E-F9B7C90C70CF" BranchID="4D37101F-253D-4d16-AC5E-F9B7C90C70CF"/>
+				<Format VersionModifiedMax="3" VersionModifiedLast="3" DateModifiedVersion="38344.3943865741"/>
+				<Assessment>Two multiple choice questions</Assessment>
+			</LearningResourceData>
+			<Language>EN</Language>
+			<Keywords>common fraction; denominator; numerator; whole; equal parts</Keywords>
+		</General>
+		<Technical>
+			<Duration>600</Duration>
+		</Technical>
+		<Classification>
+			<EducationalObjective>An introduction to common fractions</EducationalObjective>
+		</Classification>
+	</PackageDescription>
+	<Organization>
+		<TableOfContents>
+			<Page PageID="1001" Title="Title" ImsId="r1" href="indexSCORM.html"/>
+		</TableOfContents>
+	</Organization>
+</LearningResource>

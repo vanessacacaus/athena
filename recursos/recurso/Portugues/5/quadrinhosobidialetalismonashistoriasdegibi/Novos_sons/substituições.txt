@@ -1,0 +1,4 @@
+substituir, todas as falas da rive.
+feira1,2,3
+praia1,2,3
+sitio1,2,3

@@ -85,4 +85,14 @@ p.texto {
 		font-size: 0.96em;
 		text-align: center;
 	}	
+
+	.botao {
+		width: 100%;
+	}
+
+	.btnCaixa {
+		width: 100%;
+		margin-left: 0%;
+	}
+
 }

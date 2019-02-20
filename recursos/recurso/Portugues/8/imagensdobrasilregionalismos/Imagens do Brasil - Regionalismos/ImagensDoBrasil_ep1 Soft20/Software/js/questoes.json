@@ -1,0 +1,120 @@
+{
+    "nome" : "Imagens do Brasil- Gândavo e Pero Vaz de Caminha<br/>Regionalismos",
+    "titulo": "Regionalismos",
+    "apresentacao" : "Nesse jogo, você entrará em contato com palavras regionais.",
+
+    "telas": [
+	{
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao_2.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Formação",
+            "texto" : "introducao_3.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo" : "jogo",
+            "titulo" : "Jogo da Memória",
+            "texto" : "",
+       	},        
+        {
+            "tipo": "texto",
+            "titulo" : "Relatório",
+            "texto" : ""
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "fim.html"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "creditos.html"
+        }
+    ],
+
+    "questoes" : [
+        {
+            "id" : 1,
+            "texto" : "macaxeira",
+            "correto" : "mandioca",
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+        {
+            "id" : 2,
+            "texto" : "bololô",
+            "correto" : "briga",
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+        {
+            "id" : 3,
+            "texto" : "trompaço",
+            "correto" : 'safanão',
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+        {
+            "id" : 4,
+            "texto" : "charlar",
+            "correto" : "conversar",
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+       {
+            "id" : 5,
+            "texto" : "catinga",
+            "correto" : 'cheiro',
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+        {
+            "id" : 6,
+            "texto" : "trabucar",
+            "correto" : "cair",
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+        {
+            "id" : 7,
+            "texto" : "bucho",
+            "correto" : "barriga",
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+        {
+            "id" : 8,
+            "texto" : "calundu",
+            "correto" : "triste",
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+        {
+            "id" : 9,
+            "texto" : "vexado",
+            "correto" : "envergonhado",
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        },
+        {
+            "id" : 10,
+            "texto" : "jururu",
+            "correto" : "mau-humor",
+            "feedback_correto" : "Correto!",
+            "feedback_incorreto" : "Tente novamente."
+        }
+  ]
+ 
+}

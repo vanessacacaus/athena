@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<boolArabic>false</boolArabic>
+	<boolTesting>false</boolTesting>
+	<boolTMEnabled>true</boolTMEnabled>
+	<strCountryExtension>.com.br</strCountryExtension>
+	<boolCountryExtensionEnabled>true</boolCountryExtensionEnabled>
+	<autoplay>false</autoplay>
+	<pause>5</pause>
+	<centreNavButtons>true</centreNavButtons>
+
+</xml>

@@ -1,0 +1,100 @@
+{
+    "nome" : "Vozes da Cidade Acontecimento Estranho <br/>Discurso direto, indireto e indireto livre.",
+    "titulo": "Discurso direto, indireto e indireto livre.",
+    "apresentacao" : "Nesse jogo, você trabalhará questões relativas aos múltiplos sentidos das palavras.",
+    "questoes": [
+	{
+            "tipo": "texto",
+            "titulo" : "Discursos",
+            "texto" : "introducao.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Discursos",
+            "texto" : "introducao_2.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Discursos",
+            "texto" : "introducao_3.html",
+            "introducao" : "true"
+        },
+        {
+            "tipo" : "tictactoe",
+            "titulo" : "Jogo da Velha",
+            "texto" : "tictactoe.html",
+            "itens" : [
+                {
+                    "id" : 1,
+                    "texto" : "1-O pai chamou Pedro e perguntou:<br/> - Quem arranhou meu carro?",
+                    "correto" : "DD",
+                    "feedback_correto" : "Muito bom! Temos aqui a voz do enunciador.",
+                    "feedback_incorreto" : "Ops! Preste atenção em quem fala."
+                },
+                {
+                    "id" : 2,
+                    "texto" : "2-Ela dizia que guardava tudo o que o neto escrevia.",
+                    "correto" : "DI",
+                    "feedback_correto" : "Exato! O narrador é quem apresenta o que é dito.",
+                    "feedback_incorreto" : "Tente de novo. Preste atenção na construção da sintaxe."
+                },
+                {
+                    "id" : 3,
+                    "texto" : "3-Uma senhora, interessada na ave, perguntou qual era o preço.",
+                    "correto" : 'DI',
+                    "feedback_correto" : "Ótimo! O narrador é quem apresenta o que é dito.",
+                    "feedback_incorreto" : "Ops! Preste atenção na construção da sintaxe."
+                },
+                {
+                    "id" : 4,
+                    "texto" : "4-O juiz disse:<br/> - O réu é inocente.",
+                    "correto" : "DD",
+                    "feedback_correto" : "Muito bom! Temos aqui a voz do enunciador.",
+                    "feedback_incorreto" : "Tente de novo. Preste atenção em quem fala."
+                },
+                {
+                    "id" : 5,
+                    "texto" : "5-Ela soube, naquele momento, que algo estava errado, só podia estar!",
+                    "correto" : "DIL",
+                    "feedback_correto" : "Certo! Você reconheceu os dois tipos de discurso juntos!",
+                    "feedback_incorreto" : "Ops! Esse quer agradar a gregos e troianos!"
+                },
+                {
+                    "id" : 6,
+                    "texto" : "6-Eu deveria ter pegado um casaco – disse tremendo de frio.",
+                    "correto" : 'DD',
+                    "feedback_correto" : "Ótimo! Temos aqui a voz do enunciador.",
+                    "feedback_incorreto" : "Tente de novo. Preste atenção em quem fala."
+                },
+                {
+                    "id" : 7,
+                    "texto" : "7-Olhou para o céu. Oras, não era possível que estivesse chovendo!",
+                    "correto" : "DIL",
+                    "feedback_correto" : "Muito bom! Você reconheceu os dois tipos de discurso juntos!",
+                    "feedback_incorreto" : "Ops! Esse quer agradar a gregos e troianos!"
+                },
+                {
+                    "id" : 8,
+                    "texto" : "8-A menina afirmou que estava zangada.",
+                    "correto" : "DI",
+                    "feedback_correto" : "Muito bom! O narrador é quem apresenta o que é dito.",
+                    "feedback_incorreto" : "Tente de novo. Preste atenção na construção da sintaxe."
+                },
+                {
+                    "id" : 9,
+                    "texto" : "9-Carlos, indignado, gritou:<br/> - Onde estão todos?",
+                    "correto" : 'DD',
+                    "feedback_correto" : "Muito bom! Temos aqui a voz do enunciador.",
+                    "feedback_incorreto" : "Tente de novo. Preste atenção em quem fala."
+                }
+            ]
+        },        
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "creditos.html"
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "nome" : "A questão da autoria e a circulação dos textos na sociedade<br><span>Autoria</span>",
+    "titulo": "Autoria",
+    "apresentacao" : "",
+    "questoes": [
+	{
+            "tipo": "texto",
+            "titulo" : "Múltiplos sentidos",
+            "texto" : "introducao.html",
+            "introducao" : "true"
+        },
+         {
+            "tipo"  : "teste",
+            "titulo" : "1",
+            "texto" : "1.html",
+            "textoAdicional" : "Assinale a alternativa <b>correta</b>:</br></br>",
+            "respondida" : 0,
+            "correto" : 2,
+            "feedback_correto" : "Muito bem! Ao fazer a oposição entre boato e fontes oficiais, o entrevistado assume que apenas esta última vale como evidência para o fato narrado.",
+            "feedback_incorreto" : "Você errou! Ao fazer a oposição entre boato e fontes oficiais, o entrevistado assume que apenas esta última vale como evidência para o fato narrado.",
+            "itens": [
+                {
+                    "id" : 1,
+                    "texto": "a) O entrevistado diferencia fonte oficial de boato, e afirma que este último já é suficiente para que um fato seja dado como comprovado."
+                },
+                {
+                    "id" : 2,
+                    "texto": "b) O entrevistado procura dar autoridade ao que está dizendo ao citar fontes oficiais."
+                },
+                {
+                    "id" : 3,
+                    "texto": "c) Para o entrevistado, fontes oficiais têm autoria tão incerta quanto os boatos."
+                }
+            ]
+        },
+           {
+            "tipo" : "vf",
+            "titulo" : "2",
+            "texto" : "2.html",
+            "respondida":0,
+            "itens" : [
+                {
+                    "id" : 1,
+                    "texto" : "Após ler a discussão, julgue as alternativas abaixo em <b>verdadeiras (V)</b> ou <b>falsas (F)</b>:<br/><br/>(a) Para o primeiro comentarista, textos de autoria desconhecida não são confiáveis.",
+                    "correto" : "V",
+                    "feedback_correto" : "(a) Muito bem! O autor desqualifica os boatos dizendo que não se pode confiar em algo cuja fonte é desconhecida.",
+                    "feedback_incorreto" : "(a) Você errou! O comentarista desqualifica os boatos dizendo que não se pode confiar em algo cuja fonte é desconhecida."
+                },
+                {
+                    "id" : 2,
+                    "texto" : "(b) Para o segundo comentarista, importa que se saiba quem são os autores das informações sobre a vacina. Se tais autores não fossem médicos ou pesquisadores, ele ainda atribuiria a ela o mesmo grau de credibilidade.",
+                    "correto" : "F",
+                    "feedback_correto" : "(b) Muito bem! Para o comentarista, o fato de um pesquisador e um médico assinarem o e-mail é importante, pois eles teriam autoridade para falar sobre o assunto.",
+                    "feedback_incorreto" : "(b) Você errou! Para o comentarista, o fato de um pesquisador e um médico assinarem o e-mail é importante, pois eles teriam autoridade para falar sobre o assunto."
+                },
+                {
+                    "id" : 3,
+                    "texto" : "(c) Segundos os comentaristas, a notícia é tida como verdadeira ou falsa por causa de sua autoria (desconhecida para um, vinda de especialistas para outro).",
+                    "correto" : 'V',
+                    "feedback_correto" : "(c) Muito bem! Os comentaristas qualificam ou desqualificam o e-mail partindo da imagem – ou falta de imagem – de um autor, a quem se atribuiria o texto.",
+                    "feedback_incorreto" : "(c) Você errou! Os comentaristas qualificam ou desqualificam o e-mail partindo da imagem – ou falta de imagem – de um autor, a quem se atribuiria o texto."
+                }
+            ]
+        },
+         {
+            "tipo"  : "teste",
+            "titulo" : "3",
+            "texto" : "3.html",
+            "textoAdicional" : "Abaixo, você lerá três diálogos. Escolha aquele em que, assim como sugerido no texto ao lado, pede-se um autor para que a credibilidade se instaure.</br></br>",
+            "respondida" : 0,
+            "correto" : 1,
+            "feedback_correto" : "Muito bem! O interlocutor questiona sobre a origem do boato para decidir se lhe atribui credibilidade ou não.",
+            "feedback_incorreto" : "Você errou! O interlocutor questiona sobre a origem do boato para decidir se lhe atribui credibilidade ou não.",
+            "itens": [
+                {
+                    "id" : 1,
+                    "texto": "a) - Ficou sabendo que a Camila vai casar?<br>- Ah, não acredito! Quem te contou?"
+                },
+                {
+                    "id" : 2,
+                    "texto": "b) - Ficou sabendo que a Camila vai casar?<br>- Sério? Quando vai ser o casamento?"
+                },
+                {
+                    "id" : 3,
+                    "texto": "c) - Ficou sabendo que a Camila vai casar?<br>- Fiquei! Eu ouvi dizer que a Marcela também ficou noiva."
+                }
+            ]
+        },
+         {
+            "tipo"  : "teste",
+            "titulo" : "4",
+            "texto" : "4.html",
+            "textoAdicional" : "Abaixo, você lerá três diálogos. Escolha aquele em que, assim como sugerido no texto ao lado, pede-se um autor para que a credibilidade se instaure.</br></br>",
+            "respondida" : 0,
+            "correto" : 3,
+            "feedback_correto" : "Muito bem! O texto plagiado compila trechos de outros textos, apagando seus autores e atribuindo àquele que o escreve todas as ideias que ele contém.",
+            "feedback_incorreto" : "Você errou! O texto plagiado compila trechos de outros textos, apagando seus autores e atribuindo àquele que o escreve todas as ideias que ele contém.",
+            "itens": [
+                {
+                    "id" : 1,
+                    "texto": "a) Segundo Foucault (1996, p.27), “na ordem do discurso científico, a atribuição a um autor era, na Idade Média, indispensável, pois era um indicador de verdade”."
+                },
+                {
+                    "id" : 2,
+                    "texto": "b) Como lembra Foucault, para que se atribuísse credibilidade a um texto científico, era necessário indicar seu autor."
+                },
+                {
+                    "id" : 3,
+                    "texto": "c) Na Idade Média, um texto científico precisava ter seu autor indicado para que a ele fosse atribuído um indicador de verdade."
+                }
+            ]
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Relatório",
+            "texto" : "fim.html"
+        },
+        {
+            "tipo": "texto",
+            "titulo" : "Fim",
+            "texto" : "creditos.html"
+        }
+    ]
+}

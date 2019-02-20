@@ -1,0 +1,10 @@
+﻿info = new Array();
+with(info) {
+push(new Array("Copacabana", "Bairro da cidade do Rio de Janeiro onde está localizada a Rua Tonelero: ____","Um dos bairros mais famosos do Rio de Janeiro e onde fica a estátua de Carlos Drummond de Andrade. ", "Um dos bairros mais famosos do Rio de Janeiro e onde fica a estátua de Carlos Drummond de Andrade. ", "COPACABANA"));
+push(new Array("Biblioteca", "Lugar no qual encontramos livros de poesia, ciência, romance e conhecimentos em geral: ____","A Nacional fica no Rio de Janeiro e contém a 1ª edição de Os Lusíadas, de Luís Vaz de Camões.", "A Nacional fica no Rio de Janeiro e contém a 1ª edição de Os Lusíadas, de Luís Vaz de Camões.", "BIBLIOTECA"));
+push(new Array("Itaquera", "Distrito de São Paulo que surgiu de aldeias indígenas: ____","Significa, em tupi-guarani, “pedra dormente”.", "Significa, em tupi-guarani, “pedra dormente”.", "ITAQUERA"));
+push(new Array("Carlos Lacerda", "Jornalista e político que sofreu um atentado na Rua Toneleiro em 5 de agosto de 1954: ____.","Um dos principais opositores do governo Vargas e, na época, iria se candidatar a deputado federal.", "Um dos principais opositores do governo Vargas e, na época, iria se candidatar a deputado federal.", "CARLOSLACERDA"));
+push(new Array("Epopéia", "Gênero que dá nome aos livros Odisséia, Ilíada e Eneida: ____","Calíope era musa da eloquência, da ciência e da poesia. ", "Calíope era musa da eloquência, da ciência e da poesia. ", "EPOPEIA"));
+push(new Array("Xavante", "Tribo indígena que ainda tem aldeias na região metropolitana de São Paulo: ____","São originários do estado de Mato Grosso.", "São originários do estado de Mato Grosso.", "XAVANTE"));
+push(new Array("Suicídio", "Atitude tomada por Vargas, dezenove dias depois do atentado da Rua Tonelero: ____","Aquilo que lhe tirou a vida. ", "Aquilo que lhe tirou a vida. ", "SUICIDIO"));
+}
