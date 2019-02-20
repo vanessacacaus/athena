@@ -1,12 +1,13 @@
 #containerContent{
-	width: 80%;
-	margin-left: 10%;
+	width: 75%;
+	margin-left: 14%;
 	margin-top: 8%;
 	margin-bottom: 8%;
 }
 
 /*título da página*/
 h1.titulo {
+	margin-left: -10%;
 	font-size: 2em;
 	color: #0E89AC;
 	font-weight: normal;
@@ -18,10 +19,11 @@ h1.titulo {
 
 .caixa {
 	margin: 6% 0%;
-}
+} 
 
 .boxie {
 	margin-left: -10%;
+	padding: 0% 10%;
 }
 
 img.imgApoio {
@@ -30,6 +32,7 @@ img.imgApoio {
 	margin: 0;
 	margin-left: -60%;
 }
+
 
 /*verdes*/
 h4.titulo4V {
@@ -101,6 +104,10 @@ a.collapseColorA {
 @media only screen and (max-width: 580px) {
 	#containerContent{
 		margin-top: 20%;
+	}
+
+	.col-sm-2 {
+		padding-bottom: 10%;
 	}
 
 	h1.titulo {
