@@ -3,7 +3,7 @@ function checkDescritors(materia, ano){
         document.getElementById('t').disabled=true;
         $('#t').empty();
         $('#t').append('<option value="">Descritor</option>');
-    }else{
+    }else{ 
         document.getElementById('t').disabled=false;
         if(materia == 'lp'){
             if(ano >= 08){

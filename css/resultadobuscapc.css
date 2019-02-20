@@ -13,6 +13,10 @@ h1.titulo {
 	margin-bottom: 2%;
 }
 
+.bavancada {
+	color: #003960 !important;
+}
+
 img.recursosTamanho:hover{
 	cursor: pointer;
 }
