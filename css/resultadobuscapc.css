@@ -10,11 +10,19 @@ h1.titulo {
 	font-size: 2em;
 	color: #0E89AC;
 	font-weight: normal;
-	margin-bottom: 2%;
+	margin-bottom: 4%;
 }
 
 .bavancada {
 	color: #003960 !important;
+}
+
+p#nenhumRecurso {
+	color: #0E89AC;
+	font-size: 1.6em;
+	text-align: center;
+	/*padding: 5% 0%;*/
+	visibility: hidden;
 }
 
 img.recursosTamanho:hover{
@@ -43,6 +51,10 @@ p.tituloRecurso{
 #botoesPassarPagina{
 	margin: auto;
 	padding-bottom: 3vh;
+}
+
+#recurso0, #recurso1, #recurso2, #recurso3, #recurso4, #recurso5, #recurso6, #recurso7{
+	display: none;
 }
 
 #buscaavancada select{

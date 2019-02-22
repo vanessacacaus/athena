@@ -3,9 +3,14 @@ var recursos = [];
 var url = new URL(urlString);
 var disciplinaDesejada = url.searchParams.get("d");
 var anoDesejado = url.searchParams.get("a");
-var descritoresDesejados = url.searchParams.get("t");
+var descritoresDesejados = String(url.searchParams.get("t"));
 var pagina = url.searchParams.get("p");
 var primeiroIntervaloRecursos = 0;
+var buscarPorDescritores = false;
+
+if(descritoresDesejados!="null" && descritoresDesejados!=""){
+	buscarPorDescritores = true;
+}
 
 if(String(disciplinaDesejada)=="lp"){
 	disciplinaDesejada = "Portugues";
@@ -30,7 +35,6 @@ else{
 	primeiroIntervaloRecursos = pagina*8;
 }
 
-
 $(document).ready(function() {
     $.ajax({
         type: "GET",
@@ -44,7 +48,7 @@ function processData(textoParam){
 	var linhas = textoParam.split('\n');
 	for (var i=0; i < linhas.length; i++){
 	    var aux = linhas[i].split('\t');
-	    aux = {identidade:aux[0], nome:aux[1], miniatura:aux[2], resumo:aux[3], disciplina:aux[4], ano:aux[5], descritores:aux[6], linkdown:aux[7], visualizar:aux[8], tema:aux[9], origem:aux[10], autores:aux[11], idioma:aux[12], datacriacao:aux[13]};
+	    aux = {identidade:String(aux[0]), nome:String(aux[1]), miniatura:String(aux[2]), resumo:String(aux[3]), disciplina:String(aux[4]), ano:String(aux[5]), descritores:String(aux[6]), linkdown:String(aux[7]), visualizar:String(aux[8]), tema:String(aux[9]), origem:String(aux[10]), autores:String(aux[11]), idioma:String(aux[12]), datacriacao:String(aux[13])};
 	    if(String(disciplinaDesejada) != "null" && String(disciplinaDesejada) != String(aux.disciplina)){
 	    	continue;
 	    }
@@ -53,11 +57,21 @@ function processData(textoParam){
 	    }
 	    recursos.push(aux);
 	}
+
 	//processamento de consulta por descritores
-	//processamento de consulta por tema
-	//alert(recursos.length);
-
-
+	if(buscarPorDescritores == true){
+		descritoresArray = descritoresDesejados.split(";");
+		recursosComDescritoresDesejados = [];
+		for(var i=0; i < recursos.length; i++){
+			for(var j=0; j<descritoresArray.length; j++){
+				if(recursos[i].descritores.indexOf(descritoresArray[j]) > -1){
+					recursosComDescritoresDesejados.push(recursos[i]);
+					break;
+				}
+			}
+		}
+		recursos = recursosComDescritoresDesejados;
+	}
 
 	//colocando recursos no seus locais
 	var auxCount = 0;
@@ -69,6 +83,7 @@ function processData(textoParam){
 		document.getElementById('recurso'+auxCount).children[0].src = recursos[i].miniatura;
 		document.getElementById('recurso'+auxCount).children[1].innerHTML = recursos[i].nome;
 		document.getElementById('recurso'+auxCount).children[2].innerHTML = recursos[i].ano+"º ano";
+		document.getElementById('recurso'+auxCount).style.display = "block";
 		auxCount++;
 	}
 
@@ -91,9 +106,16 @@ function processData(textoParam){
 		document.getElementById("paginaAnterior").innerHTML='&laquo; Página '+pagina;	
 	}
 
+	if(recursos.length == 0){
+		//alert("testando");
+		document.getElementById("nenhumRecurso").style.visibility = "visible";
+		document.getElementById("nenhumRecurso").style.padding = "5% 0";
+		document.getElementById("paginacao").style.visibility = "hidden";
+	}
+
 }
 
 
 function irPararecurso(n) {
-	location.href="../recursocomputador.html?n=" + recursos[n].identidade;
+	location.href="../recursocomputador.html?n=" + recursos[n+pagina*8].identidade;
 }

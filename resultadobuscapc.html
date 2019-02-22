@@ -51,11 +51,11 @@
 			        	          			<option value="" selected>Dispositivo</option>
 			        	          			<option value="ad">Android</option>
 			        	          			<option value="pc">Computador</option>
-			        	          		</select><select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          		</select><select name="d" form="formsearch">
 			        	          			<option value="" selected>Disciplina</option>
 			        	          			<option value="lp">Lingua Portuguesa</option>
 			        	          			<option value="mat">Matemática</option>
-			        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          		</select><select name="a" form="formsearch">
 			        	          			<option value="" selected>Ano</option>
 			        	          			<option value="1">1ºAno</option>
 			        	          			<option value="2">2ºAno</option>
@@ -99,13 +99,14 @@
 			        	          			<option value="8">8ºAno</option>
 			        	          			<option value="9">9ºAno</option>
 			        	          		</select>
-			                            <select name="t" id="t" form="formsearch" disabled="">
+			                            <select name="t" id="t" form="buscaavancada" disabled="">
 			                            	<option value="" selected>Descritor</option>
 			                            </select>
 			        	          		<input type="text" name="p" value="0" style="display: none">
 			        	          		<input type="submit" value="Buscar">
 			        	          	</form>
 			                  	</div>
+			<p id="nenhumRecurso">Nenhum recurso encontrado</p>
 
 			<div class="row rowRecurso">
 				<div id="recurso0" class="col-sm-3">
@@ -151,7 +152,8 @@
 					<p></p>
 				</div>
 			</div>
-			<div class="row">
+
+			<div class="row" id="paginacao">
 				<div id="botoesPassarPagina">
 					<a href="#" id="paginaAnterior"></a>
 					<a id="paginaAtual"></a> 
