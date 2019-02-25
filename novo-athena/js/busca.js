@@ -117,5 +117,5 @@ function processData(textoParam){
 
 
 function irPararecurso(n) {
-	location.href="../recursocomputador.html?n=" + recursos[n+pagina*8].identidade;
+	location.href="../novo-athena/recursocomputador.html?n=" + recursos[n+pagina*8].identidade;
 }

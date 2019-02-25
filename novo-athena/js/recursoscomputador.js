@@ -247,5 +247,5 @@ var recursos = [];
 		document.getElementById('recurso20').children[2].innerHTML = recursos[19].ano+"º ano";	
 		
 		function page(n) {
-			location.href="../recursocomputador.html?n=" + recursos[n].id;
+			location.href="../novo-athena/recursocomputador.html?n=" + recursos[n].id;
 		}
