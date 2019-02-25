@@ -1,0 +1,70 @@
+
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+
+/*título da página*/
+h1.titulo {
+	font-size: 2em;
+	color: #0E89AC;
+	font-weight: normal;
+	margin-bottom: 4%;
+}
+
+.bavancada {
+	color: #003960 !important;
+}
+
+p#nenhumRecurso {
+	color: #0E89AC;
+	font-size: 1.6em;
+	text-align: center;
+	/*padding: 5% 0%;*/
+	visibility: hidden;
+}
+
+img.recursosTamanho:hover{
+	cursor: pointer;
+}
+
+
+img.recursosTamanho {
+	height: 60%; 
+	width: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+p.tituloRecurso{
+	font-size: 1.05em;
+	font-weight: 600;
+}
+
+.rowRecurso {
+	margin: 4% 2%;
+}
+
+#botoesPassarPagina{
+	margin: auto;
+	padding-bottom: 3vh;
+}
+
+#recurso0, #recurso1, #recurso2, #recurso3, #recurso4, #recurso5, #recurso6, #recurso7{
+	display: none;
+}
+
+#buscaavancada select{
+	background-color: white;
+	max-width: 200px;
+}
+
+@media only screen and (max-width: 780px) {
+	h1.titulo{
+		margin-top:80px;
+		font-size:1.5em;
+	}
+}

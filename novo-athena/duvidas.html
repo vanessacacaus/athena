@@ -1,0 +1,239 @@
+<html>
+	<head>
+		<title>Dúvidas - Athena</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/gif" href="img/ico.gif">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/duvidas.css">
+	</head>
+	<body>
+		<!--cabecalho-->
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="athenanavbar">
+			    <a id="logoNav" href="index.html"><img src="img/athena.png" id="logonav"/></a>
+			    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+			   	    <span class="navbar-toggler-icon"></span>
+			    </button>
+
+			    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+			        <ul class="navbar-nav ml-auto">
+			            <li class="nav-item">
+			                <a class="nav-link" href="index.html">INÍCIO</a>
+			            </li>
+			            <li class="dropdown">
+			                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+			                <div class="dropdown-menu">
+			                    <a class="dropdown-item" href="buscaandroid.html">PARA ANDROID</a>
+			                    <a class="dropdown-item" href="buscacomputador.html">PARA COMPUTADOR</a>
+			                </div>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="apoio.html">MATERIAL DE APOIO</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="duvidas.html">DÚVIDAS</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="sobre.html">SOBRE</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" data-toggle="dropdown" href="#">BUSCAR</a>
+			                <div class="dropdown-menu" id="searchBar">
+			                  	<div id="containerSearchBar">
+			        	          	<p>Pesquise Recursos:</p>
+			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+			        	          		<select name="h" id="h" form="formsearch">
+			        	          			<option value="" selected>Dispositivo</option>
+			        	          			<option value="ad">Android</option>
+			        	          			<option value="pc">Computador</option>
+			        	          		</select><select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Disciplina</option>
+			        	          			<option value="lp">Lingua Portuguesa</option>
+			        	          			<option value="mat">Matemática</option>
+			        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Ano</option>
+			        	          			<option value="1">1ºAno</option>
+			        	          			<option value="2">2ºAno</option>
+			        	          			<option value="3">3ºAno</option>
+			        	          			<option value="4">4ºAno</option>
+			        	          			<option value="5">5ºAno</option>
+			        	          			<option value="6">6ºAno</option>
+			        	          			<option value="7">7ºAno</option>
+			        	          			<option value="8">8ºAno</option>
+			        	          			<option value="9">9ºAno</option>
+			        	          		</select>
+			        	          		<input type="submit" value="Buscar">
+			        	          	</form>
+			                  	</div>
+			                </div>
+			            </li>
+			        </ul>
+			    </div>
+			</nav>
+		</header>
+<!--inicio do corpo da página-->
+<div id="containerContent">
+		<h1 class="titulo">DÚVIDAS FREQUENTES</h1>
+
+<div class="container">
+  <div class="panel-group" id="accordion">
+		  	    <div class="content">
+		  	    	<!--card-->
+		  	    	<div class="row caixa bordaV">
+		  	    		<div class="col-sm-2">
+		  	    			<div class="imagens col-sm-2">
+		  	    				<img class="imgFundo" src="img/faq/verde.png">
+		  	    				<img class="imgDuvida" src="img/faq/athena2.png">
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="col-sm-10">
+		  	    						    <div class="panel panel-default boxie"> <!--abre a caixa-->
+										    <div class="panel-heading">
+										    <h4 class="panel-title titulo4V">
+										          <a class="dropdown-toggle collapseColorV" data-toggle="collapse" data-parent="#accordion" href="#collapse1">O QUE É O REPOSITÓRIO ATHENA?</a>
+										    </h4>
+										    </div>
+										    <div id="collapse1" class="panel-collapse collapse in">
+										    <div class="panel-body corpoTexto">O Athena é um repositório educacional digital que contém recursos educacionais digitais (RED) gratuitos, catalogados com base em critérios técnicos e pedagógicos de seleção e que funcionam de forma off-line. O repositório foi desenvolvido pelo Grupo de Pesquisa e Produção de Ambientes Interativos e Objetos de Aprendizagem (PROATIVA), da Universidade Federal do Ceará (UFC).
+</div>
+										    </div>
+										    </div>
+		  	    		</div>
+		  	    	</div>
+		  	    	<!--fecha card-->
+		  	    	<!--card-->
+		  	    	<div class="row caixa bordaA">
+		  	    		<div class="col-sm-2">
+		  	    			<div class="imagens col-sm-2">
+		  	    				<img class="imgFundo" src="img/faq/azul.png">
+		  	    				<img class="imgDuvida2" src="img/faq/recursosfaq.png">
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="col-sm-10">
+		  	    						    <div class="panel panel-default boxie"> <!--abre a caixa-->
+										    <div class="panel-heading">
+										    <h4 class="panel-title titulo4A"> <a class="dropdown-toggle collapseColorA" data-toggle="collapse" data-parent="#accordion" href="#collapse2">COMO SURGIU O ATHENA?</a>
+										    </h4>
+										    </div>
+										    <div id="collapse2" class="panel-collapse collapse in">
+										    <div class="panel-body corpoTexto">O Repositório Athena surgiu a partir de demandas verificadas no Projeto Um Computador por Aluno (UCA), no qual professores demonstraram o desejo em acessar recursos educacionais digitais de Língua Portuguesa e de Matemática gratuitos e que pudessem ser utilizados de forma off-line. Uma preocupação, ainda, foi o alinhamento da catalogação dos recursos à matriz de referência do Sistema de Avaliação da Educação Básica (SAEB) e seus descritores, tendo em vista que este documento é utilizado pelos professores como referência para as avaliações externas de aprendizagem. Desse modo, buscou-se disponibilizar RED selecionados conforme critérios técnicos e pedagógicos e que foram analisados com base nos descritores da citada matriz.</div>
+										    </div>
+										    </div>
+		  	    		</div>
+						</div>
+		  	    	<!--fecha card-->
+		  	    	<!--card-->
+		  	    	<div class="row caixa bordaV">
+		  	    		<div class="col-sm-2">
+		  	    			<div class="imagens col-sm-2">
+		  	    				<img class="imgFundo" src="img/faq/verde.png">
+		  	    				<img class="imgDuvida2" src="img/faq/recursosfaq.png">
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="col-sm-10">
+		  	    						    <div class="panel panel-default boxie"> <!--abre a caixa-->
+										    <div class="panel-heading">
+										    <h4 class="panel-title titulo4V">
+										         <a class="dropdown-toggle collapseColorV" data-toggle="collapse" data-parent="#accordion" href="#collapse3">O QUE SÃO RECURSOS EDUCACIONAIS DIGITAIS (RED)?</a>
+										    </h4>
+										    </div>
+										    <div id="collapse3" class="panel-collapse collapse in">
+										    <div class="panel-body corpoTexto">Os RED são definidos como qualquer recurso digital que apresenta finalidades educacionais aplicadas ao ensino e à aprendizagem. Estes recursos podem ser encontrados em diferentes tipos, dentre eles, objetos de aprendizagem, animações, jogos, hipertextos, simulações, exercícios práticos, aplicativos educacionais, entre outros, e muitas vezes, podem apresentar uma hibridização de dois ou mais tipos.
+										    </div>
+										    </div>
+		  	    		</div>
+		  	    	</div>
+		  	    </div>
+		  	    	<!--fecha card-->
+		  	    	<!--card-->
+		  	    	<div class="row caixa bordaA">
+		  	    		<div class="col-sm-2">
+		  	    			<div class="imagens col-sm-2">
+		  	    				<img class="imgFundo" src="img/faq/azul.png">
+		  	    				<img class="imgDuvida3" src="img/faq/ZIP.png">
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="col-sm-10">
+		  	    						    <div class="panel panel-default boxie"> <!--abre a caixa-->
+										    <div class="panel-heading">
+										    <h4 class="panel-title titulo4A"> <a class="dropdown-toggle collapseColorA" data-toggle="collapse" data-parent="#accordion" href="#collapse4">COMO EXTRAIR OS ARQUIVOS COM OS RED APÓS O DOWNLOAD?</a>
+										    </h4>
+										    </div>
+										    <div id="collapse4" class="panel-collapse collapse in">
+										    <div class="panel-body corpoTexto">REFORMULAÇÃO DA IMAGEM</div>
+										    </div>
+										    </div>
+		  	    		</div>
+
+		  	    	</div>
+		  	    	<!--fecha card-->		  	    	
+		  	    	</div>
+	      		
+	       </div><!--fecha a div panel group-->
+  </div><!--fecha a div container-->
+
+</div><!--fecha a div content-->
+				<!--fim do corpo da página-->
+				
+
+		<!--footer-->
+		<footer>
+			<div id="footerContainer">
+				<div class="row" id="row_one">
+					<div class="col-sm-5" id="logosInst">
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/ufc.png"/></a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/virtual.png"/></a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/proativa.png"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4"></div>
+
+					<div class="col-sm-3" id="logosSocialNetworks">
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/fb.png"/></a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/ig.png"/></a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/tt.png"/></a>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-sm-9">
+					</div>
+
+					<div class="col-sm-3" id="cccol">
+						<div class="row">
+							<div class="col-sm-6">
+							</div>
+							<div class="col-sm-6">
+								<a href="#"><img src="img/footer/cc.png"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/sweetalert2.all.min.js"></script>
+		<script src="js/nav.js"></script>
+	</body>
+</html>
