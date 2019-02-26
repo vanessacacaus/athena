@@ -1,0 +1,237 @@
+<html>
+	<head>
+		<head>
+			<title>Material de Apoio - Athena</title>
+			<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="icon" type="image/gif" href="img/ico.gif">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+			<link rel="stylesheet" type="text/css" href="css/nav.css">
+			<link rel="stylesheet" type="text/css" href="css/footer.css">
+			<link rel="stylesheet" type="text/css" href="css/apoio.css">
+			<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+		</head>
+	</head>
+	<body>
+		<!--cabecalho-->
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="athenanavbar">
+			    <a id="logoNav" href="index.html"><img src="img/athena.png" id="logonav"/></a>
+			    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+			   	    <span class="navbar-toggler-icon"></span>
+			    </button>
+
+			    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+			        <ul class="navbar-nav ml-auto">
+			            <li class="nav-item">
+			                <a class="nav-link" href="index.html">INÍCIO</a>
+			            </li>
+			            <li class="dropdown">
+			                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+			                <div class="dropdown-menu">
+			                    <a class="dropdown-item" href="buscaandroid.html">PARA ANDROID</a>
+			                    <a class="dropdown-item" href="buscacomputador.html">PARA COMPUTADOR</a>
+			                </div>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="apoio.html">MATERIAL DE APOIO</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="duvidas.html">DÚVIDAS</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="sobre.html">SOBRE</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" data-toggle="dropdown" href="#">BUSCAR</a>
+			                <div class="dropdown-menu" id="searchBar">
+			                  	<div id="containerSearchBar">
+			        	          	<p>Pesquise Recursos:</p>
+			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+			        	          		<select name="h" id="h" form="formsearch">
+			        	          			<option value="" selected>Dispositivo</option>
+			        	          			<option value="ad">Android</option>
+			        	          			<option value="pc">Computador</option>
+			        	          		</select><select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Disciplina</option>
+			        	          			<option value="lp">Lingua Portuguesa</option>
+			        	          			<option value="mat">Matemática</option>
+			        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Ano</option>
+			        	          			<option value="1">1ºAno</option>
+			        	          			<option value="2">2ºAno</option>
+			        	          			<option value="3">3ºAno</option>
+			        	          			<option value="4">4ºAno</option>
+			        	          			<option value="5">5ºAno</option>
+			        	          			<option value="6">6ºAno</option>
+			        	          			<option value="7">7ºAno</option>
+			        	          			<option value="8">8ºAno</option>
+			        	          			<option value="9">9ºAno</option>
+			        	          		</select>
+			        	          		<input type="submit" value="Buscar">
+			        	          	</form>
+			                  	</div>
+			                </div>
+			            </li>
+			        </ul>
+			    </div>
+			</nav>
+		</header>
+				<!--inicio do corpo da página-->
+		<div id="containerContent">
+				<h1 class="titulo">MATERIAL DE APOIO</h1>
+
+		<div class="container">
+		  <div class="panel-group" id="accordion">
+				  	    <div class="content">
+				  	    	<!--card-->
+				  	    	<div class="row caixa bordaV">
+				  	    		<div class="col-sm-2">
+				  	    			<img class="imgApoio" src="img/apoio/imagemApoio1.png">
+				  	    		</div> 
+				  	    		<div class="col-sm-10 box">
+				  	    						    <div class="panel panel-default boxie"> <!--abre a caixa-->
+												    <div class="panel-heading">
+												    <h4 class="panel-title titulo4V">
+												          <a class="dropdown-toggle collapseColorV" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+												          Matriz de referência do Sistema de Avaliação da Educação Básica (SAEB) </a>
+												    </h4>
+												    </div>
+												    <div id="collapse1" class="panel-collapse collapse in">
+												    <div class="panel-body corpoTexto">A matriz de referência do SAEB apresenta parâmetros curriculares  para a Educação Básica, utilizados nas redes municipais que possuem turmas de 5º e 9º anos do Ensino Fundamental. O documento traz informações necessárias aos gestores e professores sobre os pressupostos teóricos que embasam a avaliação da aprendizagem, com  temas, tópicos e descritores para as áreas de Língua Portuguesa e de Matemática dos anos a serem avaliados. Os descritores indicam habilidades gerais esperadas dos alunos e constituem uma referência para a seleção dos itens que devem compor uma prova de avaliação.</div>
+												    </div>
+												    </div>
+												    <br>
+												    <div class="botaoAlinhamentoV"><input class="btn botaoV" type="button" value="DOWNLOAD"></div>
+				  	    		</div>
+				  	    	</div>
+				  	    	<!--fecha card-->
+				  	    	<!--card-->
+				  	    	<div class="row caixa bordaA">
+				  	    		<div class="col-sm-2">
+				  	    			<img class="imgApoio" src="img/apoio/imagemApoio2.png">
+				  	    		</div>
+				  	    		<div class="col-sm-10 box">
+				  	    						    <div class="panel panel-default boxie"> <!--abre a caixa-->
+												    <div class="panel-heading">
+												    <h4 class="panel-title titulo4A">
+												        <a class="dropdown-toggle collapseColorA" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Expectativas de Aprendizagem </a>
+												    </h4>
+												    </div>
+												    <div id="collapse2" class="panel-collapse collapse in">
+												    <div class="panel-body corpoTexto">As expectativas de aprendizagem buscam estabelecer os parâmetros acerca dos conteúdos essenciais que devem ser ensinados aos alunos da Educação Básica. O documento sistematiza o que foi estabelecido na Lei de Diretrizes e Bases da Educação Nacional (LDB nº 9394/96), nos Parâmetros Curriculares Nacionais (PCN) e nas matrizes de referência para avaliação das disciplinas de Língua Portuguesa e de Matemática. As expectativas de aprendizagem variam conforme os estados brasileiros, de forma a atender às realidades locais e as necessidade de cada instituição educacional.</div>
+												    </div>
+												    </div>
+												    <br>
+												    <div class="botaoAlinhamentoA"><input class="btn botaoA" type="button" value="DOWNLOAD"></div>
+				  	    		</div>
+
+				  	    	</div>
+				  	    	<!--fecha card-->
+				  	    	<!--card-->
+				  	    	<div class="row caixa bordaV">
+				  	    		<div class="col-sm-2">
+				  	    			<img class="imgApoio" src="img/apoio/imagemApoio3.png">
+				  	    		</div>
+				  	    		<div class="col-sm-10 box">
+				  	    						    <div class="panel panel-default boxie"> <!--abre a caixa-->
+												    <div class="panel-heading">
+												    <h4 class="panel-title titulo4V">
+												          <a class="dropdown-toggle collapseColorV" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Diretrizes Curriculares Nacionais (DCN)</a>
+												    </h4>
+												    </div>
+												    <div id="collapse3" class="panel-collapse collapse in">
+												    <div class="panel-body corpoTexto">As Diretrizes Curriculares Nacionais são normas voltadas para a Educação Básica que buscam orientar o planejamento curricular das escolas. Este documento tem como principal objetivo promover a igualdade no processo de aprendizagem, assegurando que os conteúdos básicos sejam ensinados para todos os discentes.</div>
+												    </div>
+												    </div>
+												    <br>
+												    <div class="botaoAlinhamentoV"><input class="btn botaoV" type="button" value="DOWNLOAD"></div>
+				  	    		</div>
+				  	    	</div>
+				  	    	<!--fecha card-->
+				  	    	<!--card-->
+				  	    	<div class="row caixa bordaA">
+				  	    		<div class="col-sm-2">
+				  	    			<img class="imgApoio" src="img/apoio/imagemApoio4.png">
+				  	    		</div>
+				  	    		<div class="col-sm-10 box">
+				  	    						    <div class="panel panel-default boxie"> <!--abre a caixa-->
+												    <div class="panel-heading">
+												    <h4 class="panel-title titulo4A">
+												          <a class="dropdown-toggle collapseColorA" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Parâmetros Curriculares Nacionais (PCN)</a>
+												    </h4>
+												    </div>
+												    <div id="collapse4" class="panel-collapse collapse in">
+												    <div class="panel-body corpoTexto">Os Parâmetros Curriculares Nacionais tem como propósito orientar a construção das matrizes de referência para a aprendizagem. Ainda, objetivam disseminar os princípios da reforma curricular, bem como buscam propor a inserção de novas abordagens e metodologias.</div>
+												    </div>
+												    </div>
+												    <br>
+												    <div class="botaoAlinhamentoA"><input class="btn botaoA" type="button" value="PCN LÍNGUA PORTUGUESA"><input class="btn botaoL" type="button" value="PCN MATEMÁTICA"></div>
+				  	    		</div>
+				  	    	</div>
+				  	    	<!--fecha card-->
+				  	    	</div>
+			      		
+			       </div><!--fecha a div panel group-->
+		  </div><!--fecha a div container-->
+
+		</div><!--fecha a div content-->
+				<!--fim do corpo da página-->
+				
+				<!--footer-->
+	<footer>
+		<div id="footerContainer">
+			<div class="row" id="row_one">
+				<div class="col-sm-5" id="logosInst">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/ufc.png"/></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/virtual.png"/></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/proativa.png"/></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4"></div>
+
+				<div class="col-sm-3" id="logosSocialNetworks">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/fb.png"/></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/ig.png"/></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/tt.png"/></a>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-sm-9">
+				</div>
+
+				<div class="col-sm-3" id="cccol">
+					<div class="row">
+						<div class="col-sm-6">
+						</div>
+						<div class="col-sm-6">
+							<a href="#"><img src="img/footer/cc.png"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/sweetalert2.all.min.js"></script>
+	<script src="js/nav.js"></script>
+</body>
+</html>
