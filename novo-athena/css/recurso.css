@@ -14,9 +14,8 @@ h1.titulo {
 	text-transform: uppercase;
 }
  
-
 p.texto {
-	font-size: 1.6em;
+	font-size: 1.2em;
 	text-align: center;
 	margin: 5%;
 }
@@ -82,7 +81,7 @@ p.texto {
 	}
 
 	p.texto {
-		font-size: 0.96em;
+		font-size: 0.8em;
 		text-align: center;
 	}	
 

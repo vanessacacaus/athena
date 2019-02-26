@@ -93,7 +93,7 @@ textoRecursosI.push(matI6);
 textoRecursosI.push(matI7);
     var matI8 = {texto: "D8 - Estabelecer relações entre unidades de medida de tempo", descritor:"DMI08"};
 textoRecursosI.push(matI8);
-    var matI8 = {texto: "D9 - Estabelecer relações entre horário de início e término e/ou intervalo da duração de um evento ou acontecimento", descritor:"DMI09"};
+    var matI9 = {texto: "D9 - Estabelecer relações entre horário de início e término e/ou intervalo da duração de um evento ou acontecimento", descritor:"DMI09"};
 textoRecursosI.push(matI9);
     var matI10 = {texto: "D10 - Num problema, estabelecer trocas entre cédulas e moedas do sistema monetário brasileiro, em função de seus valores", descritor:"DMI10"};
 textoRecursosI.push(matI10);

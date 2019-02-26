@@ -26,7 +26,7 @@ p {
 	}
 
 	h1.titulo {
-		font-size: 1.6em;
+		font-size: 1.2em;
 		color: #0E89AC;
 		font-weight: normal;
 		text-transform: uppercase;
@@ -35,7 +35,7 @@ p {
 
 	p {
 		text-indent: 2em;
-		font-size: 1em;
+		font-size: 0.8em;
 		text-align: justify;
 	}
 
