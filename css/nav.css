@@ -1,5 +1,6 @@
 nav{
-	background-color: #003960;
+	background-color: #F7F7F7;
+	/*background-color: #003960;*/
 	margin: 0;
 	padding: 0;
 }
@@ -21,15 +22,20 @@ nav{
 #buttonMobile{
 	margin-right: 10%;
 }
+
+.nav-link{
+ color: #003960!important;
+}
+
 .dropdown-menu.show{
-	background-color: #001727;
+	background-color: #F7F7F7;
 	border: none;
 	border-radius: 0px;
 	margin: 0px;
 	padding: 0px;
 }
 .dropdown-item{
-	color: #F7F7F7;
+	color: #003960;
 	border: none;
 	border-radius: 0px;
 }
@@ -37,6 +43,7 @@ nav{
 	color:#003960;
 	border: none;
 	border-radius: 0px;
+	background-color: #fdfdfd;
 }
 #searchBar{
 	background-color: #003960;
@@ -83,4 +90,6 @@ input[type="submit"]:hover{
 	#formsearch select{
 		max-width: 100%;
 	}
+
+
 }
