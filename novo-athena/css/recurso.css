@@ -1,0 +1,97 @@
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+
+/*título da página*/
+h1.titulo {
+	font-size: 2em;
+	color: #0E89AC;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+ 
+p.texto {
+	font-size: 1.2em;
+	text-align: center;
+	margin: 5%;
+}
+
+.caixa {
+	margin: 3% 0%;
+	padding: 2%;
+	border: 1px dashed #0E89AC;
+}
+
+.imgRecurso {
+	width: 75%;
+	margin: 5% 12.5%;
+}
+
+.caixaBtn {
+	margin: 2%;
+	margin-bottom: 5%;
+}
+
+.botao {
+	width: 75%;
+	text-transform: uppercase;
+	font-size: 1.6em;
+}
+
+.botaom {
+	width: 75%;
+	margin: 0% 0% 1% 0%;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.btnCaixa {
+	width: 75%;
+	color: white;
+	margin: 0 12.5%;
+}
+
+.alinhamentoImgBtn {
+	text-align: center;
+}
+
+.posicionamentoMetadados {
+	text-align: left;
+}
+
+.play {
+	width: 10%;
+	margin: 0 1%;
+}
+
+@media only screen and (max-width: 780px) {
+	#containerContent{
+		margin-top: 20%;
+	}
+	h1.titulo {
+		font-size: 1.2em;
+		color: #0E89AC;
+		font-weight: normal;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	p.texto {
+		font-size: 0.8em;
+		text-align: center;
+	}	
+
+	.botao {
+		width: 100%;
+	}
+
+	.btnCaixa {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+}
