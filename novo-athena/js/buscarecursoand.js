@@ -235,7 +235,7 @@ function processData(textoParam){
 	var linhas = textoParam.split('\n');
 	for (var i=0; i < linhas.length; i++){
 	    var aux = linhas[i].split('\t');
-	    aux = {identidade:String(aux[0]), nome:String(aux[1]), link:String(aux[2]), tipo:String(aux[3]), autor:String(aux[4]), tamanho:String(aux[5]), android:String(aux[6]), versao:String(aux[7]), permissoes:String(aux[8]), tema:String(aux[9]), descritoresteste:String(aux[10]), descritores:String(aux[11]), idioma:String(aux[12]), atualizacao:String(aux[13]), visualizacao:String(aux[14]), configuracoes:String(aux[15]), multimidia:String(aux[16]), anuncio:String(aux[17]), internet:String(aux[18]), obs:String(aux[19]), miniatura:String(aux[20]), resumo:String(aux[21]), disciplina:String(aux[22]), ano:String(aux[23])};
+	    aux = {identidade:String(aux[0]), nome:String(aux[1]), linkk:String(aux[2]), tipo:String(aux[3]), autor:String(aux[4]), tamanho:String(aux[5]), android:String(aux[6]), versao:String(aux[7]), permissoes:String(aux[8]), tema:String(aux[9]), descritoresteste:String(aux[10]), descritores:String(aux[11]), idioma:String(aux[12]), atualizacao:String(aux[13]), visualizacao:String(aux[14]), configuracoes:String(aux[15]), multimidia:String(aux[16]), anuncio:String(aux[17]), internet:String(aux[18]), obs:String(aux[19]), miniatura:String(aux[20]), resumo:String(aux[21]), disciplina:String(aux[22]), ano:String(aux[23])};
 	    if(String(identidade)!="null" && String(aux.identidade)!=String(identidade)){
 	    	continue;
 	    }

@@ -1,4 +1,5 @@
 	var recursos = []; 
+	var recursosAnd = [];
 	var recurso1 = {
 		miniatura: "recursos/img/Portugues/brincandocomasvogais.png", 
 		nome: "Brincando com as vogais",
@@ -79,6 +80,15 @@
 	};
 	recursos.push(recurso10);
 
+//recursos android
+	var recursoA1 = {
+		miniatura: "recursos/img/PortuguesMovel/palavracantadaoficial.png", 
+		nome: "Palavra Cantada Oficial",
+		ano: "1",
+		id: "1"
+	};
+	recursosAnd.push(recursoA1);
+
 		document.getElementById('recurso1').children[0].src = recursos[0].miniatura;
 		document.getElementById('recurso1').children[1].innerHTML = recursos[0].nome;
 		document.getElementById('recurso1').children[2].innerHTML = recursos[0].ano+"º ano";
@@ -117,8 +127,19 @@
 
 		document.getElementById('recurso10').children[0].src = recursos[9].miniatura;
 		document.getElementById('recurso10').children[1].innerHTML = recursos[9].nome;
-			document.getElementById('recurso10').children[2].innerHTML = recursos[9].ano+"º ano";	
+		document.getElementById('recurso10').children[2].innerHTML = recursos[9].ano+"º ano";	
+
+
+//recursos android
+		document.getElementById('recursoA1').children[0].src = recursosAnd[0].miniatura;
+		document.getElementById('recursoA1').children[1].innerHTML = recursosAnd[0].nome;
+		document.getElementById('recursoA1').children[2].innerHTML = recursosAnd[0].ano+"º ano";
+		
 
 		function page(n) {
 			location.href="../novo-athena/recursocomputador.html?n=" + recursos[n].id;
+		}
+
+		function pageAnd(n) {
+			location.href="../novo-athena/recursomobile.html?n=" + recursosAnd[n].id;
 		}
