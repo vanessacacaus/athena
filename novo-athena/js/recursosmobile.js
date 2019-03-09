@@ -1,42 +1,42 @@
 var recursos = []; 
 //recursos de matematica
 	var recurso1 = {
-		miniatura: "recursos/img/Matematica/Arrumeoquarto.png", 
-		nome: "Arrume o Quarto",
+		miniatura: "recursos/img/MatematicaMovel/matematicaparacriancassoma.png", 
+		nome: "Matemática para crianças: Soma",
 		ano: "1",
-		id: "176"
+		id: "74"
 	};
 	recursos.push(recurso1);
 	 
 	var recurso2 = {
-		miniatura: "recursos/img/Matematica/4Cores.png", 
-		nome: "4 Cores",
-		ano: "2",
-		id: "191"
+		miniatura: "recursos/img/MatematicaMovel/adicaoesubcolorido.png", 
+		nome: "Adição e Subtração Colorido",
+		ano: "1",
+		id: "75"
 	};
 	recursos.push(recurso2);
 
 	var recurso3 = {
-		miniatura: "recursos/img/Matematica/circuloMagico.png", 
-		nome: "Cí­rculo Mágico",
-		ano: "3",
-		id: "200"
+		miniatura: "recursos/img/MatematicaMovel/adicaoesubpcriancas.png", 
+		nome: "Adição, subtração para crianças",
+		ano: "1",
+		id: "76"
 	};
 	recursos.push(recurso3);
 
 	var recurso4 = {
-		miniatura: "recursos/img/Matematica/Acerte.png", 
-		nome: "Acerte o Resultado",
-		ano: "3",
-		id: "214"
+		miniatura: "recursos/img/MatematicaMovel/criancasomatenum.png", 
+		nome: "Crianças, matemática e números",
+		ano: "1",
+		id: "77"
 	};
 	recursos.push(recurso4);
 
 	var recurso5 = {
-		miniatura: "recursos/img/Matematica/ehobicho.png", 
-		nome: "Eh o Bicho",
-		ano: "4",
-		id: "230"
+		miniatura: "recursos/img/MatematicaMovel/matematicadaselva.png", 
+		nome: "Matemática Selva: Pré-escola",
+		ano: "1",
+		id: "78"
 	};
 	recursos.push(recurso5);
 
@@ -84,42 +84,42 @@ var recursos = [];
 //recursos de portugues
 
 	var recurso11 = {
-		miniatura: "recursos/img/Portugues/brincandocomasvogais.png", 
-		nome: "Brincando com as vogais",
+		miniatura: "recursos/img/PortuguesMovel/palavracantadaoficial.png", 
+		nome: "Palavra Cantada Oficial",
 		ano: "1",
 		id: "1"
 	};
 	recursos.push(recurso11);
 	
 	var recurso12 = {
-		miniatura: "recursos/img/Portugues/noimensomarazul.png", 
-		nome: "No imenso mar azul",
+		miniatura: "recursos/img/PortuguesMovel/ursinhoaeiou.png", 
+		nome: "Ursinho A E I O U",
 		ano: "1",
-		id: "50"
+		id: "2"
 	};
 	recursos.push(recurso12);
 
 	var recurso13 = {
-		miniatura: "recursos/img/Portugues/perdidoseseparados.png", 
-		nome: "Perdidos e separados",
-		ano: "6",
-		id: "100"
+		miniatura: "recursos/img/PortuguesMovel/formapalavras.png", 
+		nome: "Forma Palavras",
+		ano: "1",
+		id: "3"
 	};
 	recursos.push(recurso13);
 
 	var recurso14 = {
-		miniatura: "recursos/img/Portugues/acidadecomotexto.png", 
-		nome: "A cidade como texto",
-		ano: "8",
-		id: "150"
+		miniatura: "recursos/img/PortuguesMovel/asminhashistorias.png", 
+		nome: "As minhas histórias",
+		ano: "1",
+		id: "5"
 	};
 	recursos.push(recurso14);
 
 	var recurso15 = {
-		miniatura: "recursos/img/Portugues/vogais.png", 
-		nome: "Vogais",
+		miniatura: "recursos/img/PortuguesMovel/apocadagua.png", 
+		nome: "A poça d'água",
 		ano: "1",
-		id: "10"
+		id: "6"
 	};
 	recursos.push(recurso15);
 
@@ -246,6 +246,6 @@ var recursos = [];
 		document.getElementById('recurso20').children[1].innerHTML = recursos[19].nome;
 		document.getElementById('recurso20').children[2].innerHTML = recursos[19].ano+"º ano";	
 		
-		function page(n) {
-			location.href="../novo-athena/recursocomputador.html?n=" + recursos[n].id;
+		function pageAnd(n) {
+			location.href="../novo-athena/recursomobile.html?n=" + recursos[n].id;
 		}
