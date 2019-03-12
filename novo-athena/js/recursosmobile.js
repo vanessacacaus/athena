@@ -41,42 +41,42 @@ var recursos = [];
 	recursos.push(recurso5);
 
 	var recurso6 = {
-		miniatura: "recursos/img/Matematica/arrumeOperacoes.png", 
-		nome: "Arrume Operações",
-		ano: "6",
-		id: "250"
+		miniatura: "recursos/img/MatematicaMovel/arrumeOperacoes.png", 
+		nome: "Learning Colors Shapes Memory (Cores e formas jogos infantins)",
+		ano: "1",
+		id: "79"
 	};
 	recursos.push(recurso6);
 
 	var recurso7 = {
-		miniatura: "recursos/img/Matematica/demonstracao_da_area_do_circulo.png", 
-		nome: "Demonstração da área do cí­rculo",
-		ano: "9",
-		id: "300"
+		miniatura: "recursos/img/MatematicaMovel/demonstracao_da_area_do_circulo.png", 
+		nome: "Dino Tim : Jogo educativo de formas e números",
+		ano: "2",
+		id: "80"
 	};
 	recursos.push(recurso7);
 
 	var recurso8 = {
-		miniatura: "recursos/img/Matematica/tabuada9.PNG", 
-		nome: "Tabuada 9",
-		ano: "5",
-		id: "245"
+		miniatura: "recursos/img/MatematicaMovel/tabuada9.PNG", 
+		nome: "Monster Numbers (Jogos educativos de Matematica: adição, tabuada)",
+		ano: "2",
+		id: "81"
 	};
 	recursos.push(recurso8);
 
 	var recurso9 = {
-		miniatura: "recursos/img/Matematica/muroNumerico.png", 
-		nome: "Muro Numérico",
-		ano: "4",
-		id: "225"
+		miniatura: "recursos/img/MatematicaMovel/muroNumerico.png", 
+		nome: "Math Kid (Matemática Crianças)",
+		ano: "2",
+		id: "82"
 	};
 	recursos.push(recurso9);
 
 	var recurso10 = {
-		miniatura: "recursos/img/Matematica/formas.png", 
-		nome: "Formas",
-		ano: "1",
-		id: "173"
+		miniatura: "recursos/img/MatematicaMovel/formas.png", 
+		nome: "Telling Time For Kids (Aprender a Contar o Tempo)",
+		ano: "2",
+		id: "83"
 	};
 	recursos.push(recurso10);
 
@@ -124,42 +124,42 @@ var recursos = [];
 	recursos.push(recurso15);
 
 	var recurso16 = {
-		miniatura: "recursos/img/Portugues/viagemespacial.png", 
-		nome: "Viagem Espacial",
+		miniatura: "recursos/img/PortuguesMovel/viagemespacial.png", 
+		nome: "Formar Palavras - Alfabetização",
 		ano: "2",
 		id: "20"
 	};
 	recursos.push(recurso16);
 
 	var recurso17 = {
-		miniatura: "recursos/img/Portugues/silaba.png", 
-		nome: "Sílaba",
-		ano: "3",
+		miniatura: "recursos/img/PortuguesMovel/silaba.png", 
+		nome: "Mundo do Leitor - Histórias",
+		ano: "4",
 		id: "38"
 	};
 	recursos.push(recurso17);
 
 	var recurso18 = {
-		miniatura: "recursos/img/Portugues/ruthrocha.png", 
-		nome: "Ruth Rocha",
-		ano: "4",
-		id: "60"
+		miniatura: "recursos/img/PortuguesMovel/ruthrocha.png", 
+		nome: "O mistério no galinheiro",
+		ano: "3",
+		id: "22"
 	};
 	recursos.push(recurso18);
 
 	var recurso19 = {
-		miniatura: "recursos/img/Portugues/ortografiapalavrascomsc.png", 
-		nome: "Ortografia: palavras com sc [Orto e grafia]",
-		ano: "5",
-		id: "75"
+		miniatura: "recursos/img/PortuguesMovel/ortografiapalavrascomsc.png", 
+		nome: "Mundo Leitor - 1950",
+		ano: "4",
+		id: "31"
 	};
 	recursos.push(recurso19);
 
 	var recurso20 = {
-		miniatura: "recursos/img/Portugues/vanguardas.png", 
-		nome: "Vanguarda",
-		ano: "6",
-		id: "93"
+		miniatura: "recursos/img/PortuguesMovel/vanguardas.png", 
+		nome: "Silabando",
+		ano: "2",
+		id: "13"
 	};
 	recursos.push(recurso20);
 

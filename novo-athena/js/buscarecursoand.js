@@ -1,3 +1,4 @@
+var nenhumRecurso = [];
 var textoRecursosI = [];
 
 //recursos de portugues
@@ -210,7 +211,7 @@ textoRecursosII.push(matII35);
 textoRecursosII.push(matII36);
     var matII37 = {texto: "D37 - Associar informações apresentadas em listas e/ou tabelas simples aos gráficos que as representam e vice-versa", descritor:"DMII37"};
 textoRecursosII.push(matII37);
-
+    var nenhum = {texto: "Nenhum descritor foi contemplado nesse recurso.", descritor:"nenhum"};
 
 
 var url_string = window.location.href
@@ -252,6 +253,7 @@ function processData(textoParam){
 		var tituloDescritoresII = '';
 		var descritoresI = [];
 		var descritoresII = [];
+        var nenhumRecursoS = [];
 		for (var j = 0; j < thread_descritor.length; j++) {
 			for (var k = 0; k < textoRecursosI.length; k++) {
 				//alert(textoRecursosI[k]);
@@ -269,11 +271,25 @@ function processData(textoParam){
 				if(String(textoRecursosII[k].descritor) != "null" && String(textoRecursosII[k].descritor) != String(thread_descritor[j])){
 					//alert(textoRecursosPII[k].texto);
 					continue;
-				}
-			var auxiliar2 = textoRecursosII[k].texto;
+			}
+            
+            var auxiliar2 = textoRecursosII[k].texto;
+            };
+            if(String(auxiliar2) != "undefined"){
+                descritoresII.push(auxiliar2 + '<br>');
+            }
+
+            for (var k = 0; k < nenhumRecurso.length; k++) {
+                //alert(textoRecursos[k]);
+                if(String(nenhumRecurso[k].descritor) != "null" && String(nenhumRecurso[k].descritor) != String(thread_descritor[j])){
+                    //alert(textoRecursosPII[k].texto);
+                    continue;
+            }    
+			 var auxiliar3 = nenhumRecurso[k].texto;
 			};
-			if(String(auxiliar2) != "undefined"){
-				descritoresII.push(auxiliar2 + '<br>');
+
+			if(String(auxiliar3) != "undefined"){
+				nenhumRecursoS.push(auxiliar3 + '<br>');
 			}
 
 			if(descritoresI.length > 0){
@@ -285,7 +301,7 @@ function processData(textoParam){
 			//alert(thread_descritor[j]);
 			//alert(descritoresPII.length);
 		}
-		document.getElementById("descritoresRecurso").innerHTML = '<em> Ano indicado: ' + recursos[0].ano + 'º ano</em>' + '<b>'+ tituloDescritoresI + '</b>' + descritoresI + '<br>' + '<b>'+ tituloDescritoresII + '</b>' + descritoresII;
+		document.getElementById("descritoresRecurso").innerHTML = '<b>'+ tituloDescritoresI + '</b>' + descritoresI + '<br>' + '<b>'+ tituloDescritoresII + '</b>' + descritoresII + nenhumRecursoS;
 		document.getElementById("metadadosRecurso").innerHTML = '<b> Tema: </b>' + recursos[0].tema + '<br><b> Autor (es): </b>' + recursos[0].autor + '<br> <b> Idioma: </b>' + recursos[0].idioma + '<br> <b> Visto em:</b>' + recursos[0].visualizacao;
 	}
 }
