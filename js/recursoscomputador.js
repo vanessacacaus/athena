@@ -7,7 +7,7 @@ var recursos = [];
 		id: "176"
 	};
 	recursos.push(recurso1);
-	
+	 
 	var recurso2 = {
 		miniatura: "recursos/img/Matematica/4Cores.png", 
 		nome: "4 Cores",

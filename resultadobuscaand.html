@@ -82,7 +82,7 @@
 
 			<div id="containerSearchBar">
 			        	          	<p class="bavancada">Busca Avançada:</p>
-			        	          	<form name="buscaavancada" id="buscaavancada" action="resultadobuscapc.html">
+			        	          	<form name="buscaavancada" id="buscaavancada" action="resultadobuscaand.html">
 			        	          		<select name="d" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Disciplina</option>
 			        	          			<option value="lp">Lingua Portuguesa</option>
@@ -99,56 +99,57 @@
 			        	          			<option value="8">8ºAno</option>
 			        	          			<option value="9">9ºAno</option>
 			        	          		</select>
-			                            <select name="t" id="t" form="formsearch" disabled="">
+			                            <select name="t" id="t" form="buscaavancada" disabled="">
 			                            	<option value="" selected>Descritor</option>
 			                            </select>
 			        	          		<input type="text" name="p" value="0" style="display: none">
 			        	          		<input type="submit" value="Buscar">
 			        	          	</form>
 			                  	</div>
+			<p id="nenhumRecurso">Nenhum recurso encontrado</p>
 
 			<div class="row rowRecurso">
 				<div id="recurso0" class="col-sm-3">
-								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso1.png">
-								<p class="tituloRecurso">Matemática Selva</p>
-								<p>Pré-escola</p>
+								<img class="recursosTamanho" onclick="irPararecursoAnd(0);">
+								<p class="tituloRecurso"></p>
+								<p></p>
 				</div>
 				<div id="recurso1" class="col-sm-3">
-								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso2.png">
-								<p class="tituloRecurso">Crianças, matemática</p>
-								<p>1º ano</p>
+								<img class="recursosTamanho" onclick="irPararecursoAnd(1);">
+								<p class="tituloRecurso"></p>
+								<p></p>
 				</div>
 				<div id="recurso2" class="col-sm-3">
-								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso2.png">
-								<p class="tituloRecurso">A poça d'água</p>
-								<p>2º e 3º anos</p>
+								<img class="recursosTamanho" onclick="irPararecursoAnd(2);">
+								<p class="tituloRecurso"></p>
+								<p></p>
 				</div>
 				<div id="recurso3" class="col-sm-3">
-								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso3.png">
-								<p class="tituloRecurso">Adição e Subtração</p>
-								<p>1º ano</p>
+								<img class="recursosTamanho" onclick="irPararecursoAnd(3);">
+								<p class="tituloRecurso"></p>
+								<p></p>
 				</div>
 			</div>
 			<div class="row rowRecurso">
 				<div id="recurso4" class="col-sm-3">
-								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso1.png">
-								<p class="tituloRecurso">Brincando com as palavras</p>
-								<p>4º e 5º anos</p>
+								<img class="recursosTamanho" onclick="irPararecursoAnd(4);">
+								<p class="tituloRecurso"></p>
+								<p></p>
 				</div>
 				<div id="recurso5" class="col-sm-3">
-								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso3.png">
-								<p class="tituloRecurso">As minhas histórias</p>
-								<p>2º e 3º anos</p>
+								<img class="recursosTamanho" onclick="irPararecursoAnd(5);">
+								<p class="tituloRecurso"></p>
+								<p></p>
 				</div>
 				<div id="recurso6" class="col-sm-3">
-								<img class="recursosTamanho" src="img/home/recursos/matematicaMovel/recurso4.png">
-								<p class="tituloRecurso">Adição e Subtração</p>
-								<p>4º e 5º anos</p>
+								<img class="recursosTamanho" onclick="irPararecursoAnd(6);">
+								<p class="tituloRecurso"></p>
+								<p></p>
 				</div>
 				<div id="recurso7" class="col-sm-3">
-								<img class="recursosTamanho" src="img/home/recursos/portuguesMovel/recurso4.png">
-								<p class="tituloRecurso">Forma palavras</p>
-								<p>Pré-escola</p>
+								<img class="recursosTamanho" onclick="irPararecursoAnd(7);">
+								<p class="tituloRecurso"></p>
+								<p></p>
 				</div>
 			</div>
 			<div class="row">
@@ -217,5 +218,7 @@
 		<script src="js/sweetalert2.all.min.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/home.js"></script>
+		<script src="js/buscaand.js"></script>
+		<script src="js/buscaavancadaand.js"></script>
 	</body>
 </html>

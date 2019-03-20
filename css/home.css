@@ -19,7 +19,7 @@
 
 /*INICIO:cinco imagens informativas*/
 .imginfo{
-	width: 100%;
+	width: 30%;
 }
 #infosIniciais .col-sm{
 	text-align: center;
@@ -29,7 +29,7 @@
 }
 .infos{
 	font-weight: 600;
-	font-size: 0.9em;
+	font-size: 1.2em;
 }
 #info1{
 	color: #00C37A;				
@@ -91,7 +91,7 @@ img.recursosTamanho {
 	width: 15vw;
 }
 .itemandroid img{
-	width: 100%;
+	width: 80%;
 }
 .itemandroid p{
 	color: white;
@@ -135,7 +135,7 @@ img.recursosTamanho {
 	width: 15vw;
 }
 .itempc img{
-	width: 100%;
+	width: 80%;
 }
 .itempc p{
 	color: white;
