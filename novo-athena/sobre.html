@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<title>Sobre - Athena</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/gif" href="img/ico.gif">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/sobre.css">
+	</head>
+	<body>
+		<!--cabecalho-->
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="athenanavbar">
+			    <a id="logoNav" href="index.html"><img src="img/athena.png" id="logonav"/></a>
+			    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+			   	    <span class="navbar-toggler-icon"></span>
+			    </button>
+
+			    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+			        <ul class="navbar-nav ml-auto">
+			            <li class="nav-item">
+			                <a class="nav-link" href="index.html">INÍCIO</a>
+			            </li>
+			            <li class="dropdown">
+			                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+			                <div class="dropdown-menu">
+			                    <a class="dropdown-item" href="buscaandroid.html">PARA ANDROID</a>
+			                    <a class="dropdown-item" href="buscacomputador.html">PARA COMPUTADOR</a>
+			                </div>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="apoio.html">MATERIAL DE APOIO</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="duvidas.html">DÚVIDAS</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="sobre.html">SOBRE</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" data-toggle="dropdown" href="#">BUSCAR</a>
+			                <div class="dropdown-menu" id="searchBar">
+			                  	<div id="containerSearchBar">
+			        	          	<p>Pesquise Recursos:</p>
+			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+			        	          		<select name="h" id="h" form="formsearch">
+			        	          			<option value="" selected>Dispositivo</option>
+			        	          			<option value="ad">Android</option>
+			        	          			<option value="pc">Computador</option>
+			        	          		</select><select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Disciplina</option>
+			        	          			<option value="lp">Lingua Portuguesa</option>
+			        	          			<option value="mat">Matemática</option>
+			        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Ano</option>
+			        	          			<option value="1">1ºAno</option>
+			        	          			<option value="2">2ºAno</option>
+			        	          			<option value="3">3ºAno</option>
+			        	          			<option value="4">4ºAno</option>
+			        	          			<option value="5">5ºAno</option>
+			        	          			<option value="6">6ºAno</option>
+			        	          			<option value="7">7ºAno</option>
+			        	          			<option value="8">8ºAno</option>
+			        	          			<option value="9">9ºAno</option>
+			        	          		</select>
+			        	          		<input type="submit" value="Buscar">
+			        	          	</form>
+			                  	</div>
+			                </div>
+			            </li>
+			        </ul>
+			    </div>
+			</nav>
+		</header>
+		
+		<!--inicio do corpo-->
+		<div id="containerContent">
+			<h1 class="titulo">O Projeto</h1>
+			<p>Com o crescente avanço das tecnologias digitais em todos os setores da sociedade, surge a necessidade da incorporação desses recursos ao contexto escolar. Nessa perspectiva, as possibilidades oferecidas pelo uso da tecnologia tomam proporções cada vez maiores, quer seja no âmbito comercial, industrial ou educacional. Sendo assim, atualmente, existem inúmeras formas de se trabalhar as tecnologias em benefício da aprendizagem escolar. Em vista disso, o Grupo PROATIVA (UFC/Virtual), da Universidade Federal do Ceará (UFC) vem por meio desse repositório, promover a utilização das tecnologias digitais, disponibilizando diferentes recursos educacionais digitais para o seu uso no meio educacional.</p>
+
+			<p>O Grupo PROATIVA apresenta sua atuação em torno do trabalho entre as tecnologias digitais e educação, tendo como principal objetivo desenvolver objetos de aprendizagem (atividades multimídia e interativas), bem como realizar pesquisas sobre a utilização desses objetos na escola, como forma de melhorar o aprendizado dos conteúdos escolares. Dessa forma, o Ambiente Athena surgiu a partir da constatação da necessidade de se ter recursos educacionais digitais disponíveis na Internet, previamente selecionados e catalogados, que sejam de boa qualidade e que possam ser utilizados sem a obrigatoriedade do acesso à rede. Assim, este vem com o propósito de fornecer um conjunto de recursos digitais de modo a estimular os professores a integrarem o uso das tecnologias digitais no currículo escolar, sobretudo, dando maior subsídio aos docentes e gestores, para que os recursos educacionais digitais hoje existentes possam ter uma maior aplicabilidade.</p>
+		</div>
+
+		<!--footer-->
+		<footer>
+			<div id="footerContainer">
+				<div class="row" id="row_one">
+					<div class="col-sm-5" id="logosInst">
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/ufc.png"/></a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/virtual.png"/></a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/proativa.png"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4"></div>
+
+					<div class="col-sm-3" id="logosSocialNetworks">
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/fb.png"/></a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/ig.png"/></a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#"><img src="img/footer/tt.png"/></a>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-sm-9">
+					</div>
+
+					<div class="col-sm-3" id="cccol">
+						<div class="row">
+							<div class="col-sm-6">
+							</div>
+							<div class="col-sm-6">
+								<a href="#"><img src="img/footer/cc.png"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/sweetalert2.all.min.js"></script>
+		<script src="js/nav.js"></script>
+	</body>
+</html>
