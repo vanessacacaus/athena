@@ -29,8 +29,7 @@
 }
 .infos{
 	font-weight: 600;
-	font-size: 1.2em;
-}
+	font-size: 0.9em}
 #info1{
 	color: #00C37A;				
 }
@@ -46,6 +45,7 @@
 #info5{
 	color: #7383BF;				
 }
+
 
 img.recursosTamanho {
 	width: 96.5px; 

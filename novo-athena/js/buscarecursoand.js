@@ -302,7 +302,7 @@ function processData(textoParam){
 			//alert(descritoresPII.length);
 		}
 		document.getElementById("descritoresRecurso").innerHTML = '<b>'+ tituloDescritoresI + '</b>' + descritoresI + '<br>' + '<b>'+ tituloDescritoresII + '</b>' + descritoresII + nenhumRecursoS;
-		document.getElementById("metadadosRecurso").innerHTML = '<b> Tema: </b>' + recursos[0].tema + '<br><b> Autor (es): </b>' + recursos[0].autor + '<br> <b> Idioma: </b>' + recursos[0].idioma + '<br> <b> Visto em:</b>' + recursos[0].visualizacao;
+		document.getElementById("metadadosRecurso").innerHTML = '<b> Tema: </b>' + recursos[0].tema + '<br><b> Autor(es): </b>' + recursos[0].autor + '<br> <b> Idioma: </b>' + recursos[0].idioma + '<br> <b> Última visualização:</b>' + recursos[0].visualizacao + '<br> <b> Ultima atualização em:</b>' + recursos[0].atualizacao + '<br> <b> Versão do android: </b>' + recursos[0].android + '<br> <b> Versão do aplicativo: </b>' + recursos[0].versao + '<br> <b> Tamanho: </b>' + recursos[0].tamanho +  '<br> <b> Permissões de uso: </b>' + recursos[0].permissoes + '<br> <b> Configurações: </b>' + recursos[0].configuracoes + '<br> <b> Tipo de aplicativo: </b>' + recursos[0].tipo + '<br> <b> Multimídia: </b>' + recursos[0].multimidia + '<br> <b> Possui anúncio: </b>' + recursos[0].anuncio + '<br> <b> Necessita de internet: </b>' + recursos[0].internet + '<br> <b> Observações: </b>' + recursos[0].obs;
 	}
 }
 
