@@ -20,12 +20,6 @@ p.texto {
 	margin: 5%;
 }
 
-.caixa {
-	margin: 3% 0%;
-	padding: 2%;
-	border: 1px dashed #0E89AC;
-}
-
 .imgRecurso {
 	width: 75%;
 	margin: 5% 12.5%;
@@ -39,7 +33,7 @@ p.texto {
 .botao {
 	width: 75%;
 	text-transform: uppercase;
-	font-size: 1.6em;
+	font-size: 1.2em;
 }
 
 .botaom {
