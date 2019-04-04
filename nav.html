@@ -28,35 +28,35 @@
             <li class="nav-item">
                 <a class="nav-link" data-toggle="dropdown" href="#">BUSCAR</a>
                 <div class="dropdown-menu" id="searchBar">
-                  	<div id="containerSearchBar">
-        	          	<p>Pesquise Recursos:</p>
-        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
-        	          		<select name="h" id="h" form="formsearch">
-        	          			<option value="pc" selected>Dispositivo</option>
-        	          			<option value="ad">Android</option>
-        	          			<option value="pc">Computador</option>
-        	          		</select><select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
-        	          			<option value="" selected>Disciplina</option>
-        	          			<option value="lp">Lingua Portuguesa</option>
-        	          			<option value="mat">Matemática</option>
-        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
-        	          			<option value="" selected>Ano</option>
-        	          			<option value="1">1ºAno</option>
-        	          			<option value="2">2ºAno</option>
-        	          			<option value="3">3ºAno</option>
-        	          			<option value="4">4ºAno</option>
-        	          			<option value="5">5ºAno</option>
-        	          			<option value="6">6ºAno</option>
-        	          			<option value="7">7ºAno</option>
-        	          			<option value="8">8ºAno</option>
-        	          			<option value="9">9ºAno</option>
-        	          		</select>
-                            <select name="t" id="t" form="formsearch" disabled="">
-                                            <option value="" selected>Descritor</option>
-                                        </select>
-        	          		<input type="submit" value="Buscar">
-        	          	</form>
-                  	</div>
+                                <div id="containerSearchBar">
+                                    <p>Pesquise Recursos:</p>
+                                    <form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+                                    <div class="form-row">
+                                        <div class="col-sm-3"><select class="form-control" name="h" id="h" form="formsearch">
+                                            <option value="" selected>Dispositivo</option>
+                                            <option value="ad">Android</option>
+                                            <option value="pc">Computador</option>
+                                        </select></div>
+                                        <div class="col-sm-3"><select class="form-control" name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+                                            <option value="" selected>Disciplina</option>
+                                            <option value="lp">Lingua Portuguesa</option>
+                                            <option value="mat">Matemática</option>
+                                        </select></div>
+                                        <div class="col-sm-2"><select class="form-control" name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+                                            <option value="" selected>Ano</option>
+                                            <option value="1">1ºAno</option>
+                                            <option value="2">2ºAno</option>
+                                            <option value="3">3ºAno</option>
+                                            <option value="4">4ºAno</option>
+                                            <option value="5">5ºAno</option>
+                                            <option value="6">6ºAno</option>
+                                            <option value="7">7ºAno</option>
+                                            <option value="8">8ºAno</option>
+                                            <option value="9">9ºAno</option>
+                                        </select></div>
+                                        <div class="form-group col-sm-2"><input class="form-control" type="submit" value="Buscar"></div>
+                                    </div></form>
+                                </div>
                 </div>
             </li>
         </ul>

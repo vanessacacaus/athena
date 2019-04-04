@@ -47,15 +47,18 @@
 			                  	<div id="containerSearchBar">
 			        	          	<p>Pesquise Recursos:</p>
 			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
-			        	          		<select name="h" id="h" form="formsearch">
+			        	          	<div class="form-row">
+			        	          		<div class="col-sm-3"><select class="form-control" name="h" id="h" form="formsearch">
 			        	          			<option value="" selected>Dispositivo</option>
 			        	          			<option value="ad">Android</option>
 			        	          			<option value="pc">Computador</option>
-			        	          		</select><select name="d" form="formsearch">
+			        	          		</select></div>
+			        	          		<div class="col-sm-3"><select class="form-control" name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Disciplina</option>
 			        	          			<option value="lp">Lingua Portuguesa</option>
 			        	          			<option value="mat">Matemática</option>
-			        	          		</select><select name="a" form="formsearch">
+			        	          		</select></div>
+			        	          		<div class="col-sm-2"><select class="form-control" name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Ano</option>
 			        	          			<option value="1">1ºAno</option>
 			        	          			<option value="2">2ºAno</option>
@@ -66,9 +69,9 @@
 			        	          			<option value="7">7ºAno</option>
 			        	          			<option value="8">8ºAno</option>
 			        	          			<option value="9">9ºAno</option>
-			        	          		</select>
-			        	          		<input type="submit" value="Buscar">
-			        	          	</form>
+			        	          		</select></div>
+			        	          		<div class="form-group col-sm-2"><input class="form-control" type="submit" value="Buscar"></div>
+			        	          	</div></form>
 			                  	</div>
 			                </div>
 			            </li>
@@ -83,11 +86,13 @@
 			<div id="containerSearchBar">
 			        	          	<p class="bavancada">Busca Avançada:</p>
 			        	          	<form name="buscaavancada" id="buscaavancada" action="resultadobuscapc.html">
-			        	          		<select name="d" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
+			        	          		<div class="form-row">
+			        	          		<div class="col-sm-3"><select class="form-control" name="d" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Disciplina</option>
 			        	          			<option value="lp">Lingua Portuguesa</option>
 			        	          			<option value="mat">Matemática</option>
-			        	          		</select><select name="a" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
+			        	          		</select></div>
+			        	          		<div class="col-sm-3"><select class="form-control" name="a" form="buscaavancada" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Ano</option>
 			        	          			<option value="1">1ºAno</option>
 			        	          			<option value="2">2ºAno</option>
@@ -98,55 +103,55 @@
 			        	          			<option value="7">7ºAno</option>
 			        	          			<option value="8">8ºAno</option>
 			        	          			<option value="9">9ºAno</option>
-			        	          		</select>
-			                            <select name="t" id="t" form="buscaavancada" disabled="">
+			        	          		</select></div>
+			                            <div class="col-sm-3"><select class="form-control" name="t" id="t" form="buscaavancada" disabled="">
 			                            	<option value="" selected>Descritor</option>
-			                            </select>
+			                            </select></div>
 			        	          		<input type="text" name="p" value="0" style="display: none">
-			        	          		<input type="submit" value="Buscar">
-			        	          	</form>
+			        	          		<div class="col-sm-2"><input class="form-control" type="submit" value="Buscar"></div>
+			        	          	</div></form>
 			                  	</div>
 			<p id="nenhumRecurso">Nenhum recurso encontrado</p>
 
 			<div class="row rowRecurso">
-				<div id="recurso0" class="col-sm-3">
+				<div id="recurso0" class="col-sm-3 classRecurso">
 					<img class="recursosTamanho" src="" onclick="irPararecurso(0);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso1" class="col-sm-3">
+				<div id="recurso1" class="col-sm-3 classRecurso">
 					<img class="recursosTamanho" src="" onclick="irPararecurso(1);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso2" class="col-sm-3">
+				<div id="recurso2" class="col-sm-3 classRecurso">
 					<img class="recursosTamanho" src="" onclick="irPararecurso(2);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso3" class="col-sm-3">
+				<div id="recurso3" class="col-sm-3 classRecurso">
 					<img class="recursosTamanho" src="" onclick="irPararecurso(3);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
 			</div>
 			<div class="row rowRecurso">
-				<div id="recurso4" class="col-sm-3">
+				<div id="recurso4" class="col-sm-3 classRecurso">
 					<img class="recursosTamanho" src="" onclick="irPararecurso(4);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso5" class="col-sm-3">
+				<div id="recurso5" class="col-sm-3 classRecurso">
 					<img class="recursosTamanho" src="" onclick="irPararecurso(5);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso6" class="col-sm-3">
+				<div id="recurso6" class="col-sm-3 classRecurso">
 					<img class="recursosTamanho" src="" onclick="irPararecurso(6);">
 					<p class="tituloRecurso"></p>
 					<p></p>
 				</div>
-				<div id="recurso7" class="col-sm-3">
+				<div id="recurso7" class="col-sm-3 classRecurso">
 					<img class="recursosTamanho" src="" onclick="irPararecurso(7);">
 					<p class="tituloRecurso"></p>
 					<p></p>
@@ -155,9 +160,9 @@
 
 			<div class="row" id="paginacao">
 				<div id="botoesPassarPagina">
-					<a href="#" id="paginaAnterior"></a>
-					<a id="paginaAtual"></a> 
-					<a href="#" id="proximaPagina"></a>
+					<a class="btn btn-primary" href="#" id="paginaAnterior"></a>
+					<a class="btn btn-primary" id="paginaAtual"></a> 
+					<a class="btn btn-primary" href="#" id="proximaPagina"></a>
 				</div>
 			</div>
 		</div>

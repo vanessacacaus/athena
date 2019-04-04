@@ -47,15 +47,18 @@
 			                  	<div id="containerSearchBar">
 			        	          	<p>Pesquise Recursos:</p>
 			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
-			        	          		<select name="h" id="h" form="formsearch">
+			        	          	<div class="form-row">
+			        	          		<div class="col-sm-3"><select class="form-control" name="h" id="h" form="formsearch">
 			        	          			<option value="" selected>Dispositivo</option>
 			        	          			<option value="ad">Android</option>
 			        	          			<option value="pc">Computador</option>
-			        	          		</select><select name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          		</select></div>
+			        	          		<div class="col-sm-3"><select class="form-control" name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Disciplina</option>
 			        	          			<option value="lp">Lingua Portuguesa</option>
 			        	          			<option value="mat">Matemática</option>
-			        	          		</select><select name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          		</select></div>
+			        	          		<div class="col-sm-2"><select class="form-control" name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
 			        	          			<option value="" selected>Ano</option>
 			        	          			<option value="1">1ºAno</option>
 			        	          			<option value="2">2ºAno</option>
@@ -66,9 +69,9 @@
 			        	          			<option value="7">7ºAno</option>
 			        	          			<option value="8">8ºAno</option>
 			        	          			<option value="9">9ºAno</option>
-			        	          		</select>
-			        	          		<input type="submit" value="Buscar">
-			        	          	</form>
+			        	          		</select></div>
+			        	          		<div class="form-group col-sm-2"><input class="form-control" type="submit" value="Buscar"></div>
+			        	          	</div></form>
 			                  	</div>
 			                </div>
 			            </li>
@@ -89,8 +92,7 @@
 				<div class="col-sm">
 					<img class="imginfo" src="img/home/recursos.png">
 					<p id="info2" class="infos">CATALOGADOS DE ACORDO COM A MATRIZ DE REFERÊNCIA DO SAEB</p>
-				</div></div>
-				<div class="row" id="infosIniciais">
+				</div>
 				<div class="col-sm">
 					<img class="imginfo" src="img/home/computador.png">
 					<p id="info3" class="infos">PARA COMPUTADOR</p>
@@ -230,7 +232,8 @@
 		<!--download offline-->
 		<div id="downloadOffline">
 				<h3><i>Faça o download completo do repositório, coloque-o em um pendrive e leve-o a qualquer lugar</i></h3>
-				<h3><a href="#">Clique aqui bara baixar</a></h3>
+				<br>
+				<input class="btn btn-primary" type="button" value="Download">
 		</div>
 
 		<!--footer-->
