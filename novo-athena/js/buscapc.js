@@ -89,13 +89,13 @@ function processData(textoParam){
 
 	//colocando os links para passar de página
 	//pagina+1 para calcular quantos recursos temos, se tiver menos recursos que o maximo das paginas, é a ultima
-	document.getElementById("paginaAtual").innerHTML='&nbsp;'+ (pagina+1) + '&nbsp;';
+	document.getElementById("paginaAtual").innerHTML='| Página '+ (pagina+1) + ' |';
 	if((pagina+1)*8 >= recursos.length){
 		document.getElementById("proximaPagina").style.visibility = "hidden";
 	}else{
 		var proximaPaginaUrl = urlString.replace('p='+pagina,'p='+(pagina+1))
 		document.getElementById('proximaPagina').href=proximaPaginaUrl;
-		document.getElementById("proximaPagina").innerHTML=' '+(pagina+2)+'&raquo;';
+		document.getElementById("proximaPagina").innerHTML='Página '+(pagina+2)+'&raquo;';
 	}
 
 	if(pagina == 0){
@@ -103,7 +103,7 @@ function processData(textoParam){
 	}else{
 		var paginaAnteriorUrl = urlString.replace('p='+pagina,'p='+(pagina-1))
 		document.getElementById('paginaAnterior').href=paginaAnteriorUrl;
-		document.getElementById("paginaAnterior").innerHTML='&laquo;'+pagina;	
+		document.getElementById("paginaAnterior").innerHTML='&laquo; Página '+pagina;	
 	}
 
 	if(recursos.length == 0){

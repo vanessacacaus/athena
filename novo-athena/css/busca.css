@@ -52,12 +52,12 @@ img.recursosTamanho {
 	display: none;
 }
 #scrollbarMat {
-	width: 140vw;
+	width: 170vw;
 }
 .itemMat{
 	display: inline-block;
 	margin-right: 2vw;
-	width: 12vw;
+	width: 15vw;
 }
 .itemMat img{
 	width: 100%;
@@ -97,12 +97,12 @@ img.recursosTamanho {
 	display: none;
 }
 #scrollbarPort{
-	width: 140vw;
+	width: 170vw;
 }
 .itemPort {
 	display: inline-block;
 	margin-right: 2vw;
-	width: 12vw;
+	width: 15vw;
 }
 .itemPort img{
 	width: 100%;
@@ -129,9 +129,8 @@ img.recursosTamanho {
 	width: 80%;
 }
 p.tituloRecurso{
-	font-size: 0.9em;
+	font-size: 1.05em;
 	font-weight: 600;
-	height: 30%;
 }
 /*FIM:COMUM DOS DOIS SLIDERS*/
 
