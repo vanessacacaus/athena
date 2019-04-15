@@ -83,15 +83,15 @@ img.recursosTamanho {
 	display: none;
 }
 #scrollbarandroid{
-	width: 170vw;
+	width: 140vw;
 }
 .itemandroid{
 	display: inline-block;
 	margin-right: 2vw;
-	width: 15vw;
+	width: 12vw;
 }
 .itemandroid img{
-	width: 80%;
+	width: 100%;
 }
 .itemandroid p{
 	color: white;
@@ -127,19 +127,19 @@ img.recursosTamanho {
 	display: none;
 }
 #scrollbarpc{
-	width: 170vw;
+	width: 140vw;
 }
 .itempc{
 	display: inline-block;
 	margin-right: 2vw;
-	width: 15vw;
+	width: 12vw;
 }
 .itempc img{
-	width: 80%;
+	width: 100%;
 }
 .itempc p{
 	color: white;
-	margin:0px;
+	margin: 0px;
 	font-size: 0.8em;
 }
 /*FIM:recursos scroll lateral PC*/
@@ -156,9 +156,9 @@ img.recursosTamanho {
 }
 
 p.tituloRecurso{
-	font-size: 1.05em;
+	font-size: 0.9em;
 	font-weight: 600;
-	/*height: 2vh;*/
+	height: 25%;
 }
 
 p {

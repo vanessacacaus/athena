@@ -47,10 +47,11 @@ $(document).ready(function() {
 
 function processData(textoParam){
 	var linhas = textoParam.split('\n');
-	for (var i=0; i < linhas.length; i++){
+	for (var i=1; i < linhas.length; i++){
 	    var aux = linhas[i].split('\t');
 	 //   aux = {identidade:String(aux[0]), nome:String(aux[1]), miniatura:String(aux[2]), resumo:String(aux[3]), disciplina:String(aux[4]), ano:String(aux[5]), descritores:String(aux[6]), linkdown:String(aux[7]), visualizar:String(aux[8]), tema:String(aux[9]), origem:String(aux[10]), autores:String(aux[11]), idioma:String(aux[12]), datacriacao:String(aux[13])};
-	    aux = {identidade:String(aux[0]), nome:String(aux[1]), link:String(aux[2]), tipo:String(aux[3]), autor:String(aux[4]), tamanho:String(aux[5]), android:String(aux[6]), versao:String(aux[7]), permissoes:String(aux[8]), tema:String(aux[9]), descritoresteste:String(aux[10]), descritores:String(aux[11]), idioma:String(aux[12]), atualizacao:String(aux[13]), visualizacao:String(aux[14]), configuracoes:String(aux[15]), multimidia:String(aux[16]), anuncio:String(aux[17]), internet:String(aux[18]), obs:String(aux[19]), miniatura:String(aux[20]), resumo:String(aux[21]), disciplina:String(aux[22]), ano:String(aux[23])};
+	  //  aux = {identidade:String(aux[0]), nome:String(aux[1]), link:String(aux[2]), tipo:String(aux[3]), autor:String(aux[4]), tamanho:String(aux[5]), android:String(aux[6]), versao:String(aux[7]), permissoes:String(aux[8]), tema:String(aux[9]), descritoresteste:String(aux[10]), descritores:String(aux[11]), idioma:String(aux[12]), atualizacao:String(aux[13]), visualizacao:String(aux[14]), configuracoes:String(aux[15]), multimidia:String(aux[16]), anuncio:String(aux[17]), internet:String(aux[18]), obs:String(aux[19]), miniatura:String(aux[20]), resumo:String(aux[21]), disciplina:String(aux[22]), ano:String(aux[23])};
+	    aux = {identidade:String(aux[0]), nome:String(aux[1]), miniatura:String(aux[2]), link:String(aux[3]), resumo:String(aux[4]), tema:String(aux[5]), descritores:String(aux[6]), tipo:String(aux[7]), idioma:String(aux[8]), autor:String(aux[9]), permissoes:String(aux[10]), tamanho:String(aux[11]), versaoand:String(aux[12]), versaoapp:String(aux[13]), revisao:String(aux[14]), ano:String(aux[15]), disciplina:String(aux[16])};
 
 	    if(String(disciplinaDesejada) != "null" && String(disciplinaDesejada) != String(aux.disciplina)){
 	    	continue;
@@ -94,13 +95,13 @@ function processData(textoParam){
 
 	//colocando os links para passar de página
 	//pagina+1 para calcular quantos recursos temos, se tiver menos recursos que o maximo das paginas, é a ultima
-	document.getElementById("paginaAtual").innerHTML='| Página '+ (pagina+1) + ' |';
+	document.getElementById("paginaAtual").innerHTML=' Página '+ (pagina+1);
 	if((pagina+1)*8 >= recursos.length){
 		document.getElementById("proximaPagina").style.visibility = "hidden";
 	}else{
 		var proximaPaginaUrl = urlString.replace('p='+pagina,'p='+(pagina+1))
 		document.getElementById('proximaPagina').href=proximaPaginaUrl;
-		document.getElementById("proximaPagina").innerHTML='Página '+(pagina+2)+'&raquo;';
+		document.getElementById("proximaPagina").innerHTML='Página'+(pagina+2)+'&raquo;';
 	}
 
 	if(pagina == 0){
@@ -108,7 +109,7 @@ function processData(textoParam){
 	}else{
 		var paginaAnteriorUrl = urlString.replace('p='+pagina,'p='+(pagina-1))
 		document.getElementById('paginaAnterior').href=paginaAnteriorUrl;
-		document.getElementById("paginaAnterior").innerHTML='&laquo; Página '+pagina;	
+		document.getElementById("paginaAnterior").innerHTML='&laquo;Página '+pagina;	
 	}
 
 	if(recursos.length == 0){
