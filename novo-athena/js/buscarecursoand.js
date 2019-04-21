@@ -244,6 +244,7 @@ function processData(textoParam){
 
 		//alert(recursos.length);
         window.document.title = "Recurso: " + recursos[0].nome;
+        document.getElementById("linkRecurso").href = recursos[0].link;
 		document.getElementById("tituloRecurso").innerHTML = recursos[0].nome;
 		document.getElementById("imagemRecurso").src = recursos[0].miniatura;
 		document.getElementById("textoRecurso").innerHTML = recursos[0].resumo;
