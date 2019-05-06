@@ -133,6 +133,10 @@ p.tituloRecurso{
 	font-weight: 600;
 	height: 30%;
 }
+
+p.anoRecurso {
+	visibility: hidden;
+}
 /*FIM:COMUM DOS DOIS SLIDERS*/
 
 @media only screen and (max-width: 780px) {
