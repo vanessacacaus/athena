@@ -1,82 +1,82 @@
 var recursos = []; 
 //recursos de matematica
 	var recurso1 = {
-		miniatura: "recursos/img/MatematicaMovel/matematicaparacriancassoma.png", 
-		nome: "Matemática para crianças: Soma",
+		miniatura: "recursos/img/Mobile/Matematica/1/adicaoesubtracao.jpg", 
+		nome: "Adição e subtração",
 		ano: "1",
-		id: "74"
-	};
+		id: "70"
+	}; 
 	recursos.push(recurso1);
 	 
 	var recurso2 = {
-		miniatura: "recursos/img/MatematicaMovel/adicaoesubcolorido.png", 
-		nome: "Adição e Subtração Colorido",
-		ano: "1",
-		id: "75"
+		miniatura: "recursos/img/Mobile/Matematica/1/adicaoesubtracao.jpg", 
+		nome: "Enigma Matemático com Varas",
+		ano: "5",
+		id: "93"
 	};
 	recursos.push(recurso2);
 
 	var recurso3 = {
-		miniatura: "recursos/img/MatematicaMovel/adicaoesubpcriancas.png", 
-		nome: "Adição, subtração para crianças",
-		ano: "1",
-		id: "76"
+		miniatura: "recursos/img/Mobile/Matematica/2/jematematicatabuada.jpg", 
+		nome: "Jogos educativos de Matemática: adição, tabuada",
+		ano: "2",
+		id: "75"
 	};
 	recursos.push(recurso3);
 
 	var recurso4 = {
-		miniatura: "recursos/img/MatematicaMovel/criancasomatenum.png", 
-		nome: "Crianças, matemática e números",
-		ano: "1",
-		id: "77"
+		miniatura: "recursos/img/Mobile/Matematica/3/jogospara2.jpg", 
+		nome: "Jogos para 2: Jogo Matemático",
+		ano: "3",
+		id: "83"
 	};
 	recursos.push(recurso4);
 
 	var recurso5 = {
-		miniatura: "recursos/img/MatematicaMovel/matematicadaselva.png", 
-		nome: "Matemática Selva: Pré-escola",
-		ano: "1",
-		id: "78"
+		miniatura: "recursos/img/Mobile/Matematica/5/lotofracoes.jpg", 
+		nome: "Loto - Frações",
+		ano: "3",
+		id: "92"
 	};
 	recursos.push(recurso5);
 
 	var recurso6 = {
-		miniatura: "recursos/img/MatematicaMovel/arrumeOperacoes.png", 
-		nome: "Learning Colors Shapes Memory (Cores e formas jogos infantins)",
-		ano: "1",
-		id: "79"
+		miniatura: "recursos/img/Mobile/Matematica/4/matematicabasica.jpg", 
+		nome: "Matemática básica 1, 2 frações",
+		ano: "4",
+		id: "86"
 	};
 	recursos.push(recurso6);
 
 	var recurso7 = {
-		miniatura: "recursos/img/MatematicaMovel/demonstracao_da_area_do_circulo.png", 
-		nome: "Dino Tim : Jogo educativo de formas e números",
-		ano: "2",
-		id: "80"
+		miniatura: "recursos/img/Mobile/Matematica/7/mathmaster.jpg", 
+		nome: "Math Master - Brain Quizzes & Math Puzzles",
+		ano: "7",
+		id: "102"
 	};
 	recursos.push(recurso7);
 
 	var recurso8 = {
-		miniatura: "recursos/img/MatematicaMovel/tabuada9.PNG", 
-		nome: "Monster Numbers (Jogos educativos de Matematica: adição, tabuada)",
-		ano: "2",
-		id: "81"
+		miniatura: "recursos/img/Mobile/Matematica/6/mestredamatematica.jpg", 
+		nome: "Mestre da Matemática Jogo Educativo e Exercícios",
+		ano: "6",
+		id: "94"
 	};
 	recursos.push(recurso8);
 
 	var recurso9 = {
-		miniatura: "recursos/img/MatematicaMovel/muroNumerico.png", 
-		nome: "Math Kid (Matemática Crianças)",
-		ano: "2",
-		id: "82"
+		miniatura: "recursos/img/Mobile/Matematica/5/representarporfracoes.jpg", 
+		nome: "Representar por frações",
+		ano: "5",
+		id: "91"
 	};
 	recursos.push(recurso9);
 
 	var recurso10 = {
-		miniatura: "recursos/img/MatematicaMovel/formas.png", 
-		nome: "Telling Time For Kids (Aprender a Contar o Tempo)",
-		ano: "2",
-		id: "83"
+		miniatura: "recursos/img/Mobile/Matematica/9/treinaequacao.jpg", 
+		nome: "Treina Equação",
+		ano: "9",
+		id: "110"
 	};
 	recursos.push(recurso10);
 
@@ -84,23 +84,24 @@ var recursos = [];
 //recursos de portugues
 
 	var recurso11 = {
-		miniatura: "recursos/img/PortuguesMovel/palavracantadaoficial.png", 
-		nome: "Palavra Cantada Oficial",
-		ano: "1",
-		id: "1"
+		//G:\novo-athena22.04\recursos\img\Mobile\Portugues\inicial
+		miniatura: "recursos/img/Mobile/Portugues/5/Acentuando.jpg", 
+		nome: "Acentuando",
+		ano: "5",
+		id: "39"
 	};
 	recursos.push(recurso11);
 	
 	var recurso12 = {
-		miniatura: "recursos/img/PortuguesMovel/ursinhoaeiou.png", 
-		nome: "Ursinho A E I O U",
+		miniatura: "recursos/img/Mobile/Portugues/1/brincandocomoalfabeto.jpg", 
+		nome: "Brincando com o alfabeto",
 		ano: "1",
-		id: "2"
+		id: "10"
 	};
 	recursos.push(recurso12);
 
 	var recurso13 = {
-		miniatura: "recursos/img/PortuguesMovel/formapalavras.png", 
+		miniatura: "recursos/img/Mobile/Portugues/1/formapalavras.jpg", 
 		nome: "Forma Palavras",
 		ano: "1",
 		id: "3"
@@ -108,58 +109,58 @@ var recursos = [];
 	recursos.push(recurso13);
 
 	var recurso14 = {
-		miniatura: "recursos/img/PortuguesMovel/asminhashistorias.png", 
-		nome: "As minhas histórias",
-		ano: "1",
-		id: "5"
+		miniatura: "recursos/img/Mobile/Portugues/9/gramaticadebolso.jpg", 
+		nome: "Gramática de bolso",
+		ano: "9",
+		id: "67"
 	};
 	recursos.push(recurso14);
 
 	var recurso15 = {
-		miniatura: "recursos/img/PortuguesMovel/apocadagua.png", 
-		nome: "A poça d'água",
-		ano: "1",
-		id: "6"
+		miniatura: "recursos/img/Mobile/Portugues/2/lelesilabas.jpg", 
+		nome: "Lele sílabas",
+		ano: "2",
+		id: "11"
 	};
 	recursos.push(recurso15);
 
 	var recurso16 = {
-		miniatura: "recursos/img/PortuguesMovel/viagemespacial.png", 
-		nome: "Formar Palavras - Alfabetização",
+		miniatura: "recursos/img/Mobile/Portugues/2/luzdosaber.jpg", 
+		nome: "Luz do saber",
 		ano: "2",
-		id: "20"
+		id: "17"
 	};
 	recursos.push(recurso16);
 
 	var recurso17 = {
-		miniatura: "recursos/img/PortuguesMovel/silaba.png", 
-		nome: "Mundo do Leitor - Histórias",
-		ano: "4",
-		id: "38"
+		miniatura: "recursos/img/Mobile/Portugues/8/mistercrase.jpg", 
+		nome: "Mister Crase",
+		ano: "8",
+		id: "58"
 	};
 	recursos.push(recurso17);
 
 	var recurso18 = {
-		miniatura: "recursos/img/PortuguesMovel/ruthrocha.png", 
-		nome: "O mistério no galinheiro",
-		ano: "3",
-		id: "22"
+		miniatura: "recursos/img/Mobile/Portugues/6/montapalavras.jpg", 
+		nome: "Monta palavras",
+		ano: "6",
+		id: "47"
 	};
 	recursos.push(recurso18);
 
 	var recurso19 = {
-		miniatura: "recursos/img/PortuguesMovel/ortografiapalavrascomsc.png", 
-		nome: "Mundo Leitor - 1950",
+		miniatura: "recursos/img/Mobile/Portugues/4/mundoleitorfabulas.jpg", 
+		nome: "Mundo Leitor - Fábulas",
 		ano: "4",
-		id: "31"
+		id: "30"
 	};
 	recursos.push(recurso19);
 
 	var recurso20 = {
-		miniatura: "recursos/img/PortuguesMovel/vanguardas.png", 
-		nome: "Silabando",
-		ano: "2",
-		id: "13"
+		miniatura: "recursos/img/Mobile/Portugues/3/oraptodavaca.jpg", 
+		nome: "O rapto da vaca sagrada",
+		ano: "3",
+		id: "22"
 	};
 	recursos.push(recurso20);
 

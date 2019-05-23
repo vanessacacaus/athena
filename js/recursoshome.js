@@ -82,82 +82,82 @@
 
 //recursos android
 	var recursoA1 = {
-		miniatura: "recursos/img/PortuguesMovel/palavracantadaoficial.png", 
-		nome: "Palavra Cantada Oficial",
+		miniatura: "recursos/img/Mobile/Matematica/1/adicaoesubtracao.jpg", 
+		nome: "Adição e subtração",
 		ano: "1",
-		id: "1"
+		id: "70"
 	};
 	recursosAnd.push(recursoA1);
 
 	var recursoA2 = {
-		miniatura: "recursos/img/MatematicaMovel/matematicaparacriancassoma.png", 
-		nome: "Matemática para crianças: Soma",
-		ano: "1",
-		id: "74"
+		miniatura: "recursos/img/Mobile/Portugues/2/luzdosaber.jpg", 
+		nome: "Luz do saber",
+		ano: "2",
+		id: "17"
 	};
 	recursosAnd.push(recursoA2);
 
 	var recursoA3 = {
-		miniatura: "recursos/img/PortuguesMovel/ursinhoaeiou.png", 
-		nome: "Ursinho A E I O U",
-		ano: "1",
-		id: "2"
+		miniatura: "recursos/img/Mobile/Matematica/1/adicaoesubtracao.jpg", 
+		nome: "Enigma Matemático com Varas",
+		ano: "5",
+		id: "93"
 	};
 	recursosAnd.push(recursoA3);
 
 	var recursoA4 = {
-		miniatura: "recursos/img/MatematicaMovel/adicaoesubcolorido.png", 
-		nome: "Adição e Subtração Colorido",
-		ano: "1",
-		id: "75"
+		miniatura: "recursos/img/Mobile/Portugues/9/gramaticadebolso.jpg", 
+		nome: "Gramática de bolso",
+		ano: "9",
+		id: "67"
 	};
 	recursosAnd.push(recursoA4);
 
 	var recursoA5 = {
-		miniatura: "recursos/img/PortuguesMovel/formapalavras.png", 
-		nome: "Forma Palavras",
-		ano: "1",
-		id: "3"
+miniatura: "recursos/img/Mobile/Matematica/3/jogospara2.jpg", 
+		nome: "Jogos para 2: Jogo Matemático",
+		ano: "3",
+		id: "83"
 	};
 	recursosAnd.push(recursoA5);
 
 	var recursoA6 = {
-		miniatura: "recursos/img/MatematicaMovel/adicaoesubpcriancas.png", 
-		nome: "Adição, subtração para crianças",
+		miniatura: "recursos/img/Mobile/Portugues/1/formapalavras.jpg", 
+		nome: "Forma Palavras",
 		ano: "1",
-		id: "76"
+		id: "3"
 	};
 	recursosAnd.push(recursoA6);
 
 	var recursoA7 = {
-		miniatura: "recursos/img/PortuguesMovel/asminhashistorias.png", 
-		nome: "As minhas histórias",
-		ano: "1",
-		id: "5"
+		miniatura: "recursos/img/Mobile/Matematica/5/lotofracoes.jpg", 
+		nome: "Loto - Frações",
+		ano: "3",
+		id: "92"
 	};
 	recursosAnd.push(recursoA7);
 
 	var recursoA8 = {
-		miniatura: "recursos/img/MatematicaMovel/criancasomatenum.png", 
-		nome: "Crianças, matemática e números",
+		miniatura: "recursos/img/Mobile/Portugues/1/brincandocomoalfabeto.jpg", 
+		nome: "Brincando com o alfabeto",
 		ano: "1",
-		id: "77"
+		id: "10"
 	};
 	recursosAnd.push(recursoA8);
 
 	var recursoA9 = {
-		miniatura: "recursos/img/PortuguesMovel/apocadagua.png", 
-		nome: "A poça d'água",
-		ano: "1",
-		id: "6"
+		miniatura: "recursos/img/Mobile/Matematica/4/matematicabasica.jpg", 
+		nome: "Matemática básica 1, 2 frações",
+		ano: "4",
+		id: "86"
 	};
 	recursosAnd.push(recursoA9);	
 
 	var recursoA10 = {
-		miniatura: "recursos/img/MatematicaMovel/matematicadaselva.png", 
-		nome: "Matemática Selva: Pré-escola",
-		ano: "1",
-		id: "78"
+		miniatura: "recursos/img/Mobile/Portugues/5/Acentuando.jpg", 
+		nome: "Acentuando",
+		ano: "5",
+		id: "39"
 	};
 	recursosAnd.push(recursoA10);
 

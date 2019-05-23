@@ -1,3 +1,10 @@
+body {
+	background-image: url('../img/ilustraApoio.png');
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: 85% 10%;
+}
+
 #containerContent{
 	width: 75%;
 	margin-left: 14%;

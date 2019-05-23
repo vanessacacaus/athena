@@ -1,3 +1,10 @@
+body {
+	background-image: url('../img/ilustraDuvidas.png');
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: 85% 10%;
+}
+
 #containerContent{
 	width: 80%;
 	margin-left: 10%;
