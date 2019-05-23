@@ -1,3 +1,8 @@
+@charset "UTF-8";
+#containerExterno {
+	background-color: 
+}
+
 #containerContent{
 	width: 80%;
 	margin-left: 10%;
@@ -46,6 +51,23 @@
 	color: #7383BF;				
 }
 
+/*INICIO: Carousel Informativo (SUBSTITUI PELO CODIGO DAS CINCO IMAGENS INFORMATIVAS)*/
+
+
+#carouselInformativo{
+	margin-bottom: 5vh;
+}
+
+.carousel-control-prev {
+	left: -30px;
+}
+
+.carousel-control-next {
+	right: -30px;
+}
+
+
+/*FIM: Carousel Informativo*/
 
 img.recursosTamanho {
 	width: 96.5px; 
@@ -158,7 +180,7 @@ img.recursosTamanho {
 p.tituloRecurso{
 	font-size: 0.9em;
 	font-weight: 600;
-	height: 25%;
+	height: 30%;
 }
 
 p {
@@ -173,6 +195,21 @@ p {
 	margin-top: 8vh;
 	margin-bottom: 8vh;
 	text-align: center;
+	padding: 5% 0;
+}
+
+#downloadOffline h3 {
+	background-color: #FFFFFF;
+	opacity: 0.8;
+}
+
+
+.aires {
+/*	background-image: url("../img/aires.png");
+	background-size: 25%; 
+	background-repeat: no-repeat;*/
+	width: 50%;
+	margin, padding: 0%;
 }
 
 /*#downloadOffline .col-sm-5 button{
