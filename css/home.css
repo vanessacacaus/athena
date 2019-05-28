@@ -22,36 +22,8 @@
 	margin-bottom: 4vh;
 }
 
-/*INICIO:cinco imagens informativas*/
-.imginfo{
-	width: 27%;
-}
-#infosIniciais .col-sm{
-	text-align: center;
-}
-#infosIniciais{
-	margin-bottom: 8vh;
-}
-.infos{
-	font-weight: 600;
-	font-size: 0.9em}
-#info1{
-	color: #00C37A;				
-}
-#info2{
-	color: #FF7058;				
-}
-#info3{
-	color: #0E89AC;				
-}
-#info4{
-	color: #AAC148;				
-}
-#info5{
-	color: #7383BF;				
-}
 
-/*INICIO: Carousel Informativo (SUBSTITUI PELO CODIGO DAS CINCO IMAGENS INFORMATIVAS)*/
+/*INICIO: Carousel Informativo*/
 
 
 #carouselInformativo{
@@ -64,6 +36,25 @@
 
 .carousel-control-next {
 	right: -30px;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2394999D' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	padding: 16px;
+
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2394999D' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	padding: 16px;
+
+}
+
+.carousel-indicators li {
+	background-color: #94999D;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
 }
 
 
@@ -169,18 +160,19 @@ img.recursosTamanho {
 /*INICIO:COMUM DOS DOIS SLIDERS*/
 #botaosliderEsquerda:hover, #botaosliderDireita:hover{
 	cursor: pointer;
+	width: 80%;
 }
 #botaosliderEsquerda{
-	width: 80%;
+	width: 70%;
 }
 #botaosliderDireita{
-	width: 80%;
+	width: 70%;
 }
 
 p.tituloRecurso{
 	font-size: 0.9em;
 	font-weight: 600;
-	height: 30%;
+	height: 40px;
 }
 
 p {
@@ -318,5 +310,16 @@ p {
 		text-align: center;
 		color: #0069d9;
 		font-size: 1.2em;
+	}
+
+	ol.carousel-indicators {
+		margin-bottom: 0rem !important;
+	}
+
+	.carousel-indicators li {
+		background-color: #94999D;
+		height: 7px;
+		width: 7px;
+		border-radius: 50%;
 	}
 }
